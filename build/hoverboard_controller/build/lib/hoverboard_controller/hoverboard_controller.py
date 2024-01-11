@@ -5,7 +5,8 @@ import math
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-
+from hoverboard_msgs.msg import SonarMsg
+from hoverboard_msgs.msg import TempMsg
 
 # SERIAL COMMUNICATION
 BAUD_RATE = 115200
@@ -35,10 +36,9 @@ TEMP1_MSG = 8
 TEMP2_MSG = 9
 TEMP3_MSG = 10
 TEMP4_MSG = 11
-
+PUMP_MSG = 12
 
 HEARTBEAT_INTERVAL = 1  # second
-
 
 
 
@@ -48,16 +48,32 @@ class HoverboardController(Node):
         super().__init__('hoverboard_controller')
 
         # Get params
-        self.declare_parameter('serial_port', '/dev/ttyUSB1') 
+        self.declare_parameter('serial_port', '/dev/ttyUSB0'    ) 
         self.port = self.get_parameter('serial_port').value       
 
         # Set the serial message to stop the hoverboard
         self.hoverBoardSpeed = 0
         self.hoverBoardSteer = 0
         self.sonarMsg = [-1,-1,-1,-1,1]
-        self.tmpMsg = [-1,-1,-1,-1]
+        self.tempMsg = [-1,-1,-1,-1]
         self.speedInfoMsg = [5,5]
 
+        # Set Publishers
+        self.sonar_publisher = self.create_publisher(SonarMsg, '/sonar_msg', 10)
+        self.temp_publisher = self.create_publisher(TempMsg, '/temp_msg', 10)
+
+        # Set Messages
+        self.ros_temp_msg = TempMsg()
+        self.ros_temp_msg.temp1 = 200
+        self.ros_temp_msg.temp2 = 200
+
+        self.ros_sonar_msg = SonarMsg()
+        self.ros_sonar_msg.sonar1 = 100
+        self.ros_sonar_msg.sonar2 = 100
+        self.ros_sonar_msg.sonar3 = 100
+        self.ros_sonar_msg.sonar4 = 100
+        self.ros_sonar_msg.sonar5 = 100
+        
         # For the heartbeat indicator
         self.lastTime = time.time()
 
@@ -74,6 +90,7 @@ class HoverboardController(Node):
         # Set the frequency for communication between the computer and the board
         timer_period = 0.01  # seconds
         self.timer = self.create_timer(timer_period, self.sendData)
+        self.timer2 = self.create_timer(timer_period, self.publishData)
     
     def sendData(self):
         self.serialMsg =bytearray(4)
@@ -96,6 +113,22 @@ class HoverboardController(Node):
         # Send the byte array message
         self.ser.write(self.serialMsg)
         self.readData()
+    
+    def publishData(self):
+        self.ros_sonar_msg.sonar1 = self.sonarMsg[0]
+        self.ros_sonar_msg.sonar2 = self.sonarMsg[1]
+        self.ros_sonar_msg.sonar3 = self.sonarMsg[2]
+        self.ros_sonar_msg.sonar4 = self.sonarMsg[3]
+        self.ros_sonar_msg.sonar5 = self.sonarMsg[4]
+
+        print("Msg: ",self.ros_temp_msg)
+
+        self.ros_temp_msg.temp1 = self.tempMsg[0]
+        self.ros_temp_msg.temp2 = self.tempMsg[1]
+
+        self.sonar_publisher.publish(self.ros_sonar_msg)
+        self.temp_publisher.publish(self.ros_temp_msg)
+        
 
 
     def controllerCallback(self, msg):
@@ -141,7 +174,7 @@ class HoverboardController(Node):
 
 
         
-        print("Sent: speed: {}, steer: {}".format(self.hoverBoardSpeed,self.hoverBoardSteer))
+        # print("Sent: speed: {}, steer: {}".format(self.hoverBoardSpeed,self.hoverBoardSteer))
 
 
     def initializeSerial(self):
@@ -193,31 +226,31 @@ class HoverboardController(Node):
                     self.sonarMsg[4] = int.from_bytes(datas,byteorder="big")
                     self.sonarMsg[4] = self.sonarMsg[4] - (SONAR5_MSG << 12 )
                 elif(msgType == TEMP1_MSG):
-                    self.tmpMsg[0] = int.from_bytes(datas,byteorder="big")
-                    self.tmpMsg[0] = self.tmpMsg[0] - (TEMP1_MSG << 12 )
+                    self.tempMsg[0] = int.from_bytes(datas,byteorder="big")
+                    self.tempMsg[0] = self.tempMsg[0] - (TEMP1_MSG << 12 )
                 elif(msgType == TEMP2_MSG):
-                    self.tmpMsg[1] = int.from_bytes(datas,byteorder="big")
-                    self.tmpMsg[1] = self.tmpMsg[1] - (TEMP2_MSG << 12 )
+                    self.tempMsg[1] = int.from_bytes(datas,byteorder="big")
+                    self.tempMsg[1] = self.tempMsg[1] - (TEMP2_MSG << 12 )
                 elif(msgType == TEMP3_MSG):
-                    self.tmpMsg[2] = int.from_bytes(datas,byteorder="big")
-                    self.tmpMsg[2] = self.tmpMsg[2] - (TEMP3_MSG << 12 )
+                    self.tempMsg[2] = int.from_bytes(datas,byteorder="big")
+                    self.tempMsg[2] = self.tempMsg[2] - (TEMP3_MSG << 12 )
                 elif(msgType == TEMP4_MSG):
-                    self.tmpMsg[3] = int.from_bytes(datas,byteorder="big")
-                    self.tmpMsg[3] = self.tmpMsg[3] - (TEMP4_MSG << 12 )
+                    self.tempMsg[3] = int.from_bytes(datas,byteorder="big")
+                    self.tempMsg[3] = self.tempMsg[3] - (TEMP4_MSG << 12 )
                 else:
                     print("Msg Type: ",msgType)
                     return
                 
 
                 # print("Msg Type: ",msgType)
-                # self.printData()
+                self.printData()
                 
 
 
     def printData(self):
         print("Speed Info: {}, {}".format(self.speedInfoMsg[0],self.speedInfoMsg[1]))
         print("Sonar Data: {}, {}, {}, {}, {}".format(self.sonarMsg[0],self.sonarMsg[1],self.sonarMsg[2],self.sonarMsg[3],self.sonarMsg[4]))
-        print("Temp Data: {}, {}, {}, {}".format(self.tmpMsg[0],self.tmpMsg[1],self.tmpMsg[2],self.tmpMsg[3]))
+        print("Temp Data: {}, {}, {}, {}".format(self.tempMsg[0],self.tempMsg[1],self.tempMsg[2],self.tempMsg[3]))
 
     def saveMap(self):
         pass

@@ -20,13 +20,15 @@
 #define SONAR5_MSG  7
 #define TEMP1_MSG   8
 #define TEMP2_MSG   9
-#define TEMP3_MSG   10
-#define TEMP4_MSG   11
+#define PUMP_MSG    10
+#define FIRE_MSG    11
 
 // About Sonar
-#define MIN_SONAR_DISTANCE 20
+#define MIN_SONAR_DISTANCE 30
 #define STOP_SONAR_FRONT 1
 #define STOP_SONAR_BACK 2
+#define CAR_DIRECTION_FRONT 1
+#define CAR_DIRECTION_BACKWARD 2
 
 // #define DEBUG_RX                        // [-] Debug received data. Prints all bytes to serial (comment-out to disable)
 
@@ -84,11 +86,11 @@ void Send(int16_t uSteer, int16_t uSpeed)
 
 // USED PINS: 4,5,6,7,8,9,10,11
 byte data,datas[2],startByte=254,stopByte=255;
-int cmd_vel,isReceived, msgType;
+int cmd_vel,isReceived, msgType, fireSensorData=1500;
 uint16_t carSpeed=0,carSteer=0;
 unsigned long iTimeSend = 0;
 unsigned long heartBeatTime;
-float sonarDataList[5], tempDataList[4];
+float sonarDataList[5], tempDataList[2];
 
 // Sonar Pins
 const int sonarTrig1 = 4;
@@ -102,6 +104,7 @@ const int sonarEcho4 = 11;
 const int sonarTrig5 = 12;
 const int sonarEcho5 = 13;
 int sonarStop = 0;
+int carDirection = 0;
 
 // Temp Pins
 const int tempSensor1 = A0;
@@ -109,9 +112,12 @@ const int tempSensor2 = A1;
 const int tempSensor3 = A2;
 const int tempSensor4 = A3;
 
+// Fire Sensor Pins
+const int fireSensor = A4;
+
 
 // GET COMMAND FROM SERIAL 
-void getCommand(){
+int getCommand(){
 
      while(Serial.available() > 0){
         datas[0] = Serial.read();
@@ -123,6 +129,14 @@ void getCommand(){
           datas[0] = datas[0] & 0x0F;
           if(msgType == SPEED_MSG){
             carSpeed = (datas[1] | datas[0] << 8) - MAX_SPEED;
+            
+            if(carSpeed > 0){
+              carDirection = CAR_DIRECTION_FRONT;
+            }
+            else if(carSpeed < 0){
+              carDirection = CAR_DIRECTION_BACKWARD;
+            }
+            
             heartBeatTime = millis();
           }
           else if(msgType == STEER_MSG){
@@ -131,6 +145,7 @@ void getCommand(){
           }
         }
      }
+     return carDirection;
 }
 
 void sendData(){
@@ -148,13 +163,13 @@ void sendData(){
 
   // Get Tmp Message
   int tmpMsg1 = (TEMP1_MSG << 12) + min(tempDataList[0],1000);
-  int tmpMsg2 = (TEMP2_MSG << 12) + min(tempDataList[0],1000);
-  int tmpMsg3 = (TEMP3_MSG << 12) + min(tempDataList[0],1000);
-  int tmpMsg4 = (TEMP4_MSG << 12) + min(tempDataList[0],1000);
+  int tmpMsg2 = (TEMP2_MSG << 12) + min(tempDataList[1],1000);
+
+  int fireMsg1 = (FIRE_MSG << 12) + min(fireSensorData,1000);
 
 
 
-  // Send Speed Data
+  //Send Speed Data
   Serial.write(highByte(speedMsg));
   Serial.write(lowByte(speedMsg));
   Serial.write(highByte(steerMsg));
@@ -177,10 +192,10 @@ void sendData(){
   Serial.write(lowByte(tmpMsg1));
   Serial.write(highByte(tmpMsg2));
   Serial.write(lowByte(tmpMsg2));
-  Serial.write(highByte(tmpMsg3));
-  Serial.write(lowByte(tmpMsg3));
-  Serial.write(highByte(tmpMsg4));
-  Serial.write(lowByte(tmpMsg4));
+
+  //Send Fire Data
+  Serial.write(highByte(fireMsg1));
+  Serial.write(lowByte(fireMsg1));
 }
 
 
@@ -206,13 +221,14 @@ int getSonarData(int sonarTrig, int sonarEcho){
   }
 }
 
-float getTempData(int tempSensor){
-  float tempVoltage, temp;
-  int readValue;
+int getTempData(int tempSensor){
+
+  float tempVoltage;
+  int readValue, temp;
   readValue = analogRead(tempSensor);
   tempVoltage = (readValue / 1023.0)*5000;
   temp = tempVoltage /10.0; 
-  return temp;
+  return (int) temp;
 }
 
 int getSonarDataList(){
@@ -242,9 +258,12 @@ int getSonarDataList(){
 
 void getTempDataList(){
   tempDataList[0] = getTempData(tempSensor1);
-  tempDataList[0] = getTempData(tempSensor2);
-  tempDataList[0] = getTempData(tempSensor3);
-  tempDataList[0] = getTempData(tempSensor4);
+  tempDataList[1] = 100; //getTempData(tempSensor2);
+}
+
+int getFireSensorData(int fireSensor){
+  fireSensorData  = analogRead(fireSensor);
+  return fireSensorData;
 }
 
 //MAIN METHOD
@@ -254,7 +273,6 @@ void getTempDataList(){
 void setup() 
 {
   Serial.begin(SERIAL_BAUD);
-  analogReference(INTERNAL1V1);
 
   // Set Sonar Pins
   pinMode(sonarTrig1, OUTPUT);
@@ -283,10 +301,11 @@ void setup()
 void loop()
 { 
   //Get Command From Serial 
-  getCommand();
+  carDirection = getCommand();
 
   // Get Sonar Data 
-  getSonarDataList();
+  sonarStop = getSonarDataList();
+  fireSensorData = getFireSensorData(fireSensor);
   getTempDataList();
 
   //If the last received command exceed the heart beat interval stop the car
@@ -295,12 +314,13 @@ void loop()
     carSteer = 0;
   }
 
-  if(sonarStop == STOP_SONAR_FRONT && carSpeed > 0){
+  // Check if there is any obstacles in front
+  if(sonarStop == STOP_SONAR_FRONT && carDirection == CAR_DIRECTION_FRONT){
     carSpeed = 0;
     carSteer = 0;
   }
 
-  if(sonarStop == STOP_SONAR_BACK && carSpeed < 0){
+  if(sonarStop == STOP_SONAR_BACK && carSpeed == CAR_DIRECTION_BACKWARD){
     carSpeed = 0;
     carSteer = 0;
   }

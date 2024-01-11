@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from hoverboard_msgs/msg/TempMsg.msg
+// generated code does not contain a copyright notice
+
+
+module hoverboard_msgs {
+  module msg {
+    struct TempMsg {
+      int64 temp1;
+
+      int64 temp2;
+    };
+  };
+};

@@ -1,0 +1,7 @@
+{
+  "package_name": "hoverboard_msgs",
+  "non_idl_tuples": [
+    "/home/qty/ros2_ws/src/hoverboard_msgs:msg/SonarMsg.msg",
+    "/home/qty/ros2_ws/src/hoverboard_msgs:msg/TempMsg.msg"
+  ]
+}

@@ -1,0 +1,68 @@
+[0.125s] Invoking command in '/home/qty/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/tutorial_interfaces
+[0.221s] -- The C compiler identification is GNU 9.4.0
+[0.275s] -- The CXX compiler identification is GNU 9.4.0
+[0.280s] -- Check for working C compiler: /usr/bin/cc
+[0.329s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.330s] -- Detecting C compiler ABI info
+[0.398s] -- Detecting C compiler ABI info - done
+[0.406s] -- Detecting C compile features
+[0.407s] -- Detecting C compile features - done
+[0.409s] -- Check for working CXX compiler: /usr/bin/c++
+[0.463s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.464s] -- Detecting CXX compiler ABI info
+[0.522s] -- Detecting CXX compiler ABI info - done
+[0.531s] -- Detecting CXX compile features
+[0.532s] -- Detecting CXX compile features - done
+[0.535s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.568s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.568s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.767s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.843s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.849s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.858s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.932s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.952s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.019s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.066s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.197s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[1.197s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.197s]   tutorial_interfaces --arguments-file
+[1.197s]   /home/qty/ros2_ws/build/tutorial_interfaces/rosidl_adapter__arguments__tutorial_interfaces.json
+[1.197s]   --output-dir
+[1.197s]   /home/qty/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces
+[1.197s]   --output-file
+[1.197s]   /home/qty/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces.idls)
+[1.197s]   returned error code 1:
+[1.197s] 
+[1.197s]   Traceback (most recent call last):
+[1.197s] 
+[1.197s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[1.197s]       return _run_code(code, main_globals, None,
+[1.197s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[1.197s]       exec(code, run_globals)
+[1.197s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.197s]       sys.exit(main())
+[1.197s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.197s]       abs_idl_file = convert_to_idl(
+[1.198s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.198s]       return convert_msg_to_idl(
+[1.198s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.198s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.198s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 540, in parse_message_string
+[1.198s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[1.198s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 387, in __init__
+[1.198s]       self.base_type = BaseType(
+[1.198s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 204, in __init__
+[1.198s]       raise InvalidResourceName(
+[1.198s] 
+[1.198s]   rosidl_adapter.parser.InvalidResourceName: 'tempMsg' is an invalid message
+[1.198s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.198s] 
+[1.198s] Call Stack (most recent call first):
+[1.198s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.198s]   CMakeLists.txt:38 (rosidl_generate_interfaces)
+[1.198s] 
+[1.198s] 
+[1.198s] -- Configuring incomplete, errors occurred!
+[1.198s] See also "/home/qty/ros2_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[1.202s] Invoked command in '/home/qty/ros2_ws/build/tutorial_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/tutorial_interfaces

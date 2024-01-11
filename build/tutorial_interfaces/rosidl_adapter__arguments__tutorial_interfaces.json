@@ -1,0 +1,7 @@
+{
+  "package_name": "tutorial_interfaces",
+  "non_idl_tuples": [
+    "/home/qty/ros2_ws/src/tutorial_interfaces:msg/TempMsg.msg",
+    "/home/qty/ros2_ws/src/tutorial_interfaces:msg/SonarMsg.msg"
+  ]
+}
