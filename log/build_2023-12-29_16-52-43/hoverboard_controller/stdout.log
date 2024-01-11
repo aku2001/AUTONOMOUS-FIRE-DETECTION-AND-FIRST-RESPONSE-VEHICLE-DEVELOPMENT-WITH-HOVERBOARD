@@ -1,0 +1,41 @@
+running develop
+running egg_info
+writing ../../build/hoverboard_controller/hoverboard_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/hoverboard_controller/hoverboard_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/hoverboard_controller/hoverboard_controller.egg-info/entry_points.txt
+writing requirements to ../../build/hoverboard_controller/hoverboard_controller.egg-info/requires.txt
+writing top-level names to ../../build/hoverboard_controller/hoverboard_controller.egg-info/top_level.txt
+reading manifest file '../../build/hoverboard_controller/hoverboard_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/hoverboard_controller/hoverboard_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/qty/ros2_ws/build/hoverboard_controller/build
+creating /home/qty/ros2_ws/build/hoverboard_controller/build/lib
+creating /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/joystickController.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/hoverboard_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/__init__.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/old_joystickController.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+running install
+running install_lib
+creating /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/joystickController.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/hoverboard_controller.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/__init__.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/old_joystickController.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/joystickController.py to joystickController.cpython-38.pyc
+byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/hoverboard_controller.py to hoverboard_controller.cpython-38.pyc
+byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/old_joystickController.py to old_joystickController.cpython-38.pyc
+running install_data
+creating /home/qty/ros2_ws/install/hoverboard_controller/share/ament_index
+creating /home/qty/ros2_ws/install/hoverboard_controller/share/ament_index/resource_index
+creating /home/qty/ros2_ws/install/hoverboard_controller/share/ament_index/resource_index/packages
+copying resource/hoverboard_controller -> /home/qty/ros2_ws/install/hoverboard_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+running install_egg_info
+Copying ../../build/hoverboard_controller/hoverboard_controller.egg-info to /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller-0.0.0-py3.8.egg-info
+running install_scripts
+Installing hoverboard_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing joystick_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+writing list of installed files to '/home/qty/ros2_ws/build/hoverboard_controller/install.log'

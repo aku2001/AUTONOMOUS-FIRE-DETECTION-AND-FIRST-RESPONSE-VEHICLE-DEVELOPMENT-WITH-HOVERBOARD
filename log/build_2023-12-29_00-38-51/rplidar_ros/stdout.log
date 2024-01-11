@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target rplidar_composition_node[0m
+[ 11%] Built target rplidarNodeClient
+[ 50%] Built target rplidarNode
+[ 55%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/src/rplidar_node.cpp.o[0m

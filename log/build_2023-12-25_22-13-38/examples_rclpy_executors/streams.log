@@ -1,0 +1,30 @@
+[3.791s] Invoking command in '/home/qty/ros2_ws/build/examples_rclpy_executors': PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_executors/prefix_override:/home/qty/ros2_ws/install/examples_rclpy_executors/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/examples_rclpy_executors/build --no-deps install_data
+[4.192s] running develop
+[4.405s] running egg_info
+[4.406s] creating examples_rclpy_executors.egg-info
+[4.406s] writing examples_rclpy_executors.egg-info/PKG-INFO
+[4.407s] writing dependency_links to examples_rclpy_executors.egg-info/dependency_links.txt
+[4.407s] writing entry points to examples_rclpy_executors.egg-info/entry_points.txt
+[4.407s] writing requirements to examples_rclpy_executors.egg-info/requires.txt
+[4.407s] writing top-level names to examples_rclpy_executors.egg-info/top_level.txt
+[4.415s] writing manifest file 'examples_rclpy_executors.egg-info/SOURCES.txt'
+[4.506s] reading manifest file 'examples_rclpy_executors.egg-info/SOURCES.txt'
+[4.506s] writing manifest file 'examples_rclpy_executors.egg-info/SOURCES.txt'
+[4.615s] running build_ext
+[4.616s] Creating /home/qty/ros2_ws/install/examples_rclpy_executors/lib/python3.8/site-packages/site.py
+[4.618s] Creating /home/qty/ros2_ws/install/examples_rclpy_executors/lib/python3.8/site-packages/examples-rclpy-executors.egg-link (link to .)
+[4.619s] Installing callback_group script to /home/qty/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.620s] Installing composed script to /home/qty/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.620s] Installing custom_callback_group script to /home/qty/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.627s] Installing custom_executor script to /home/qty/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.627s] Installing listener script to /home/qty/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.627s] Installing talker script to /home/qty/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.627s] 
+[4.628s] Installed /home/qty/ros2_ws/build/examples_rclpy_executors
+[4.628s] running install_data
+[4.628s] creating /home/qty/ros2_ws/install/examples_rclpy_executors/share/ament_index
+[4.628s] creating /home/qty/ros2_ws/install/examples_rclpy_executors/share/ament_index/resource_index
+[4.628s] creating /home/qty/ros2_ws/install/examples_rclpy_executors/share/ament_index/resource_index/packages
+[4.628s] copying resource/examples_rclpy_executors -> /home/qty/ros2_ws/install/examples_rclpy_executors/share/ament_index/resource_index/packages
+[4.628s] copying package.xml -> /home/qty/ros2_ws/install/examples_rclpy_executors/share/examples_rclpy_executors
+[4.721s] Invoked command in '/home/qty/ros2_ws/build/examples_rclpy_executors' returned '0': PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_executors/prefix_override:/home/qty/ros2_ws/install/examples_rclpy_executors/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/examples_rclpy_executors/build --no-deps install_data

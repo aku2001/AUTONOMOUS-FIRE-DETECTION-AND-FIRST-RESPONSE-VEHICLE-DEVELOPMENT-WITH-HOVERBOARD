@@ -1,0 +1,19 @@
+[1.578s] Invoking command in '/home/qty/ros2_ws/build/hoverBoardController': PYTHONPATH=/home/qty/ros2_ws/build/hoverBoardController/prefix_override:/home/qty/ros2_ws/install/hoverBoardController/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/hoverBoardController/build --no-deps install_data
+[1.806s] running develop
+[1.954s] running egg_info
+[1.954s] writing hoverBoardController.egg-info/PKG-INFO
+[1.955s] writing dependency_links to hoverBoardController.egg-info/dependency_links.txt
+[1.955s] writing entry points to hoverBoardController.egg-info/entry_points.txt
+[1.955s] writing requirements to hoverBoardController.egg-info/requires.txt
+[1.955s] writing top-level names to hoverBoardController.egg-info/top_level.txt
+[2.003s] reading manifest file 'hoverBoardController.egg-info/SOURCES.txt'
+[2.004s] writing manifest file 'hoverBoardController.egg-info/SOURCES.txt'
+[2.049s] running build_ext
+[2.051s] Creating /home/qty/ros2_ws/install/hoverBoardController/lib/python3.8/site-packages/hoverBoardController.egg-link (link to .)
+[2.051s] Installing hoverboard_controller script to /home/qty/ros2_ws/install/hoverBoardController/lib/hoverBoardController
+[2.052s] Installing joystick_controller script to /home/qty/ros2_ws/install/hoverBoardController/lib/hoverBoardController
+[2.053s] 
+[2.053s] Installed /home/qty/ros2_ws/build/hoverBoardController
+[2.053s] running install_data
+[2.053s] copying package.xml -> /home/qty/ros2_ws/install/hoverBoardController/share/hoverBoardController
+[2.392s] Invoked command in '/home/qty/ros2_ws/build/hoverBoardController' returned '0': PYTHONPATH=/home/qty/ros2_ws/build/hoverBoardController/prefix_override:/home/qty/ros2_ws/install/hoverBoardController/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/hoverBoardController/build --no-deps install_data

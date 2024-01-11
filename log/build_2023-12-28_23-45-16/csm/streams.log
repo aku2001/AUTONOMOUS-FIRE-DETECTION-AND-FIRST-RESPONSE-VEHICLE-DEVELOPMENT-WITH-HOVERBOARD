@@ -1,0 +1,50 @@
+[0.625s] Invoking command in '/home/qty/ros2_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/csm -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/csm
+[0.929s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.930s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.930s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.930s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.930s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.930s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.931s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.971s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.973s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.152s] -- Configuring done
+[1.156s] -- Generating done
+[1.157s] -- Build files have been written to: /home/qty/ros2_ws/build/csm
+[1.281s] Invoked command in '/home/qty/ros2_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/csm -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/csm
+[1.282s] Invoking command in '/home/qty/ros2_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/csm -- -j16 -l16
+[1.335s] [100%] Built target csm
+[1.345s] Invoked command in '/home/qty/ros2_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/csm -- -j16 -l16
+[1.387s] Invoking command in '/home/qty/ros2_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/csm
+[1.393s] -- Install configuration: ""
+[1.393s] -- Execute custom install script
+[1.394s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/lib/libcsm.so
+[1.394s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/algos.h
+[1.394s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/csm.h
+[1.394s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/laser_data.h
+[1.394s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/laser_data_inline.h
+[1.395s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/restrict.h
+[1.395s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+[1.395s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/resource/csm
+[1.395s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/../gsl_eigen/gsl_eigen.h
+[1.395s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/library_path.sh
+[1.396s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/library_path.dsv
+[1.396s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+[1.396s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+[1.396s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/ament_prefix_path.sh
+[1.396s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/ament_prefix_path.dsv
+[1.397s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/path.sh
+[1.397s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/path.dsv
+[1.397s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/local_setup.bash
+[1.397s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/local_setup.sh
+[1.397s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/local_setup.zsh
+[1.398s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/local_setup.dsv
+[1.398s] -- Symlinking: /home/qty/ros2_ws/install/csm/share/csm/package.dsv
+[1.404s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/ament_index/resource_index/packages/csm
+[1.404s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.404s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.405s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+[1.405s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/csmConfig.cmake
+[1.405s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/csmConfig-version.cmake
+[1.405s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/package.xml
+[1.407s] Invoked command in '/home/qty/ros2_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/csm

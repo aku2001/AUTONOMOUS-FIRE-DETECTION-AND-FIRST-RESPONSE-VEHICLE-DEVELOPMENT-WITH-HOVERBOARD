@@ -1,0 +1,4 @@
+[console_scripts]
+hoverboard_controller = hoverboard_controller.hoverboard_controller:main
+joystick_controller = hoverboard_controller.joystick_controller:main
+

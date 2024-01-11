@@ -1,0 +1,10 @@
+running develop
+running egg_info
+creating hoverboard_controller.egg-info
+writing hoverboard_controller.egg-info/PKG-INFO
+writing dependency_links to hoverboard_controller.egg-info/dependency_links.txt
+writing entry points to hoverboard_controller.egg-info/entry_points.txt
+writing requirements to hoverboard_controller.egg-info/requires.txt
+writing top-level names to hoverboard_controller.egg-info/top_level.txt
+writing manifest file 'hoverboard_controller.egg-info/SOURCES.txt'
+error: package directory 'hoverboard_controller' does not exist

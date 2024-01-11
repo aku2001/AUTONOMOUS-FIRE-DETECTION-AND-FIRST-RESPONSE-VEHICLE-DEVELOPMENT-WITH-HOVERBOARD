@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000079] (-) JobUnselected: {'identifier': 'articubot_one'}
+[0.000100] (-) JobUnselected: {'identifier': 'csm'}
+[0.000114] (-) JobUnselected: {'identifier': 'hoverboard_controller'}
+[0.000127] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.000175] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.000187] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.000570] (-) EventReactorShutdown: {}

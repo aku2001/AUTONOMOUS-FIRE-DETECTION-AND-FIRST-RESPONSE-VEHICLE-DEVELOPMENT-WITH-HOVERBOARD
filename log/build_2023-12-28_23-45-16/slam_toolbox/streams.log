@@ -1,0 +1,69 @@
+[0.429s] Invoking command in '/home/qty/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/slam_toolbox
+[0.442s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.468s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.468s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.616s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.622s] -- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)
+[0.624s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.643s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.644s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.739s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.870s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.899s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.900s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.004s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.060s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[1.068s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.315s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.371s] -- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)
+[1.383s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[1.388s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.411s] -- Found tf2_sensor_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_sensor_msgs/cmake)
+[1.425s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[1.433s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.442s] -- Found rviz_common: 8.2.8 (/opt/ros/foxy/share/rviz_common/cmake)
+[1.451s] -- Setting OGRE_DIR to: '/opt/ros/foxy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.453s] -- Found OGRE
+[1.453s] --   static     : OFF
+[1.453s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.453s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.454s] --   media      : /opt/ros/foxy/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.454s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.454s] -- OGRE_LIBRARY_DIRS: /opt/ros/foxy/opt/rviz_ogre_vendor/lib
+[1.454s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.454s] -- OGRE_PLUGIN_DIR: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/OGRE
+[1.454s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.454s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.454s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.455s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.488s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[1.488s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[1.490s] -- library: libassimp.so.5
+[1.506s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.562s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[1.564s] -- Found rviz_default_plugins: 8.2.8 (/opt/ros/foxy/share/rviz_default_plugins/cmake)
+[1.910s] -- A library with LAPACK API found.
+[1.911s] -- Found installed version of Eigen: /usr/lib/cmake/eigen3
+[1.912s] -- Found required Ceres dependency: Eigen version 3.3.7 in /usr/include/eigen3
+[1.913s] -- Found required Ceres dependency: glog
+[1.915s] -- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags
+[1.915s] -- Detected gflags version: 2.2.2
+[1.915s] -- Found required Ceres dependency: gflags
+[1.916s] -- Found Ceres version: 1.14.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+[1.950s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.165s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[2.392s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.510s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.541s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[2.542s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.565s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.565s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.566s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.649s] CMake Error at CMakeLists.txt:124 (rosidl_get_typesupport_target):
+[2.651s]   Unknown CMake command "rosidl_get_typesupport_target".
+[2.651s] 
+[2.651s] 
+[2.652s] -- Configuring incomplete, errors occurred!
+[2.652s] See also "/home/qty/ros2_ws/build/slam_toolbox/CMakeFiles/CMakeOutput.log".
+[2.652s] See also "/home/qty/ros2_ws/build/slam_toolbox/CMakeFiles/CMakeError.log".
+[2.673s] Invoked command in '/home/qty/ros2_ws/build/slam_toolbox' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/slam_toolbox

@@ -1,0 +1,115 @@
+[0.551s] Invoking command in '/home/qty/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/rplidar_ros -- -j16 -l16
+[0.582s] [35m[1mScanning dependencies of target rplidar_composition_node[0m
+[0.597s] [ 11%] Built target rplidarNodeClient
+[0.599s] [ 50%] Built target rplidarNode
+[0.605s] [ 55%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/src/rplidar_node.cpp.o[0m
+[0.697s] In file included from [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:36[m[K:
+[0.697s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/include/rplidar_node.hpp:50:[m[K [01;35m[Kwarning: [m[K"M_PI" redefined
+[0.698s]    50 | #define M_PI 3.1415926535897932384626433832795
+[0.698s]       | 
+[0.698s] In file included from [01m[K/usr/include/c++/9/cmath:45[m[K,
+[0.699s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18[m[K,
+[0.699s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24[m[K,
+[0.699s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[0.700s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[0.701s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[0.701s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[0.701s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[0.702s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[0.702s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[0.702s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[0.703s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[0.703s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[0.704s]                  from [01m[K/home/qty/ros2_ws/src/rplidar_ros2/include/rplidar_node.hpp:34[m[K,
+[0.704s]                  from [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:36[m[K:
+[0.704s] [01m[K/usr/include/math.h:1070:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[0.704s]  1070 | # define M_PI  3.14159265358979323846 /* pi */
+[0.705s]       | 
+[1.654s] In file included from [01m[K/home/qty/ros2_ws/src/rplidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[1.654s]                  from [01m[K/home/qty/ros2_ws/src/rplidar_ros2/include/rplidar_node.hpp:41[m[K,
+[1.654s]                  from [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:36[m[K:
+[1.654s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[1.654s]    59 |     _u8 data[[01;35m[K0[m[K];
+[1.654s]       |              [01;35m[K^[m[K
+[1.655s] In file included from [01m[K/home/qty/ros2_ws/src/rplidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[1.655s]                  from [01m[K/home/qty/ros2_ws/src/rplidar_ros2/include/rplidar_node.hpp:41[m[K,
+[1.655s]                  from [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:36[m[K:
+[1.655s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[1.655s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[1.655s]       |                  [01;35m[K^[m[K
+[1.706s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid rplidar_ros::rplidar_node::stop_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)[m[K’:
+[1.706s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:246:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.706s]   246 | void rplidar_node::stop_motor([01;35m[Kconst EmptyRequest req[m[K, EmptyResponse res)
+[1.706s]       |                               [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.706s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:246:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.706s]   246 | void rplidar_node::stop_motor(const EmptyRequest req, [01;35m[KEmptyResponse res[m[K)
+[1.707s]       |                                                       [01;35m[K~~~~~~~~~~~~~~^~~[m[K
+[1.707s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid rplidar_ros::rplidar_node::start_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)[m[K’:
+[1.707s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:257:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.707s]   257 | void rplidar_node::start_motor([01;35m[Kconst EmptyRequest req[m[K, EmptyResponse res)
+[1.707s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.707s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:257:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.707s]   257 | void rplidar_node::start_motor(const EmptyRequest req, [01;35m[KEmptyResponse res[m[K)
+[1.707s]       |                                                        [01;35m[K~~~~~~~~~~~~~~^~~[m[K
+[1.710s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid rplidar_ros::rplidar_node::publish_loop()[m[K’:
+[1.710s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:344:46:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kangle_compensate_nodes[m[K’ [[01;35m[K-Wvla[m[K]
+[1.710s]   344 |       rplidar_response_measurement_node_hq_t [01;35m[Kangle_compensate_nodes[m[K[angle_compensate_nodes_count];
+[1.710s]       |                                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.711s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:354:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[1.711s]   354 |           for (j = 0; [01;35m[Kj < m_angle_compensate_multiple[m[K; j++) {
+[1.711s]       |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.711s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:375:44:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[1.711s]   375 |       for (size_t x = start_node, y = 0; [01;35m[Kx < end_node[m[K; ++x, ++y) {
+[1.711s]       |                                          [01;35m[K~~^~~~~~~~~~[m[K
+[1.711s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:382:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_min[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.712s]   382 |     float [01;35m[Kangle_min[m[K = deg_2_rad(0.0f);
+[1.712s]       |           [01;35m[K^~~~~~~~~[m[K
+[1.712s] [01m[K/home/qty/ros2_ws/src/rplidar_ros2/src/rplidar_node.cpp:383:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_max[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.712s]   383 |     float [01;35m[Kangle_max[m[K = deg_2_rad(359.0f);
+[1.712s]       |           [01;35m[K^~~~~~~~~[m[K
+[3.345s] [ 61%] [32m[1mLinking CXX shared library librplidar_composition_node.so[0m
+[3.468s] [ 88%] Built target rplidar_composition_node
+[3.489s] [ 94%] [32m[1mLinking CXX executable rplidar_composition[0m
+[3.576s] [100%] Built target rplidar_composition
+[3.585s] Invoked command in '/home/qty/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/rplidar_ros -- -j16 -l16
+[3.609s] Invoking command in '/home/qty/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/rplidar_ros
+[3.615s] -- Install configuration: ""
+[3.615s] -- Execute custom install script
+[3.616s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNode
+[3.616s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient
+[3.616s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[3.616s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py
+[3.617s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py
+[3.617s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py
+[3.617s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py
+[3.617s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar.launch.py
+[3.617s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py
+[3.617s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py
+[3.617s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py
+[3.617s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py
+[3.617s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py
+[3.618s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz
+[3.618s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/lib/librplidar_composition_node.so
+[3.618s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/include/rplidar_node.hpp
+[3.618s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/include/visibility.h
+[3.619s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNode
+[3.619s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient
+[3.619s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[3.619s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[3.619s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[3.620s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[3.620s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[3.620s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[3.620s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[3.620s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[3.620s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[3.621s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[3.621s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[3.621s] -- Symlinking: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.dsv
+[3.627s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[3.627s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.627s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.628s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[3.628s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[3.628s] -- Up-to-date symlink: /home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.xml
+[3.629s] Invoked command in '/home/qty/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/rplidar_ros

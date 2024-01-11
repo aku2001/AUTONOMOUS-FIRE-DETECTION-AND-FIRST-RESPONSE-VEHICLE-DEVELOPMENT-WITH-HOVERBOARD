@@ -1,0 +1,628 @@
+[1.568s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test']
+[1.568s] DEBUG:colcon:Parsed command line arguments: Namespace(abort_on_error=False, allow_overriding=[], base_paths=['.'], build_base='build', ctest_args=None, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0x7f10be4d6dc0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, pytest_args=None, pytest_with_coverage=False, python_testing=None, retest_until_fail=0, retest_until_pass=0, return_code_on_test_failure=False, test_result_base=None, unittest_args=None, verb_extension=<colcon_core.verb.test.TestVerb object at 0x7f10be4d6dc0>, verb_name='test', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f10be382b50>)
+[1.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.629s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/qty/ros2_ws'
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['ignore', 'ignore_ament_install']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'ignore'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'ignore_ament_install'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['colcon_pkg']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'colcon_pkg'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['colcon_meta']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'colcon_meta'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['ros']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'ros'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['cmake', 'python']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'cmake'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'python'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['python_setup_py']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'python_setup_py'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['ignore', 'ignore_ament_install']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'ignore'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'ignore_ament_install'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['colcon_pkg']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'colcon_pkg'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['colcon_meta']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'colcon_meta'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['ros']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'ros'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['cmake', 'python']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'cmake'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'python'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['python_setup_py']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'python_setup_py'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['ignore', 'ignore_ament_install']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'ignore'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'ignore_ament_install'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['colcon_pkg']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'colcon_pkg'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['colcon_meta']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'colcon_meta'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['ros']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'ros'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['cmake', 'python']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'cmake'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'python'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['python_setup_py']
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'python_setup_py'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extensions ['ignore', 'ignore_ament_install']
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'ignore'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'ignore_ament_install'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extensions ['colcon_pkg']
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'colcon_pkg'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extensions ['colcon_meta']
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'colcon_meta'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extensions ['ros']
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'ros'
+[1.642s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/actions/minimal_action_client' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_action_client'
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extensions ['ignore', 'ignore_ament_install']
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'ignore'
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'ignore_ament_install'
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extensions ['colcon_pkg']
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'colcon_pkg'
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extensions ['colcon_meta']
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'colcon_meta'
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extensions ['ros']
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'ros'
+[1.642s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/actions/minimal_action_server' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_action_server'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['ignore', 'ignore_ament_install']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'ignore'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'ignore_ament_install'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['colcon_pkg']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'colcon_pkg'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['colcon_meta']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'colcon_meta'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['ros']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'ros'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['cmake', 'python']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'cmake'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'python'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['python_setup_py']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'python_setup_py'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extensions ['ignore', 'ignore_ament_install']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'ignore'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'ignore_ament_install'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extensions ['colcon_pkg']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'colcon_pkg'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extensions ['colcon_meta']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'colcon_meta'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extensions ['ros']
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'ros'
+[1.644s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/composition/minimal_composition' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_composition'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['ignore', 'ignore_ament_install']
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'ignore'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'ignore_ament_install'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['colcon_pkg']
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'colcon_pkg'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['colcon_meta']
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'colcon_meta'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['ros']
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'ros'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['cmake', 'python']
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'cmake'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'python'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['python_setup_py']
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'python_setup_py'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extensions ['ignore', 'ignore_ament_install']
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'ignore'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'ignore_ament_install'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extensions ['colcon_pkg']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'colcon_pkg'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extensions ['colcon_meta']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'colcon_meta'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extensions ['ros']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'ros'
+[1.645s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/executors/multithreaded_executor' with type 'ros.ament_cmake' and name 'examples_rclcpp_multithreaded_executor'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['ignore', 'ignore_ament_install']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'ignore'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'ignore_ament_install'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['colcon_pkg']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'colcon_pkg'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['colcon_meta']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'colcon_meta'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['ros']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'ros'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['cmake', 'python']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'cmake'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'python'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['python_setup_py']
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'python_setup_py'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extensions ['ignore', 'ignore_ament_install']
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'ignore'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'ignore_ament_install'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extensions ['colcon_pkg']
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'colcon_pkg'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extensions ['colcon_meta']
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'colcon_meta'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extensions ['ros']
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'ros'
+[1.646s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/services/minimal_client' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_client'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extensions ['ignore', 'ignore_ament_install']
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'ignore'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'ignore_ament_install'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extensions ['colcon_pkg']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'colcon_pkg'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extensions ['colcon_meta']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'colcon_meta'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extensions ['ros']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'ros'
+[1.647s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/services/minimal_service' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_service'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['ignore', 'ignore_ament_install']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'ignore'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'ignore_ament_install'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['colcon_pkg']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'colcon_pkg'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['colcon_meta']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'colcon_meta'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['ros']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'ros'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['cmake', 'python']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'cmake'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'python'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['python_setup_py']
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'python_setup_py'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extensions ['ignore', 'ignore_ament_install']
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'ignore'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'ignore_ament_install'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extensions ['colcon_pkg']
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'colcon_pkg'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extensions ['colcon_meta']
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'colcon_meta'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extensions ['ros']
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'ros'
+[1.648s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/timers/minimal_timer' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_timer'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['ignore', 'ignore_ament_install']
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'ignore'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'ignore_ament_install'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['colcon_pkg']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'colcon_pkg'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['colcon_meta']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'colcon_meta'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['ros']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'ros'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['cmake', 'python']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'cmake'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'python'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['python_setup_py']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'python_setup_py'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extensions ['ignore', 'ignore_ament_install']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'ignore'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'ignore_ament_install'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extensions ['colcon_pkg']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'colcon_pkg'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extensions ['colcon_meta']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'colcon_meta'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extensions ['ros']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'ros'
+[1.650s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/topics/minimal_publisher' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_publisher'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'ignore'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'ignore_ament_install'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extensions ['colcon_pkg']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'colcon_pkg'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extensions ['colcon_meta']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'colcon_meta'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extensions ['ros']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'ros'
+[1.650s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/topics/minimal_subscriber' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_subscriber'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['ignore', 'ignore_ament_install']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'ignore'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'ignore_ament_install'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['colcon_pkg']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'colcon_pkg'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['colcon_meta']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'colcon_meta'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['ros']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'ros'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['cmake', 'python']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'cmake'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'python'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['python_setup_py']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'python_setup_py'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['ignore', 'ignore_ament_install']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'ignore'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'ignore_ament_install'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['colcon_pkg']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'colcon_pkg'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['colcon_meta']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'colcon_meta'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['ros']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'ros'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['cmake', 'python']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'cmake'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'python'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['python_setup_py']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'python_setup_py'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extensions ['ignore', 'ignore_ament_install']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'ignore'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'ignore_ament_install'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extensions ['colcon_pkg']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'colcon_pkg'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extensions ['colcon_meta']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'colcon_meta'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extensions ['ros']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'ros'
+[1.652s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/actions/minimal_action_client' with type 'ros.ament_python' and name 'examples_rclpy_minimal_action_client'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extensions ['ignore', 'ignore_ament_install']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'ignore'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'ignore_ament_install'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extensions ['colcon_pkg']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'colcon_pkg'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extensions ['colcon_meta']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'colcon_meta'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extensions ['ros']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'ros'
+[1.653s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/actions/minimal_action_server' with type 'ros.ament_python' and name 'examples_rclpy_minimal_action_server'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extensions ['ignore', 'ignore_ament_install']
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'ignore'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'ignore_ament_install'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extensions ['colcon_pkg']
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'colcon_pkg'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extensions ['colcon_meta']
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'colcon_meta'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extensions ['ros']
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'ros'
+[1.653s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/executors' with type 'ros.ament_python' and name 'examples_rclpy_executors'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['ignore', 'ignore_ament_install']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'ignore'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'ignore_ament_install'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['colcon_pkg']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'colcon_pkg'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['colcon_meta']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'colcon_meta'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['ros']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'ros'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['cmake', 'python']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'cmake'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'python'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['python_setup_py']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'python_setup_py'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extensions ['ignore', 'ignore_ament_install']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'ignore'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'ignore_ament_install'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extensions ['colcon_pkg']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'colcon_pkg'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extensions ['colcon_meta']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'colcon_meta'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extensions ['ros']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'ros'
+[1.655s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/services/minimal_client' with type 'ros.ament_python' and name 'examples_rclpy_minimal_client'
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extensions ['ignore', 'ignore_ament_install']
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'ignore'
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'ignore_ament_install'
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extensions ['colcon_pkg']
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'colcon_pkg'
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extensions ['colcon_meta']
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'colcon_meta'
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extensions ['ros']
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'ros'
+[1.655s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/services/minimal_service' with type 'ros.ament_python' and name 'examples_rclpy_minimal_service'
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['ignore', 'ignore_ament_install']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'ignore'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'ignore_ament_install'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['colcon_pkg']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'colcon_pkg'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['colcon_meta']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'colcon_meta'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['ros']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'ros'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['cmake', 'python']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'cmake'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'python'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['python_setup_py']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'python_setup_py'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extensions ['ignore', 'ignore_ament_install']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'ignore'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'ignore_ament_install'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extensions ['colcon_pkg']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'colcon_pkg'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extensions ['colcon_meta']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'colcon_meta'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extensions ['ros']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'ros'
+[1.657s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/topics/minimal_publisher' with type 'ros.ament_python' and name 'examples_rclpy_minimal_publisher'
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'ignore'
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'ignore_ament_install'
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extensions ['colcon_pkg']
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'colcon_pkg'
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extensions ['colcon_meta']
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'colcon_meta'
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extensions ['ros']
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'ros'
+[1.657s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/topics/minimal_subscriber' with type 'ros.ament_python' and name 'examples_rclpy_minimal_subscriber'
+[1.657s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.657s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.657s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.657s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.657s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.767s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_client' test argument 'ctest_args' from command line to 'None'
+[1.767s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_client' test argument 'python_testing' from command line to 'None'
+[1.767s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_client' test argument 'pytest_args' from command line to 'None'
+[1.767s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_client' test argument 'pytest_with_coverage' from command line to 'False'
+[1.767s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_client' test argument 'unittest_args' from command line to 'None'
+[1.767s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_client' test argument 'retest_until_pass' from command line to '0'
+[1.767s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_client' test argument 'retest_until_fail' from command line to '0'
+[1.767s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclcpp_minimal_action_client' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclcpp_minimal_action_client', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_client', 'path': '/home/qty/ros2_ws/src/examples/rclcpp/actions/minimal_action_client', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.792s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_server' test argument 'ctest_args' from command line to 'None'
+[1.792s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_server' test argument 'python_testing' from command line to 'None'
+[1.792s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_server' test argument 'pytest_args' from command line to 'None'
+[1.792s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_server' test argument 'pytest_with_coverage' from command line to 'False'
+[1.792s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_server' test argument 'unittest_args' from command line to 'None'
+[1.792s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_server' test argument 'retest_until_pass' from command line to '0'
+[1.792s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_action_server' test argument 'retest_until_fail' from command line to '0'
+[1.792s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclcpp_minimal_action_server' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclcpp_minimal_action_server', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_server', 'path': '/home/qty/ros2_ws/src/examples/rclcpp/actions/minimal_action_server', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.818s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_client' test argument 'ctest_args' from command line to 'None'
+[1.818s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_client' test argument 'python_testing' from command line to 'None'
+[1.818s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_client' test argument 'pytest_args' from command line to 'None'
+[1.818s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_client' test argument 'pytest_with_coverage' from command line to 'False'
+[1.818s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_client' test argument 'unittest_args' from command line to 'None'
+[1.818s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_client' test argument 'retest_until_pass' from command line to '0'
+[1.818s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_client' test argument 'retest_until_fail' from command line to '0'
+[1.818s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclcpp_minimal_client' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclcpp_minimal_client', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclcpp_minimal_client', 'path': '/home/qty/ros2_ws/src/examples/rclcpp/services/minimal_client', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.844s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_composition' test argument 'ctest_args' from command line to 'None'
+[1.844s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_composition' test argument 'python_testing' from command line to 'None'
+[1.844s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_composition' test argument 'pytest_args' from command line to 'None'
+[1.844s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_composition' test argument 'pytest_with_coverage' from command line to 'False'
+[1.844s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_composition' test argument 'unittest_args' from command line to 'None'
+[1.844s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_composition' test argument 'retest_until_pass' from command line to '0'
+[1.844s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_composition' test argument 'retest_until_fail' from command line to '0'
+[1.844s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclcpp_minimal_composition' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclcpp_minimal_composition', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclcpp_minimal_composition', 'path': '/home/qty/ros2_ws/src/examples/rclcpp/composition/minimal_composition', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.870s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_publisher' test argument 'ctest_args' from command line to 'None'
+[1.870s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_publisher' test argument 'python_testing' from command line to 'None'
+[1.870s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_publisher' test argument 'pytest_args' from command line to 'None'
+[1.870s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_publisher' test argument 'pytest_with_coverage' from command line to 'False'
+[1.870s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_publisher' test argument 'unittest_args' from command line to 'None'
+[1.870s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_publisher' test argument 'retest_until_pass' from command line to '0'
+[1.870s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_publisher' test argument 'retest_until_fail' from command line to '0'
+[1.870s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclcpp_minimal_publisher' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclcpp_minimal_publisher', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclcpp_minimal_publisher', 'path': '/home/qty/ros2_ws/src/examples/rclcpp/topics/minimal_publisher', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.896s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_service' test argument 'ctest_args' from command line to 'None'
+[1.896s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_service' test argument 'python_testing' from command line to 'None'
+[1.896s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_service' test argument 'pytest_args' from command line to 'None'
+[1.896s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_service' test argument 'pytest_with_coverage' from command line to 'False'
+[1.896s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_service' test argument 'unittest_args' from command line to 'None'
+[1.896s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_service' test argument 'retest_until_pass' from command line to '0'
+[1.896s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_service' test argument 'retest_until_fail' from command line to '0'
+[1.897s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclcpp_minimal_service' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclcpp_minimal_service', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclcpp_minimal_service', 'path': '/home/qty/ros2_ws/src/examples/rclcpp/services/minimal_service', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.924s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_subscriber' test argument 'ctest_args' from command line to 'None'
+[1.925s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_subscriber' test argument 'python_testing' from command line to 'None'
+[1.925s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_subscriber' test argument 'pytest_args' from command line to 'None'
+[1.925s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_subscriber' test argument 'pytest_with_coverage' from command line to 'False'
+[1.925s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_subscriber' test argument 'unittest_args' from command line to 'None'
+[1.925s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_subscriber' test argument 'retest_until_pass' from command line to '0'
+[1.925s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_subscriber' test argument 'retest_until_fail' from command line to '0'
+[1.925s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclcpp_minimal_subscriber' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclcpp_minimal_subscriber', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclcpp_minimal_subscriber', 'path': '/home/qty/ros2_ws/src/examples/rclcpp/topics/minimal_subscriber', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.952s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_timer' test argument 'ctest_args' from command line to 'None'
+[1.952s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_timer' test argument 'python_testing' from command line to 'None'
+[1.952s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_timer' test argument 'pytest_args' from command line to 'None'
+[1.952s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_timer' test argument 'pytest_with_coverage' from command line to 'False'
+[1.952s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_timer' test argument 'unittest_args' from command line to 'None'
+[1.952s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_timer' test argument 'retest_until_pass' from command line to '0'
+[1.952s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_minimal_timer' test argument 'retest_until_fail' from command line to '0'
+[1.952s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclcpp_minimal_timer' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclcpp_minimal_timer', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclcpp_minimal_timer', 'path': '/home/qty/ros2_ws/src/examples/rclcpp/timers/minimal_timer', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.978s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_multithreaded_executor' test argument 'ctest_args' from command line to 'None'
+[1.978s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_multithreaded_executor' test argument 'python_testing' from command line to 'None'
+[1.978s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_multithreaded_executor' test argument 'pytest_args' from command line to 'None'
+[1.978s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_multithreaded_executor' test argument 'pytest_with_coverage' from command line to 'False'
+[1.978s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_multithreaded_executor' test argument 'unittest_args' from command line to 'None'
+[1.978s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_multithreaded_executor' test argument 'retest_until_pass' from command line to '0'
+[1.978s] Level 5:colcon.colcon_core.verb:set package 'examples_rclcpp_multithreaded_executor' test argument 'retest_until_fail' from command line to '0'
+[1.978s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclcpp_multithreaded_executor' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclcpp_multithreaded_executor', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclcpp_multithreaded_executor', 'path': '/home/qty/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.005s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_executors' test argument 'ctest_args' from command line to 'None'
+[2.005s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_executors' test argument 'python_testing' from command line to 'None'
+[2.005s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_executors' test argument 'pytest_args' from command line to 'None'
+[2.005s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_executors' test argument 'pytest_with_coverage' from command line to 'False'
+[2.005s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_executors' test argument 'unittest_args' from command line to 'None'
+[2.005s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_executors' test argument 'retest_until_pass' from command line to '0'
+[2.005s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_executors' test argument 'retest_until_fail' from command line to '0'
+[2.005s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclpy_executors' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclpy_executors', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclpy_executors', 'path': '/home/qty/ros2_ws/src/examples/rclpy/executors', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.032s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' test argument 'ctest_args' from command line to 'None'
+[2.032s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' test argument 'python_testing' from command line to 'None'
+[2.032s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' test argument 'pytest_args' from command line to 'None'
+[2.032s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' test argument 'pytest_with_coverage' from command line to 'False'
+[2.032s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' test argument 'unittest_args' from command line to 'None'
+[2.032s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' test argument 'retest_until_pass' from command line to '0'
+[2.032s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_client' test argument 'retest_until_fail' from command line to '0'
+[2.032s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclpy_minimal_action_client' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclpy_minimal_action_client', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client', 'path': '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_client', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.059s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' test argument 'ctest_args' from command line to 'None'
+[2.059s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' test argument 'python_testing' from command line to 'None'
+[2.059s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' test argument 'pytest_args' from command line to 'None'
+[2.059s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' test argument 'pytest_with_coverage' from command line to 'False'
+[2.059s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' test argument 'unittest_args' from command line to 'None'
+[2.059s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' test argument 'retest_until_pass' from command line to '0'
+[2.059s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_action_server' test argument 'retest_until_fail' from command line to '0'
+[2.059s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclpy_minimal_action_server' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclpy_minimal_action_server', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server', 'path': '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_server', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.085s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' test argument 'ctest_args' from command line to 'None'
+[2.085s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' test argument 'python_testing' from command line to 'None'
+[2.085s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' test argument 'pytest_args' from command line to 'None'
+[2.085s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' test argument 'pytest_with_coverage' from command line to 'False'
+[2.085s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' test argument 'unittest_args' from command line to 'None'
+[2.085s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' test argument 'retest_until_pass' from command line to '0'
+[2.085s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_client' test argument 'retest_until_fail' from command line to '0'
+[2.085s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclpy_minimal_client' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclpy_minimal_client', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclpy_minimal_client', 'path': '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_client', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' test argument 'ctest_args' from command line to 'None'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' test argument 'python_testing' from command line to 'None'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' test argument 'pytest_args' from command line to 'None'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' test argument 'pytest_with_coverage' from command line to 'False'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' test argument 'unittest_args' from command line to 'None'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' test argument 'retest_until_pass' from command line to '0'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_publisher' test argument 'retest_until_fail' from command line to '0'
+[2.111s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclpy_minimal_publisher' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclpy_minimal_publisher', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher', 'path': '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_publisher', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.137s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' test argument 'ctest_args' from command line to 'None'
+[2.137s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' test argument 'python_testing' from command line to 'None'
+[2.137s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' test argument 'pytest_args' from command line to 'None'
+[2.137s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' test argument 'pytest_with_coverage' from command line to 'False'
+[2.137s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' test argument 'unittest_args' from command line to 'None'
+[2.137s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' test argument 'retest_until_pass' from command line to '0'
+[2.137s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_service' test argument 'retest_until_fail' from command line to '0'
+[2.138s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclpy_minimal_service' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclpy_minimal_service', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclpy_minimal_service', 'path': '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_service', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.163s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' test argument 'ctest_args' from command line to 'None'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' test argument 'python_testing' from command line to 'None'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' test argument 'pytest_args' from command line to 'None'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' test argument 'pytest_with_coverage' from command line to 'False'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' test argument 'unittest_args' from command line to 'None'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' test argument 'retest_until_pass' from command line to '0'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'examples_rclpy_minimal_subscriber' test argument 'retest_until_fail' from command line to '0'
+[2.164s] DEBUG:colcon.colcon_core.verb.test:Testing package 'examples_rclpy_minimal_subscriber' with the following arguments: {'build_base': '/home/qty/ros2_ws/build/examples_rclpy_minimal_subscriber', 'ctest_args': None, 'install_base': '/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber', 'path': '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_subscriber', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.190s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.216s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.217s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclcpp/actions/minimal_action_client' with build type 'ament_cmake'
+[2.217s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/qty/ros2_ws/src/examples/rclcpp/actions/minimal_action_client'
+[2.245s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.245s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.245s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.302s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclcpp/actions/minimal_action_server' with build type 'ament_cmake'
+[2.302s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/qty/ros2_ws/src/examples/rclcpp/actions/minimal_action_server'
+[2.331s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.331s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.386s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclcpp/services/minimal_client' with build type 'ament_cmake'
+[2.386s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/qty/ros2_ws/src/examples/rclcpp/services/minimal_client'
+[2.413s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.413s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.468s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclcpp/composition/minimal_composition' with build type 'ament_cmake'
+[2.469s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/qty/ros2_ws/src/examples/rclcpp/composition/minimal_composition'
+[2.496s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.496s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.550s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclcpp/topics/minimal_publisher' with build type 'ament_cmake'
+[2.551s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/qty/ros2_ws/src/examples/rclcpp/topics/minimal_publisher'
+[2.578s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.578s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.633s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclcpp/services/minimal_service' with build type 'ament_cmake'
+[2.633s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/qty/ros2_ws/src/examples/rclcpp/services/minimal_service'
+[2.661s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.661s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.718s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclcpp/topics/minimal_subscriber' with build type 'ament_cmake'
+[2.718s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/qty/ros2_ws/src/examples/rclcpp/topics/minimal_subscriber'
+[2.746s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.746s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.809s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclcpp/timers/minimal_timer' with build type 'ament_cmake'
+[2.809s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/qty/ros2_ws/src/examples/rclcpp/timers/minimal_timer'
+[2.837s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.837s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.891s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor' with build type 'ament_cmake'
+[2.891s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/qty/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor'
+[2.918s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.918s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.973s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclpy/executors' with build type'ament_python'
+[2.973s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/qty/ros2_ws/src/examples/rclpy/executors'
+[3.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.056s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_client' with build type'ament_python'
+[3.056s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_client'
+[3.083s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.083s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.139s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_server' with build type'ament_python'
+[3.140s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_server'
+[3.169s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.169s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.226s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_client' with build type'ament_python'
+[3.226s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_client'
+[3.254s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.254s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.309s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_publisher' with build type'ament_python'
+[3.310s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_publisher'
+[3.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.393s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_service' with build type'ament_python'
+[3.393s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_service'
+[3.420s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.420s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.476s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_subscriber' with build type'ament_python'
+[3.476s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_subscriber'
+[3.503s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.503s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.755s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[3.755s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[3.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/src/examples/rclpy/executors': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_executors:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_executors/pytest.xml --junit-prefix=examples_rclpy_executors -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_executors/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_executors:/home/qty/ros2_ws/install/examples_rclpy_executors/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[3.935s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[3.935s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[3.937s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_client': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_client/pytest.xml --junit-prefix=examples_rclpy_minimal_action_client -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_client/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.124s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[4.124s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[4.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_server': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_server/pytest.xml --junit-prefix=examples_rclpy_minimal_action_server -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_server/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.323s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[4.323s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[4.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_client': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_client:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_client/pytest.xml --junit-prefix=examples_rclpy_minimal_client -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_client/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.520s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[4.520s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[4.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_publisher': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_publisher/pytest.xml --junit-prefix=examples_rclpy_minimal_publisher -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_publisher/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.736s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[4.736s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[4.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_service': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_service:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_service/pytest.xml --junit-prefix=examples_rclpy_minimal_service -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_service/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.943s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[4.943s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[4.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_subscriber': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_subscriber/pytest.xml --junit-prefix=examples_rclpy_minimal_subscriber -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_subscriber/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.963s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/src/examples/rclpy/executors' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_executors:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_executors/pytest.xml --junit-prefix=examples_rclpy_executors -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_executors/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_executors:/home/qty/ros2_ws/install/examples_rclpy_executors/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_client' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_client/pytest.xml --junit-prefix=examples_rclpy_minimal_action_client -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_client/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/src/examples/rclpy/actions/minimal_action_server' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_server/pytest.xml --junit-prefix=examples_rclpy_minimal_action_server -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_server/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.968s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_client' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_client:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_client/pytest.xml --junit-prefix=examples_rclpy_minimal_client -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_client/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[4.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_action_client': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_client:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_client /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_action_server': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_server:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_server /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_client': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_client:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_client /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_composition': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_composition:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_composition LD_LIBRARY_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_composition/lib:${LD_LIBRARY_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_publisher': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_publisher:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_publisher /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_service': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_service:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_service /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.992s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_subscriber': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_subscriber:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_subscriber /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.992s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_timer': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_timer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_timer /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[4.993s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/examples_rclcpp_multithreaded_executor': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_multithreaded_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_multithreaded_executor /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[5.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_publisher' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_publisher/pytest.xml --junit-prefix=examples_rclpy_minimal_publisher -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_publisher/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[5.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/src/examples/rclpy/services/minimal_service' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_service:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_service/pytest.xml --junit-prefix=examples_rclpy_minimal_service -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_service/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[5.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/src/examples/rclpy/topics/minimal_subscriber' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/qty/ros2_ws/build/examples_rclpy_minimal_subscriber/pytest.xml --junit-prefix=examples_rclpy_minimal_subscriber -o cache_dir=/home/qty/ros2_ws/build/examples_rclpy_minimal_subscriber/.pytest_cache PYTHONPATH=/home/qty/ros2_ws/build/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[7.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/examples_rclcpp_multithreaded_executor' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_multithreaded_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_multithreaded_executor /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[7.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_publisher' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_publisher:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_publisher /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[7.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_composition' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_composition:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_composition LD_LIBRARY_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_composition/lib:${LD_LIBRARY_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[7.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_subscriber' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_subscriber:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_subscriber /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[7.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_action_server' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_server:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_server /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[7.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_service' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_service:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_service /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[7.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_action_client' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_client:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_action_client /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[7.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_timer' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_timer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_timer /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[7.389s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/examples_rclcpp_minimal_client' returned '0': AMENT_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_client:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/examples_rclcpp_minimal_client /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[7.389s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.390s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.390s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.422s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.422s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.422s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.432s] DEBUG:colcon.colcon_core.event_reactor:joined thread

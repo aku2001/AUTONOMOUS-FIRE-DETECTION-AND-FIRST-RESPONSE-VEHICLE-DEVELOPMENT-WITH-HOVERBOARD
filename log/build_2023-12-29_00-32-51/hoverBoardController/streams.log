@@ -1,0 +1,16 @@
+[1.177s] Invoking command in '/home/qty/ros2_ws/build/hoverBoardController': PYTHONPATH=/home/qty/ros2_ws/build/hoverBoardController/prefix_override:/home/qty/ros2_ws/install/hoverBoardController/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/hoverBoardController/build --no-deps install_data
+[1.366s] running develop
+[1.473s] running egg_info
+[1.473s] writing hoverBoardController.egg-info/PKG-INFO
+[1.474s] writing dependency_links to hoverBoardController.egg-info/dependency_links.txt
+[1.474s] writing entry points to hoverBoardController.egg-info/entry_points.txt
+[1.474s] writing requirements to hoverBoardController.egg-info/requires.txt
+[1.474s] writing top-level names to hoverBoardController.egg-info/top_level.txt
+[1.502s] reading manifest file 'hoverBoardController.egg-info/SOURCES.txt'
+[1.502s] writing manifest file 'hoverBoardController.egg-info/SOURCES.txt'
+[1.530s] running build_ext
+[1.530s] Creating /home/qty/ros2_ws/install/hoverBoardController/lib/python3.8/site-packages/hoverBoardController.egg-link (link to .)
+[1.531s] 
+[1.531s] Installed /home/qty/ros2_ws/build/hoverBoardController
+[1.531s] running install_data
+[1.554s] Invoked command in '/home/qty/ros2_ws/build/hoverBoardController' returned '0': PYTHONPATH=/home/qty/ros2_ws/build/hoverBoardController/prefix_override:/home/qty/ros2_ws/install/hoverBoardController/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/hoverBoardController/build --no-deps install_data
