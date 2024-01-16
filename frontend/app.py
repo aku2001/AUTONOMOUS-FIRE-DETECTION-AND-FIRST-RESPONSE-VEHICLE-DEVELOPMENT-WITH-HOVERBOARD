@@ -1,7 +1,10 @@
-from flask import Flask, render_template, Response, send_from_directory, request
+from flask import Flask, render_template, Response, send_from_directory, request, jsonify
 import cv2
 
 app = Flask(__name__)
+
+def detect_fire():
+    return True 
 
 def generate_frames():
     camera = cv2.VideoCapture(0)  # Use 0 for default camera
@@ -47,5 +50,14 @@ def start_button():
     else:
         return mapping()
 
+@app.route('/trigger-warning')
+def trigger_warning():
+    if detect_fire():
+        print("Fire Detected!")
+        return jsonify(message="Fire Detected! Check the console for details."), 200
+    else:
+        return jsonify(message="No fire detected."), 200
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+

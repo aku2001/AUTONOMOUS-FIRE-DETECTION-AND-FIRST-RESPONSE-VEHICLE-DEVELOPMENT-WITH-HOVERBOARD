@@ -69,7 +69,6 @@
     <div id="imageContainer" class="minimized" class="minimized" >
         <img id="image" src="{{ url_for('send_static', path='map.jpg') }}" onclick="toggleSize()">
     </div>
-    
     <div id="temperature-value">
         <p>Temperature: {{ temperature }}°C</p>
     </div>
@@ -92,7 +91,22 @@
             var timestamp = new Date().getTime();
             image.src = "{{ url_for('send_static', path='map.jpg') }}?t=" + timestamp;
         }
+        function checkForFire() {
+            fetch('/trigger-warning')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.message);
+                    if (data.message === "Fire Detected! Check the console for details.") {
+                        alert("Fire Detected!");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+        setInterval(checkForFire, 5000);
         setInterval(refreshImage, 1000);
     </script>
 </body>
 </html>
+
