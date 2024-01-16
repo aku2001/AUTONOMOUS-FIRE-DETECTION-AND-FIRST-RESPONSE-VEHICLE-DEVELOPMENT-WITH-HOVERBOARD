@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kutay & Baris</title>
+    <style>
+        body {
+            position: relative;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .maximized {
+            margin: 5px;
+            width: 60vw;
+            height: 80vh;
+        }
+        .minimized {
+            top: 10px;
+            right: 10px;
+            position: absolute;
+            width: 20vw;
+            height: 20vh;
+        }
+        #temperature-value {
+            font-size: 2em;
+            bottom: 10px;
+            right: 10px;
+            position: absolute;
+        }
+        #select-option {
+            font-size: 2em;
+            top: 10px;
+            left: 50px;
+            width: 30vw;
+            margin-right: 5vw;
+            
+        }
+        #start-button-id {
+            font-size: 2em;
+            top: 10px;
+            left: 10px;
+        }
+        #start-button-id:hover{
+            cursor: pointer;
+        }
+        #selectContainer{
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            height: 5vh;
+            margin-bottom: 2vh;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="/start-button">
+        <div id="selectContainer">
+            <select id="select-option" name="select-option">
+                <option value="mapping">Mapping</option>
+                <option value="localization">Localization</option>
+            </select>
+            <input type="submit" value="start" id="start-button-id">
+        </div>
+    </form>
+    <div id="videoContainer" class="maximized">
+        <img id="video" src="{{ url_for('video_feed') }}" onclick="toggleSize()">
+    </div>
+    <div id="imageContainer" class="minimized" class="minimized" >
+        <img id="image" src="{{ url_for('send_static', path='map.jpg') }}" onclick="toggleSize()">
+    </div>
+    <div id="temperature-value">
+        <p>Temperature: {{ temperature }}°C</p>
+    </div>
+    <script>
+        function toggleSize() {
+            if (document.getElementById('videoContainer').classList.contains('maximized')) {
+                document.getElementById('videoContainer').classList.remove('maximized');
+                document.getElementById('videoContainer').classList.add('minimized');
+                document.getElementById('imageContainer').classList.remove('minimized');
+                document.getElementById('imageContainer').classList.add('maximized');
+            } else {
+                document.getElementById('imageContainer').classList.remove('maximized');
+                document.getElementById('imageContainer').classList.add('minimized');
+                document.getElementById('videoContainer').classList.remove('minimized');
+                document.getElementById('videoContainer').classList.add('maximized');
+            }
+        }
+        function refreshImage() {
+            var image = document.getElementById('image');
+            var timestamp = new Date().getTime();
+            image.src = "{{ url_for('send_static', path='map.jpg') }}?t=" + timestamp;
+        }
+        function checkForFire() {
+            fetch('/trigger-warning')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.message);
+                    if (data.message === "Fire Detected! Check the console for details.") {
+                        alert("Fire Detected!");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+        setInterval(checkForFire, 5000);
+        setInterval(refreshImage, 1000);
+    </script>
+</body>
+</html>
+
