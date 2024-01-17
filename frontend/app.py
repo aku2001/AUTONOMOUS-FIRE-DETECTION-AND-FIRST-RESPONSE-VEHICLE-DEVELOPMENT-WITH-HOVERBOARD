@@ -52,6 +52,10 @@ def start_button():
 def stop_button():
     return redirect(url_for('index'))
 
+@app.route('/save-button', methods=['POST'])
+def save_button():
+    return redirect(url_for('index'))
+
 @app.route('/trigger-warning')
 def trigger_warning():
     if detect_fire():
