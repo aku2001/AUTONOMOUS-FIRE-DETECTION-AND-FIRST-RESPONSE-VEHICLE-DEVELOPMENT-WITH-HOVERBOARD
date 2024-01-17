@@ -1,0 +1,212 @@
+[0.483s] Invoking command in '/home/qty/ros2_ws/build/hoverboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/hoverboard_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/hoverboard_msgs
+[0.541s] -- The C compiler identification is GNU 9.4.0
+[0.594s] -- The CXX compiler identification is GNU 9.4.0
+[0.598s] -- Check for working C compiler: /usr/bin/cc
+[0.647s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.648s] -- Detecting C compiler ABI info
+[0.698s] -- Detecting C compiler ABI info - done
+[0.709s] -- Detecting C compile features
+[0.709s] -- Detecting C compile features - done
+[0.711s] -- Check for working CXX compiler: /usr/bin/c++
+[0.769s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.770s] -- Detecting CXX compiler ABI info
+[0.826s] -- Detecting CXX compiler ABI info - done
+[0.836s] -- Detecting CXX compile features
+[0.836s] -- Detecting CXX compile features - done
+[0.837s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.855s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.856s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.991s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.010s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.063s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.069s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.077s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.150s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.172s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.233s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.254s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[1.282s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.339s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.421s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.430s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.449s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.450s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.472s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.472s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.472s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.472s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.490s] -- Found PythonExtra: .so  
+[1.532s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.534s] -- Added test 'lint_cmake' to check CMake code style
+[1.535s] -- Added test 'xmllint' to check XML markup files
+[1.543s] -- Configuring done
+[1.564s] -- Generating done
+[1.564s] -- Build files have been written to: /home/qty/ros2_ws/build/hoverboard_msgs
+[1.606s] Invoked command in '/home/qty/ros2_ws/build/hoverboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/hoverboard_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/hoverboard_msgs
+[1.607s] Invoking command in '/home/qty/ros2_ws/build/hoverboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/hoverboard_msgs -- -j16 -l16
+[1.634s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.635s] [35m[1mScanning dependencies of target hoverboard_msgs__cpp[0m
+[1.642s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.856s] [  5%] Built target hoverboard_msgs__cpp
+[1.873s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.873s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.902s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_generator_c[0m
+[1.905s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.966s] [ 15%] [32mBuilding C object CMakeFiles/hoverboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/hoverboard_msgs/msg/detail/sonar_msg__functions.c.o[0m
+[1.976s] [ 17%] [32mBuilding C object CMakeFiles/hoverboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/hoverboard_msgs/msg/detail/temp_msg__functions.c.o[0m
+[2.148s] [ 20%] [32m[1mLinking C shared library libhoverboard_msgs__rosidl_generator_c.so[0m
+[2.305s] [ 20%] Built target hoverboard_msgs__rosidl_generator_c
+[2.369s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.380s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.396s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_typesupport_introspection_cpp[0m
+[2.407s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[2.489s] [ 28%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hoverboard_msgs/msg/detail/dds_fastrtps/sonar_msg__type_support.cpp.o[0m
+[2.494s] [ 33%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hoverboard_msgs/msg/detail/temp_msg__type_support.cpp.o[0m
+[2.505s] [ 30%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hoverboard_msgs/msg/detail/sonar_msg__type_support.cpp.o[0m
+[2.529s] [ 35%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hoverboard_msgs/msg/detail/dds_fastrtps/temp_msg__type_support.cpp.o[0m
+[2.567s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_typesupport_cpp[0m
+[2.625s] [ 38%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hoverboard_msgs/msg/sonar_msg__type_support.cpp.o[0m
+[2.633s] [ 41%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hoverboard_msgs/msg/temp_msg__type_support.cpp.o[0m
+[3.197s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_typesupport_c[0m
+[3.310s] [ 43%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hoverboard_msgs/msg/sonar_msg__type_support.cpp.o[0m
+[3.341s] [ 46%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hoverboard_msgs/msg/temp_msg__type_support.cpp.o[0m
+[3.382s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_typesupport_introspection_c[0m
+[3.433s] [ 48%] [32m[1mLinking CXX shared library libhoverboard_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.462s] [ 51%] [32mBuilding C object CMakeFiles/hoverboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hoverboard_msgs/msg/detail/sonar_msg__type_support.c.o[0m
+[3.470s] [ 53%] [32m[1mLinking CXX shared library libhoverboard_msgs__rosidl_typesupport_c.so[0m
+[3.486s] [ 56%] [32mBuilding C object CMakeFiles/hoverboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hoverboard_msgs/msg/detail/temp_msg__type_support.c.o[0m
+[3.596s] [ 58%] [32m[1mLinking C shared library libhoverboard_msgs__rosidl_typesupport_introspection_c.so[0m
+[3.614s] [ 58%] Built target hoverboard_msgs__rosidl_typesupport_c
+[3.650s] [ 58%] Built target hoverboard_msgs__rosidl_typesupport_introspection_c
+[3.689s] [ 58%] Built target hoverboard_msgs__rosidl_typesupport_introspection_cpp
+[3.786s] [ 61%] [32m[1mLinking CXX shared library libhoverboard_msgs__rosidl_typesupport_cpp.so[0m
+[3.825s] [ 64%] [32m[1mLinking CXX shared library libhoverboard_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.975s] [ 64%] Built target hoverboard_msgs__rosidl_typesupport_cpp
+[4.098s] [ 64%] Built target hoverboard_msgs__rosidl_typesupport_fastrtps_cpp
+[4.154s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.493s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_typesupport_fastrtps_c[0m
+[4.505s] [ 69%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hoverboard_msgs/msg/detail/temp_msg__type_support_c.cpp.o[0m
+[4.507s] [ 71%] [32mBuilding CXX object CMakeFiles/hoverboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hoverboard_msgs/msg/detail/sonar_msg__type_support_c.cpp.o[0m
+[4.943s] [ 74%] [32m[1mLinking CXX shared library libhoverboard_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[5.020s] [ 74%] Built target hoverboard_msgs__rosidl_typesupport_fastrtps_c
+[5.028s] [35m[1mScanning dependencies of target hoverboard_msgs[0m
+[5.036s] [ 74%] Built target hoverboard_msgs
+[5.044s] [35m[1mScanning dependencies of target hoverboard_msgs__py[0m
+[5.052s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.443s] [ 76%] Built target hoverboard_msgs__py
+[5.451s] [35m[1mScanning dependencies of target hoverboard_msgs__python[0m
+[5.466s] [ 79%] [32mBuilding C object CMakeFiles/hoverboard_msgs__python.dir/rosidl_generator_py/hoverboard_msgs/msg/_sonar_msg_s.c.o[0m
+[5.469s] [ 82%] [32mBuilding C object CMakeFiles/hoverboard_msgs__python.dir/rosidl_generator_py/hoverboard_msgs/msg/_temp_msg_s.c.o[0m
+[5.538s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/hoverboard_msgs/libhoverboard_msgs__python.so[0m
+[5.570s] [ 84%] Built target hoverboard_msgs__python
+[5.579s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.579s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_typesupport_c__pyext[0m
+[5.581s] [35m[1mScanning dependencies of target hoverboard_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[5.595s] [ 89%] [32mBuilding C object CMakeFiles/hoverboard_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/hoverboard_msgs/_hoverboard_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[5.595s] [ 89%] [32mBuilding C object CMakeFiles/hoverboard_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/hoverboard_msgs/_hoverboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.598s] [ 92%] [32mBuilding C object CMakeFiles/hoverboard_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/hoverboard_msgs/_hoverboard_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.660s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/hoverboard_msgs/hoverboard_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.688s] [ 94%] Built target hoverboard_msgs__rosidl_typesupport_c__pyext
+[5.697s] [ 97%] [32m[1mLinking CXX shared library rosidl_generator_py/hoverboard_msgs/hoverboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.697s] [100%] [32m[1mLinking C shared library rosidl_generator_py/hoverboard_msgs/hoverboard_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.723s] [100%] Built target hoverboard_msgs__rosidl_typesupport_introspection_c__pyext
+[5.746s] [100%] Built target hoverboard_msgs__rosidl_typesupport_fastrtps_c__pyext
+[5.756s] Invoked command in '/home/qty/ros2_ws/build/hoverboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/hoverboard_msgs -- -j16 -l16
+[5.802s] Invoking command in '/home/qty/ros2_ws/build/hoverboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/hoverboard_msgs
+[5.809s] -- Install configuration: ""
+[5.809s] -- Execute custom install script
+[5.809s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/ament_index/resource_index/rosidl_interfaces/hoverboard_msgs
+[5.816s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__functions.h
+[5.823s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__struct.h
+[5.830s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__type_support.h
+[5.837s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__functions.h
+[5.844s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__struct.h
+[5.851s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__type_support.h
+[5.859s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.866s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/sonar_msg.h
+[5.873s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/temp_msg.h
+[5.881s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/environment/library_path.sh
+[5.888s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/environment/library_path.dsv
+[5.896s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__rosidl_typesupport_fastrtps_c.h
+[5.903s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__rosidl_typesupport_fastrtps_c.h
+[5.910s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.917s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_fastrtps_c.so
+[5.925s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[5.932s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[5.939s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.947s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.956s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__rosidl_typesupport_introspection_c.h
+[5.963s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__rosidl_typesupport_introspection_c.h
+[5.971s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.978s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__builder.hpp
+[5.986s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__struct.hpp
+[5.993s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__traits.hpp
+[6.000s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__type_support.hpp
+[6.007s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__builder.hpp
+[6.014s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__struct.hpp
+[6.021s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__traits.hpp
+[6.028s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__type_support.hpp
+[6.035s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.043s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/sonar_msg.hpp
+[6.050s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/temp_msg.hpp
+[6.058s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/sonar_msg__rosidl_typesupport_introspection_cpp.hpp
+[6.065s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/include/hoverboard_msgs/msg/detail/temp_msg__rosidl_typesupport_introspection_cpp.hpp
+[6.072s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/environment/pythonpath.sh
+[6.079s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/environment/pythonpath.dsv
+[6.087s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages/hoverboard_msgs/__init__.py
+[6.094s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages/hoverboard_msgs/msg/__init__.py
+[6.101s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages/hoverboard_msgs/msg/_sonar_msg.py
+[6.108s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages/hoverboard_msgs/msg/_temp_msg.py
+[6.115s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages/hoverboard_msgs/hoverboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[6.123s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages/hoverboard_msgs/hoverboard_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[6.130s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages/hoverboard_msgs/hoverboard_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[6.137s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__python.so
+[6.145s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/msg/SonarMsg.idl
+[6.152s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/msg/TempMsg.idl
+[6.160s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/msg/SonarMsg.msg
+[6.167s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/msg/TempMsg.msg
+[6.174s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/ament_index/resource_index/package_run_dependencies/hoverboard_msgs
+[6.181s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/ament_index/resource_index/parent_prefix_path/hoverboard_msgs
+[6.188s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/environment/ament_prefix_path.sh
+[6.195s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/environment/ament_prefix_path.dsv
+[6.202s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/environment/path.sh
+[6.209s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/environment/path.dsv
+[6.216s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/local_setup.bash
+[6.223s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/local_setup.sh
+[6.230s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/local_setup.zsh
+[6.238s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/local_setup.dsv
+[6.245s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.dsv
+[6.252s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/ament_index/resource_index/packages/hoverboard_msgs
+[6.260s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/rosidl_cmake-extras.cmake
+[6.267s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.275s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[6.282s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[6.289s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.296s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.304s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.311s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgsConfig.cmake
+[6.318s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgsConfig-version.cmake
+[6.325s] -- Symlinking: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.xml
+[6.332s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_generator_c.so
+[6.332s] -- Set runtime path of "/home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_generator_c.so" to ""
+[6.332s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_introspection_c.so
+[6.333s] -- Set runtime path of "/home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_introspection_c.so" to ""
+[6.333s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_c.so
+[6.333s] -- Set runtime path of "/home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_c.so" to ""
+[6.333s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_introspection_cpp.so
+[6.334s] -- Set runtime path of "/home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[6.334s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_cpp.so
+[6.334s] -- Set runtime path of "/home/qty/ros2_ws/install/hoverboard_msgs/lib/libhoverboard_msgs__rosidl_typesupport_cpp.so" to ""
+[6.359s] Compiling '/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages/hoverboard_msgs/__init__.py'...
+[6.363s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_generator_cExport.cmake
+[6.364s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_generator_cExport-noconfig.cmake
+[6.364s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_typesupport_introspection_cExport.cmake
+[6.364s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.364s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_typesupport_cExport.cmake
+[6.364s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[6.364s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_generator_cppExport.cmake
+[6.364s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[6.364s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.365s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_typesupport_cppExport.cmake
+[6.365s] -- Installing: /home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/cmake/hoverboard_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[6.366s] Invoked command in '/home/qty/ros2_ws/build/hoverboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/hoverboard_msgs

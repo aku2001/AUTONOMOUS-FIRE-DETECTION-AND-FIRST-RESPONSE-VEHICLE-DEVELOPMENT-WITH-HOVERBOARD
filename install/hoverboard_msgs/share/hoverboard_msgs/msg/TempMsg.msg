@@ -1,2 +1,1 @@
-int64 temp1
-int64 temp2
+/home/qty/ros2_ws/src/hoverboard_msgs/msg/TempMsg.msg

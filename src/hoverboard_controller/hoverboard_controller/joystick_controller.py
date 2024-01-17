@@ -3,7 +3,6 @@ import time
 import serial
 import rclpy
 from rclpy.node import Node
-
 from geometry_msgs.msg import Twist
 
 # About Joystick Input
@@ -92,10 +91,11 @@ class JoystickController(Node):
                     self.publishEnable = 1
                 else:
                     self.publishEnable = 0
+                time.sleep(0.5)
             
             # Create speed
             speed = -float((commands["axis2"]) * self.maxSpeed *self.maxSpeedPercantage) 
-            steer = float((commands["axis1"]) * self.maxSpeed *self.maxSpeedPercantage)
+            steer = -float((commands["axis1"]) * self.maxSpeed *self.maxSpeedPercantage)
         
         else:
             speed = 0.

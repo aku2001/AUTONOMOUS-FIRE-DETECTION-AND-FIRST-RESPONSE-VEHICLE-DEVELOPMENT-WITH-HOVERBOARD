@@ -108,6 +108,7 @@ CMakeFiles/hoverboard_msgs__python.dir/rosidl_generator_py/hoverboard_msgs/msg/_
  rosidl_generator_c/hoverboard_msgs/msg/rosidl_generator_c__visibility_control.h
 CMakeFiles/hoverboard_msgs__python.dir/rosidl_generator_py/hoverboard_msgs/msg/_temp_msg_s.c.o
  /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_generator_py/hoverboard_msgs/msg/_temp_msg_s.c
+ /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h

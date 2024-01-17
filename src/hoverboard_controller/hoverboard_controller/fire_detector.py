@@ -1,6 +1,4 @@
 import cv2         # Library for openCV
-import threading   # Library for threading -- which allows code to run in backend
-import playsound   # Library for alarm sound
 import smtplib     # Library for email sending
 import rclpy
 from rclpy.node import Node
@@ -27,7 +25,7 @@ class FireDetector(Node):
         self.fireDetected = False
         self.fire_cascade = cv2.CascadeClassifier('fire_detection_cascade_model.xml')
         # 4 FOR THE CAM
-        self.cam = cv2.VideoCapture(0)
+        self.cam = cv2.VideoCapture(4)
 
         timer_period = 0.01  # seconds
         self.timer = self.create_timer(timer_period, self.startImageProcessing)

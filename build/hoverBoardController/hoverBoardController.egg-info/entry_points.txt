@@ -1,4 +1,0 @@
-[console_scripts]
-hoverboard_controller = hoverBoardController.hoverBoardController:main
-joystick_controller = hoverBoardController.joystickController:main
-

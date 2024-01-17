@@ -1,5 +1,24 @@
 #include <SoftwareSerial.h>
 
+// PIN DIAGRAM:
+
+// sonarTrig1 = 4;
+// sonarEcho1 = 5;
+// sonarTrig2 = 6;
+// sonarEcho2 = 7;
+// sonarTrig3 = 8;
+// sonarEcho3 = 9;
+// sonarTrig4 = 10;
+// sonarEcho4 = 11;
+// sonarTrig5 = 12;
+// sonarEcho5 = 13;
+
+// tempSensor1 = A0;
+// tempSensor2 = A1;
+// tempSensor3 = A2;
+// tempSensor4 = A3;
+// fireSensor = A4;
+
 #define STOP_TRESHHOLD      50
 #define MAX_SPEED 1000
 #define MAX_STEER 1000

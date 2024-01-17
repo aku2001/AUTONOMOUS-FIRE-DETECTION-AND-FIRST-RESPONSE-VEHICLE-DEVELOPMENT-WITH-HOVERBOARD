@@ -2,6 +2,7 @@
 // with input from hoverboard_msgs/msg/TempMsg.msg
 // generated code does not contain a copyright notice
 
+#include "builtin_interfaces/msg/Time.idl"
 
 module hoverboard_msgs {
   module msg {
@@ -9,6 +10,8 @@ module hoverboard_msgs {
       int64 temp1;
 
       int64 temp2;
+
+      builtin_interfaces::msg::Time stamp;
     };
   };
 };

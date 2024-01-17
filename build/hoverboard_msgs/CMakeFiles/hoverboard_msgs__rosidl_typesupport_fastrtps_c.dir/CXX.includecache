@@ -53,6 +53,30 @@ hoverboard_msgs/msg/detail/temp_msg__functions.h
 /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_typesupport_fastrtps_c/hoverboard_msgs/msg/detail/hoverboard_msgs/msg/detail/temp_msg__functions.h
 fastcdr/Cdr.h
 /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_typesupport_fastrtps_c/hoverboard_msgs/msg/detail/fastcdr/Cdr.h
+builtin_interfaces/msg/detail/time__functions.h
+/home/qty/ros2_ws/build/hoverboard_msgs/rosidl_typesupport_fastrtps_c/hoverboard_msgs/msg/detail/builtin_interfaces/msg/detail/time__functions.h
+
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
+builtin_interfaces/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h
+builtin_interfaces/msg/detail/time__struct.h
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/builtin_interfaces/msg/detail/time__struct.h
+
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+/opt/ros/foxy/include/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h
 
 /opt/ros/foxy/include/fastcdr/Cdr.h
 fastcdr_dll.h
@@ -197,6 +221,8 @@ stddef.h
 -
 stdint.h
 -
+builtin_interfaces/msg/detail/time__struct.h
+rosidl_generator_c/hoverboard_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.h
 
 rosidl_generator_c/hoverboard_msgs/msg/rosidl_generator_c__visibility_control.h
 

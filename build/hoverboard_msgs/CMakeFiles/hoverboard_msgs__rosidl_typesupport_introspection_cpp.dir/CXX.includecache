@@ -62,6 +62,22 @@ rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
 rosidl_typesupport_introspection_cpp/visibility_control.h
 /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_typesupport_introspection_cpp/hoverboard_msgs/msg/detail/rosidl_typesupport_introspection_cpp/visibility_control.h
 
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp
+rosidl_runtime_cpp/bounded_vector.hpp
+-
+rosidl_runtime_cpp/message_initialization.hpp
+-
+algorithm
+-
+array
+-
+memory
+-
+string
+-
+vector
+-
+
 /opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
@@ -161,4 +177,6 @@ string
 -
 vector
 -
+builtin_interfaces/msg/detail/time__struct.hpp
+rosidl_generator_cpp/hoverboard_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.hpp
 

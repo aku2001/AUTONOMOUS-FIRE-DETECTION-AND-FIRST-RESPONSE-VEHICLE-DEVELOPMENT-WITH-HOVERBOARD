@@ -1,4 +1,8 @@
 [console_scripts]
+heat_map_controller = hoverboard_controller.heat_map_controller:main
+heat_map_tester = hoverboard_controller.heat_map_tester:main
 hoverboard_controller = hoverboard_controller.hoverboard_controller:main
 joystick_controller = hoverboard_controller.joystick_controller:main
+navigation_controller = hoverboard_controller.navigation_controller:main
+navigation_controller_tester = hoverboard_controller.navigation_controller_tester:main
 

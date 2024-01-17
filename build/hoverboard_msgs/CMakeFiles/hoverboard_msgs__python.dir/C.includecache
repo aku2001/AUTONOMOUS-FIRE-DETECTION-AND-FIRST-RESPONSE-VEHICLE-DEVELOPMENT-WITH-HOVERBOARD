@@ -34,6 +34,14 @@ hoverboard_msgs/msg/detail/temp_msg__struct.h
 hoverboard_msgs/msg/detail/temp_msg__functions.h
 /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_generator_py/hoverboard_msgs/msg/hoverboard_msgs/msg/detail/temp_msg__functions.h
 
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 
 /usr/include/python3.8/Python.h
@@ -647,6 +655,8 @@ stddef.h
 -
 stdint.h
 -
+builtin_interfaces/msg/detail/time__struct.h
+rosidl_generator_c/hoverboard_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.h
 
 rosidl_generator_c/hoverboard_msgs/msg/rosidl_generator_c__visibility_control.h
 

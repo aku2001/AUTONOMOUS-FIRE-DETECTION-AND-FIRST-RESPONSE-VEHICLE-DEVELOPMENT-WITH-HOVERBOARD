@@ -34,8 +34,22 @@ extern "C"
 {
 #endif
 
+#include "builtin_interfaces/msg/detail/time__functions.h"  // stamp
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_hoverboard_msgs
+size_t get_serialized_size_builtin_interfaces__msg__Time(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_hoverboard_msgs
+size_t max_serialized_size_builtin_interfaces__msg__Time(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_hoverboard_msgs
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, builtin_interfaces, msg, Time)();
 
 
 using _TempMsg__ros_msg_type = hoverboard_msgs__msg__TempMsg;
@@ -59,6 +73,20 @@ static bool _TempMsg__cdr_serialize(
     cdr << ros_message->temp2;
   }
 
+  // Field name: stamp
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, builtin_interfaces, msg, Time
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->stamp, cdr))
+    {
+      return false;
+    }
+  }
+
   return true;
 }
 
@@ -79,6 +107,20 @@ static bool _TempMsg__cdr_deserialize(
   // Field name: temp2
   {
     cdr >> ros_message->temp2;
+  }
+
+  // Field name: stamp
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, builtin_interfaces, msg, Time
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->stamp))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -110,6 +152,10 @@ size_t get_serialized_size_hoverboard_msgs__msg__TempMsg(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name stamp
+
+  current_alignment += get_serialized_size_builtin_interfaces__msg__Time(
+    &(ros_message->stamp), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -147,6 +193,17 @@ size_t max_serialized_size_hoverboard_msgs__msg__TempMsg(
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: stamp
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_builtin_interfaces__msg__Time(
+        full_bounded, current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;

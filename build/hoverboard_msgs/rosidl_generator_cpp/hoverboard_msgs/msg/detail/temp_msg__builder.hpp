@@ -20,16 +20,32 @@ namespace msg
 namespace builder
 {
 
+class Init_TempMsg_stamp
+{
+public:
+  explicit Init_TempMsg_stamp(::hoverboard_msgs::msg::TempMsg & msg)
+  : msg_(msg)
+  {}
+  ::hoverboard_msgs::msg::TempMsg stamp(::hoverboard_msgs::msg::TempMsg::_stamp_type arg)
+  {
+    msg_.stamp = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::hoverboard_msgs::msg::TempMsg msg_;
+};
+
 class Init_TempMsg_temp2
 {
 public:
   explicit Init_TempMsg_temp2(::hoverboard_msgs::msg::TempMsg & msg)
   : msg_(msg)
   {}
-  ::hoverboard_msgs::msg::TempMsg temp2(::hoverboard_msgs::msg::TempMsg::_temp2_type arg)
+  Init_TempMsg_stamp temp2(::hoverboard_msgs::msg::TempMsg::_temp2_type arg)
   {
     msg_.temp2 = std::move(arg);
-    return std::move(msg_);
+    return Init_TempMsg_stamp(msg_);
   }
 
 private:

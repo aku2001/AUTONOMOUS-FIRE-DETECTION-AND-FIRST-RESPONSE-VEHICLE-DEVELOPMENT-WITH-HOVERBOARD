@@ -37,7 +37,7 @@ void TempMsg_fini_function(void * message_memory)
   typed_message->~TempMsg();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember TempMsg_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember TempMsg_message_member_array[3] = {
   {
     "temp1",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
@@ -67,13 +67,28 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember TempMsg_messa
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "stamp",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<builtin_interfaces::msg::Time>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(hoverboard_msgs::msg::TempMsg, stamp),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers TempMsg_message_members = {
   "hoverboard_msgs::msg",  // message namespace
   "TempMsg",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(hoverboard_msgs::msg::TempMsg),
   TempMsg_message_member_array,  // message members
   TempMsg_init_function,  // function to initialize message memory (memory has to be allocated)

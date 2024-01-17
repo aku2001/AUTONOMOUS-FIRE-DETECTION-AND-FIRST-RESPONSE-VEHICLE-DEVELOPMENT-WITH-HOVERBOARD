@@ -11,6 +11,10 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `stamp`
+#include "builtin_interfaces/msg/detail/time__functions.h"
+
 bool
 hoverboard_msgs__msg__TempMsg__init(hoverboard_msgs__msg__TempMsg * msg)
 {
@@ -19,6 +23,11 @@ hoverboard_msgs__msg__TempMsg__init(hoverboard_msgs__msg__TempMsg * msg)
   }
   // temp1
   // temp2
+  // stamp
+  if (!builtin_interfaces__msg__Time__init(&msg->stamp)) {
+    hoverboard_msgs__msg__TempMsg__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -30,6 +39,8 @@ hoverboard_msgs__msg__TempMsg__fini(hoverboard_msgs__msg__TempMsg * msg)
   }
   // temp1
   // temp2
+  // stamp
+  builtin_interfaces__msg__Time__fini(&msg->stamp);
 }
 
 bool
@@ -44,6 +55,12 @@ hoverboard_msgs__msg__TempMsg__are_equal(const hoverboard_msgs__msg__TempMsg * l
   }
   // temp2
   if (lhs->temp2 != rhs->temp2) {
+    return false;
+  }
+  // stamp
+  if (!builtin_interfaces__msg__Time__are_equal(
+      &(lhs->stamp), &(rhs->stamp)))
+  {
     return false;
   }
   return true;
@@ -61,6 +78,12 @@ hoverboard_msgs__msg__TempMsg__copy(
   output->temp1 = input->temp1;
   // temp2
   output->temp2 = input->temp2;
+  // stamp
+  if (!builtin_interfaces__msg__Time__copy(
+      &(input->stamp), &(output->stamp)))
+  {
+    return false;
+  }
   return true;
 }
 

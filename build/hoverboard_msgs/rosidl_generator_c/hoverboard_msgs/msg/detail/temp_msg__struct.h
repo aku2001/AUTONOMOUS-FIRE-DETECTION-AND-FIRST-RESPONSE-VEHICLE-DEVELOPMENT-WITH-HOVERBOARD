@@ -17,11 +17,16 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'stamp'
+#include "builtin_interfaces/msg/detail/time__struct.h"
+
 // Struct defined in msg/TempMsg in the package hoverboard_msgs.
 typedef struct hoverboard_msgs__msg__TempMsg
 {
   int64_t temp1;
   int64_t temp2;
+  builtin_interfaces__msg__Time stamp;
 } hoverboard_msgs__msg__TempMsg;
 
 // Struct for a sequence of hoverboard_msgs__msg__TempMsg.

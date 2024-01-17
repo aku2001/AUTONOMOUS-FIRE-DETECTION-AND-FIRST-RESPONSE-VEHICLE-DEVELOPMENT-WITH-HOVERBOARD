@@ -34,6 +34,14 @@ hoverboard_msgs/msg/detail/temp_msg__struct.h
 hoverboard_msgs/msg/detail/temp_msg__functions.h
 /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_generator_py/hoverboard_msgs/hoverboard_msgs/msg/detail/temp_msg__functions.h
 
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/rosidl_runtime_c/action_type_support_struct.h
 rosidl_runtime_c/message_type_support_struct.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
@@ -609,6 +617,8 @@ stddef.h
 -
 stdint.h
 -
+builtin_interfaces/msg/detail/time__struct.h
+rosidl_generator_c/hoverboard_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.h
 
 rosidl_generator_c/hoverboard_msgs/msg/detail/temp_msg__type_support.h
 rosidl_typesupport_interface/macros.h

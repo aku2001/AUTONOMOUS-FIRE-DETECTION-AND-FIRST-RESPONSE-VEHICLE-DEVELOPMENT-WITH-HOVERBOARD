@@ -16,6 +16,10 @@
 #include "hoverboard_msgs/msg/detail/temp_msg__struct.h"
 #include "hoverboard_msgs/msg/detail/temp_msg__functions.h"
 
+ROSIDL_GENERATOR_C_IMPORT
+bool builtin_interfaces__msg__time__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * builtin_interfaces__msg__time__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool hoverboard_msgs__msg__temp_msg__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -68,6 +72,17 @@ bool hoverboard_msgs__msg__temp_msg__convert_from_py(PyObject * _pymsg, void * _
     ros_message->temp2 = PyLong_AsLongLong(field);
     Py_DECREF(field);
   }
+  {  // stamp
+    PyObject * field = PyObject_GetAttrString(_pymsg, "stamp");
+    if (!field) {
+      return false;
+    }
+    if (!builtin_interfaces__msg__time__convert_from_py(field, &ros_message->stamp)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -106,6 +121,20 @@ PyObject * hoverboard_msgs__msg__temp_msg__convert_to_py(void * raw_ros_message)
     field = PyLong_FromLongLong(ros_message->temp2);
     {
       int rc = PyObject_SetAttrString(_pymessage, "temp2", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // stamp
+    PyObject * field = NULL;
+    field = builtin_interfaces__msg__time__convert_to_py(&ros_message->stamp);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "stamp", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

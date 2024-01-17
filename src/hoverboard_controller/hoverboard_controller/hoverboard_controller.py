@@ -49,7 +49,8 @@ class HoverboardController(Node):
 
         # Get params
         self.declare_parameter('serial_port', '/dev/ttyUSB0'    ) 
-        self.port = self.get_parameter('serial_port').value       
+        self.port = self.get_parameter('serial_port').value     
+        self.speed_threshold_rpm = 3
 
         # Set the serial message to stop the hoverboard
         self.hoverBoardSpeed = 0
@@ -130,6 +131,7 @@ class HoverboardController(Node):
 
         self.ros_temp_msg.temp1 = self.tempMsg[0]
         self.ros_temp_msg.temp2 = self.tempMsg[1]
+        self.ros_temp_msg.stamp = self.get_clock().now().to_msg()
 
         self.ros_fire_msg.data = self.fireMsg
 
@@ -147,9 +149,11 @@ class HoverboardController(Node):
         # Linear Speed
         # Convert m/s to rpm and then to hoverboard speed
         rpm= msg.linear.x * 60 / TIRE_CIRCUMFERENCE
-        if(rpm >= HOVERBOARD_BASE_RPM):
+        if(rpm > self.speed_threshold_rpm):
+            rpm = HOVERBOARD_BASE_RPM if (rpm<HOVERBOARD_BASE_RPM) else rpm
             self.hoverBoardSpeed = min(HOVERBOARD_MAX_SPEED, HOVERBOARD_BASE_SPEED +  (int(rpm - HOVERBOARD_BASE_RPM)//6*10))
-        elif(rpm <= -HOVERBOARD_BASE_RPM):
+        elif(rpm < -self.speed_threshold_rpm):
+            rpm = -HOVERBOARD_BASE_RPM if (rpm > -HOVERBOARD_BASE_RPM) else rpm
             self.hoverBoardSpeed = max(-HOVERBOARD_MAX_SPEED, -HOVERBOARD_BASE_SPEED - (int(abs(rpm) - HOVERBOARD_BASE_RPM)//6*10))
         else:
             self.hoverBoardSpeed = 0
@@ -161,18 +165,18 @@ class HoverboardController(Node):
         # Convert m/s to rpm and then to hoverboard speed
         rpm= msg.angular.z * 60 / TIRE_CIRCUMFERENCE
         if(rpm != 0):
-            self.hoverBoardSteer = int(rpm/6)*10
+            self.hoverBoardSteer = -int(rpm/6)*10
         else:
             self.hoverBoardSteer = 0    
 
         if(self.hoverBoardSpeed == 0 and self.hoverBoardSteer != 0):
             if(self.hoverBoardSteer < 0):
-                self.hoverBoardSteer = -HOVERBOARD_BASE_SPEED / 2
+                self.hoverBoardSteer = min(-HOVERBOARD_BASE_SPEED, self.hoverBoardSteer*2 )
             else:
-                self.hoverBoardSteer = HOVERBOARD_BASE_SPEED / 2
+                self.hoverBoardSteer = max(HOVERBOARD_BASE_SPEED ,self.hoverBoardSteer*2)
             
-            self.hoverBoardSpeed = -abs(self.hoverBoardSteer * 2)
-            self.hoverBoardSpeed = int(self.hoverBoardSpeed)
+            # self.hoverBoardSpeed = -abs(self.hoverBoardSteer * 2)
+            self.hoverBoardSpeed = 0 #int(self.hoverBoardSpeed)
             self.hoverBoardSteer = int(self.hoverBoardSteer)
         elif(abs(self.hoverBoardSteer) > abs(self.hoverBoardSpeed/2)):
             if(self.hoverBoardSteer < 0):

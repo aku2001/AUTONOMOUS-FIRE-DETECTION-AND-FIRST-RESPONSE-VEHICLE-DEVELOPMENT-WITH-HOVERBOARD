@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/qty/ros2_ws/install/tutorial_interfaces/include/**",
+        "/home/qty/ros2_ws/install/turtlesim/include/**",
+        "/home/qty/ros2_ws/install/slam_toolbox/include/**",
+        "/home/qty/ros2_ws/install/rplidar_ros/include/**",
+        "/home/qty/ros2_ws/install/hoverboard_msgs/include/**",
+        "/home/qty/ros2_ws/install/csm/include/**",
+        "/opt/ros/foxy/include/**",
+        "/home/qty/ros2_ws/src/csm/include/**",
+        "/home/qty/ros2_ws/src/hoverboard_msgs/include/**",
+        "/home/qty/ros2_ws/src/ros2_laser_scan_matcher/include/**",
+        "/home/qty/ros2_ws/src/rplidar_ros2/include/**",
+        "/home/qty/ros2_ws/src/slam_toolbox/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

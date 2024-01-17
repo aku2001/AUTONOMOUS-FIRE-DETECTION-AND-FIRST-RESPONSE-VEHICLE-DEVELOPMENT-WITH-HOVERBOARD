@@ -18,7 +18,7 @@ def generate_launch_description():
     )
 
     # JOYSTICK NODE
-    joystick_node = Node(
+    joystick_node = Node(   
         package="hoverboard_controller",
         executable="joystick_controller"
     )

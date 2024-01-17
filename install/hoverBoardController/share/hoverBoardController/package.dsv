@@ -1,9 +1,0 @@
-source;share/hoverBoardController/hook/pythonpath.ps1
-source;share/hoverBoardController/hook/pythonpath.dsv
-source;share/hoverBoardController/hook/pythonpath.sh
-source;share/hoverBoardController/hook/ament_prefix_path.ps1
-source;share/hoverBoardController/hook/ament_prefix_path.dsv
-source;share/hoverBoardController/hook/ament_prefix_path.sh
-source;../../build/hoverBoardController/share/hoverBoardController/hook/pythonpath_develop.ps1
-source;../../build/hoverBoardController/share/hoverBoardController/hook/pythonpath_develop.dsv
-source;../../build/hoverBoardController/share/hoverBoardController/hook/pythonpath_develop.sh

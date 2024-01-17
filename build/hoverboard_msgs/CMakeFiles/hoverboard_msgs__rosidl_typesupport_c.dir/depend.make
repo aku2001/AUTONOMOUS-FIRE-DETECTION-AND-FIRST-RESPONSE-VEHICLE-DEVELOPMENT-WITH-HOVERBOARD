@@ -13,6 +13,7 @@ CMakeFiles/hoverboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hoverb
 CMakeFiles/hoverboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hoverboard_msgs/msg/sonar_msg__type_support.cpp.o: rosidl_typesupport_c/hoverboard_msgs/msg/rosidl_typesupport_c__visibility_control.h
 
 CMakeFiles/hoverboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hoverboard_msgs/msg/temp_msg__type_support.cpp.o: rosidl_typesupport_c/hoverboard_msgs/msg/temp_msg__type_support.cpp
+CMakeFiles/hoverboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hoverboard_msgs/msg/temp_msg__type_support.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 CMakeFiles/hoverboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hoverboard_msgs/msg/temp_msg__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
 CMakeFiles/hoverboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hoverboard_msgs/msg/temp_msg__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/hoverboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hoverboard_msgs/msg/temp_msg__type_support.cpp.o: /opt/ros/foxy/include/rosidl_typesupport_c/identifier.h

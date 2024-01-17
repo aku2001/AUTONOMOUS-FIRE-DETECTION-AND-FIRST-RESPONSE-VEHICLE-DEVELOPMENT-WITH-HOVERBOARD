@@ -10,6 +10,10 @@
 #include <stdint.h>
 #include <type_traits>
 
+// Include directives for member types
+// Member 'stamp'
+#include "builtin_interfaces/msg/detail/time__traits.hpp"
+
 namespace rosidl_generator_traits
 {
 
@@ -27,11 +31,11 @@ inline const char * name<hoverboard_msgs::msg::TempMsg>()
 
 template<>
 struct has_fixed_size<hoverboard_msgs::msg::TempMsg>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_fixed_size<builtin_interfaces::msg::Time>::value> {};
 
 template<>
 struct has_bounded_size<hoverboard_msgs::msg::TempMsg>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_bounded_size<builtin_interfaces::msg::Time>::value> {};
 
 template<>
 struct is_message<hoverboard_msgs::msg::TempMsg>

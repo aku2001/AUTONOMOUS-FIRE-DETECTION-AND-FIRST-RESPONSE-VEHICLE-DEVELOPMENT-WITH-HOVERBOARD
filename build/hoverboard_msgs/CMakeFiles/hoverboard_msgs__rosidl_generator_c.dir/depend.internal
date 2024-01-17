@@ -15,6 +15,9 @@ CMakeFiles/hoverboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/hoverboard
  rosidl_generator_c/hoverboard_msgs/msg/rosidl_generator_c__visibility_control.h
 CMakeFiles/hoverboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/hoverboard_msgs/msg/detail/temp_msg__functions.c.o
  /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_generator_c/hoverboard_msgs/msg/detail/temp_msg__functions.c
+ /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__functions.h
+ /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+ /opt/ros/foxy/include/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h
  /opt/ros/foxy/include/rcutils/allocator.h
  /opt/ros/foxy/include/rcutils/macros.h
  /opt/ros/foxy/include/rcutils/testing/fault_injection.h

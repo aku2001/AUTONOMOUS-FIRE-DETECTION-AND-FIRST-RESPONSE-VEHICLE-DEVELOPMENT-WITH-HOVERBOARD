@@ -14,6 +14,10 @@
 #include <vector>
 
 
+// Include directives for member types
+// Member 'stamp'
+#include "builtin_interfaces/msg/detail/time__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__hoverboard_msgs__msg__TempMsg __attribute__((deprecated))
 #else
@@ -33,6 +37,7 @@ struct TempMsg_
   using Type = TempMsg_<ContainerAllocator>;
 
   explicit TempMsg_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : stamp(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -43,8 +48,8 @@ struct TempMsg_
   }
 
   explicit TempMsg_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : stamp(_alloc, _init)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
@@ -60,6 +65,9 @@ struct TempMsg_
   using _temp2_type =
     int64_t;
   _temp2_type temp2;
+  using _stamp_type =
+    builtin_interfaces::msg::Time_<ContainerAllocator>;
+  _stamp_type stamp;
 
   // setters for named parameter idiom
   Type & set__temp1(
@@ -72,6 +80,12 @@ struct TempMsg_
     const int64_t & _arg)
   {
     this->temp2 = _arg;
+    return *this;
+  }
+  Type & set__stamp(
+    const builtin_interfaces::msg::Time_<ContainerAllocator> & _arg)
+  {
+    this->stamp = _arg;
     return *this;
   }
 
@@ -121,6 +135,9 @@ struct TempMsg_
       return false;
     }
     if (this->temp2 != other.temp2) {
+      return false;
+    }
+    if (this->stamp != other.stamp) {
       return false;
     }
     return true;

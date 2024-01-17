@@ -1,0 +1,58 @@
+[0.518s] Invoking command in '/home/qty/ros2_ws/build/hoverboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/hoverboard_msgs -- -j16 -l16
+[0.538s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.568s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.568s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.745s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.754s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.809s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.814s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.816s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.916s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.956s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.105s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[1.106s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.107s]   hoverboard_msgs --arguments-file
+[1.107s]   /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_adapter__arguments__hoverboard_msgs.json
+[1.108s]   --output-dir
+[1.108s]   /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_adapter/hoverboard_msgs
+[1.108s]   --output-file
+[1.109s]   /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_adapter/hoverboard_msgs.idls)
+[1.109s]   returned error code 1:
+[1.110s] 
+[1.110s]   Error processing 'builtin_interfaces/aTime stamp' of
+[1.110s]   'hoverboard_msgs/TempMsg': ''aTime' is an invalid message name.  It should
+[1.110s]   have the pattern '^[A-Z][A-Za-z0-9]*$''
+[1.111s] 
+[1.111s]   Traceback (most recent call last):
+[1.111s] 
+[1.111s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[1.111s]       return _run_code(code, main_globals, None,
+[1.112s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[1.112s]       exec(code, run_globals)
+[1.112s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.112s]       sys.exit(main())
+[1.112s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.112s]       abs_idl_file = convert_to_idl(
+[1.112s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.112s]       return convert_msg_to_idl(
+[1.112s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.112s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.112s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string
+[1.112s]       Type(type_string, context_package_name=pkg_name),
+[1.112s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 276, in __init__
+[1.112s]       super(Type, self).__init__(
+[1.112s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 204, in __init__
+[1.113s]       raise InvalidResourceName(
+[1.113s] 
+[1.113s]   rosidl_adapter.parser.InvalidResourceName: 'aTime' is an invalid message
+[1.113s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.113s] 
+[1.113s] Call Stack (most recent call first):
+[1.113s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.113s]   CMakeLists.txt:37 (rosidl_generate_interfaces)
+[1.113s] 
+[1.113s] 
+[1.113s] -- Configuring incomplete, errors occurred!
+[1.113s] See also "/home/qty/ros2_ws/build/hoverboard_msgs/CMakeFiles/CMakeOutput.log".
+[1.113s] make: *** [Makefile:988: cmake_check_build_system] Error 1
+[1.452s] Invoked command in '/home/qty/ros2_ws/build/hoverboard_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/home/qty/ros2_ws/install/hoverBoardController:/home/qty/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/qty/ros2_ws/install/examples_rclpy_minimal_service:/home/qty/ros2_ws/install/examples_rclpy_minimal_publisher:/home/qty/ros2_ws/install/examples_rclpy_minimal_client:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_server:/home/qty/ros2_ws/install/examples_rclpy_minimal_action_client:/home/qty/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/hoverboard_msgs -- -j16 -l16

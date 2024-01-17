@@ -72,6 +72,38 @@ rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/rosidl_g
 rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: rosidl_adapter/hoverboard_msgs/msg/SonarMsg.idl
 rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: rosidl_adapter/hoverboard_msgs/msg/TempMsg.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Char.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/ColorRGBA.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Empty.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Float32.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Float32MultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Float64.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Float64MultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Header.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Int16.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Int16MultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Int32.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Int32MultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Int64.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Int64MultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Int8.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/Int8MultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/MultiArrayDimension.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/MultiArrayLayout.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/String.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/UInt16.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/UInt16MultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/UInt32.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/UInt32MultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/UInt64.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/UInt64MultiArray.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/UInt8.idl
+rosidl_generator_c/hoverboard_msgs/msg/sonar_msg.h: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qty/ros2_ws/build/hoverboard_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/qty/ros2_ws/build/hoverboard_msgs/rosidl_generator_c__arguments.json
 
@@ -139,7 +171,22 @@ hoverboard_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 libhoverboard_msgs__rosidl_generator_c.so: CMakeFiles/hoverboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/hoverboard_msgs/msg/detail/sonar_msg__functions.c.o
 libhoverboard_msgs__rosidl_generator_c.so: CMakeFiles/hoverboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/hoverboard_msgs/msg/detail/temp_msg__functions.c.o
 libhoverboard_msgs__rosidl_generator_c.so: CMakeFiles/hoverboard_msgs__rosidl_generator_c.dir/build.make
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_typesupport_introspection_cpp.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_typesupport_cpp.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
+libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librcpputils.so
 libhoverboard_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
 libhoverboard_msgs__rosidl_generator_c.so: CMakeFiles/hoverboard_msgs__rosidl_generator_c.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qty/ros2_ws/build/hoverboard_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libhoverboard_msgs__rosidl_generator_c.so"

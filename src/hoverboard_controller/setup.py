@@ -13,7 +13,8 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']), 
         ('share/' + package_name, ['launch/hoverboard_joystick_control.launch.py']),       
-        ('share/' + package_name, ['launch/rsp.launch.py']),       
+        ('share/' + package_name, ['launch/rsp.launch.py']),  
+        ('share/' + package_name, ['launch/mapper.launch.py']),       
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,7 +26,11 @@ setup(
     entry_points={
         'console_scripts': [
             'hoverboard_controller = hoverboard_controller.hoverboard_controller:main',
-            'joystick_controller = hoverboard_controller.joystick_controller:main'
+            'joystick_controller = hoverboard_controller.joystick_controller:main',
+            'heat_map_tester = hoverboard_controller.heat_map_tester:main',
+            'heat_map_controller = hoverboard_controller.heat_map_controller:main',
+            'navigation_controller = hoverboard_controller.navigation_controller:main',
+            'navigation_controller_tester = hoverboard_controller.navigation_controller_tester:main',
         ],
     },
 )
