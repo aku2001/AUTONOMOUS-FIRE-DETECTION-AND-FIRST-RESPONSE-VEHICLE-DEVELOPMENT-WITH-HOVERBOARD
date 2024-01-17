@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response, send_from_directory, request, jsonify
+from flask import Flask, render_template, Response, send_from_directory, request, jsonify, redirect, url_for
 import cv2
 
 app = Flask(__name__)
@@ -32,23 +32,29 @@ def video_feed():
 def send_static(path):
     return send_from_directory('static', path)
 
-@app.route("/localization")
-def localization():
-    temperature_value = 20
-    return render_template('index.html', temperature=temperature_value)
+@app.route("/navigation")
+def navigation():
+    return redirect(url_for('index'))
 
 @app.route("/mapping")
 def mapping():
-    temperature_value = 20
-    return render_template('index.html', temperature=temperature_value)
+    return redirect(url_for('index'))
 
 @app.route('/start-button', methods=['POST'])
 def start_button():
     selected_option = request.form['select-option']
-    if selected_option == 'localization':
-        return localization()
+    if selected_option == 'Navigation':
+        return navigation()
     else:
         return mapping()
+
+@app.route('/stop-button', methods=['POST'])
+def stop_button():
+    return redirect(url_for('index'))
+
+@app.route('/save-button', methods=['POST'])
+def save_button():
+    return redirect(url_for('index'))
 
 @app.route('/trigger-warning')
 def trigger_warning():
