@@ -32,14 +32,17 @@
             font-size: 2em;
             top: 10px;
             left: 50px;
-            width: 30vw;
-            margin-right: 5vw;
-            
+            width: 30vw;            
         }
         #start-button-id {
             font-size: 2em;
             top: 10px;
-            left: 10px;
+            margin-left: 10px;
+        }
+        #stop-button-id {
+            font-size: 2em;
+            top: 10px;
+            margin-left: 10px;
         }
         #start-button-id:hover{
             cursor: pointer;
@@ -47,7 +50,7 @@
         #selectContainer{
             display: flex;
             flex-direction: row;
-            width: 100vw;
+            width: 50vw;
             height: 5vh;
             margin-bottom: 2vh;
         }
@@ -57,10 +60,11 @@
     <form method="post" action="/start-button">
         <div id="selectContainer">
             <select id="select-option" name="select-option">
-                <option value="mapping">Mapping</option>
-                <option value="localization">Localization</option>
+                <option value="Mapping">Mapping</option>
+                <option value="Navigation">Navigation</option>
             </select>
-            <input type="submit" value="start" id="start-button-id">
+            <input type="submit" value="Start" id="start-button-id">
+            <input type="submit" value="Stop" id="stop-button-id">
         </div>
     </form>
     <div id="videoContainer" class="maximized">
@@ -104,7 +108,6 @@
                     console.error('Error:', error);
                 });
         }
-        setInterval(checkForFire, 5000);
         setInterval(refreshImage, 1000);
     </script>
 </body>
