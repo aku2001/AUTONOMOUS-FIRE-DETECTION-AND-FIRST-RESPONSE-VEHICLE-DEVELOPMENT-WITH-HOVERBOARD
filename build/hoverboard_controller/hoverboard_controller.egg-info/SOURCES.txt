@@ -10,6 +10,7 @@ hoverboard_controller/joystick_controller.py
 hoverboard_controller/navigation_controller.py
 hoverboard_controller/navigation_controller_test.py
 hoverboard_controller/old_joystickController.py
+hoverboard_controller/save_map_tester.py
 hoverboard_controller.egg-info/PKG-INFO
 hoverboard_controller.egg-info/SOURCES.txt
 hoverboard_controller.egg-info/dependency_links.txt

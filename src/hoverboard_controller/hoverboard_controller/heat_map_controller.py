@@ -9,6 +9,10 @@ from tf2_ros import TransformException
 from tf2_ros.buffer import Buffer
 from tf2_ros.transform_listener import TransformListener
 import numpy as np
+from slam_toolbox.srv import SaveMap
+from PIL import Image
+
+
 
 # This program subscribes to temperature /temp_msg 
 # Gets the temperature and create a heat map
@@ -45,8 +49,79 @@ class HeatMapController(Node):
         self.original_map_width = 30
         self.original_map_height = 30
         self.createHeatMap(self.resolution,self.origin_x,self.origin_y,self.original_map_width,self.original_map_height)
+        self.saveHeatMapTest()
 
         self.overheating_publisher = self.create_publisher(Pose,"/overheat_pose",10)
+
+        # Set Service
+        self.save_map_srv = self.create_service(SaveMap, 'save_heat_map', self.saveHeatMap)
+
+
+    def mapValueToColor(self,value):
+        if value < 0:
+            # Map values from 0 to -128 to gray scale
+            normalized_value = int((value + 128) * 200 / 128) + 55
+            return (normalized_value, normalized_value, normalized_value)
+        elif value <= 20:
+            # Dark blue for values 1-20
+            return (0, 0, 128 + int(value * 7))
+        elif value <= 40:
+            # Blue for values 21-40
+            return (0, 0, 255 - int((value - 20) * 7))
+        elif value <= 60:
+            # Pink for values 41-60
+            return (255, 192 - int((value - 40) * 7), 203)
+        elif value <= 80:
+            # Light red for values 61-80
+            return (255, 128 + int((value - 60) * 7), 128)
+        elif value <= 100:
+            # Dark red for values 81-100
+            return (255, 0, 0)
+        else:
+            # Black for values 101 and above
+            return (0, 0, 0)
+
+
+    def saveHeatMap(self,request, response):
+        fileName = request.data
+        block_size = 20
+
+        width = self.heat_map._info.width 
+        height = (len(self.heat_map.data) + width - 1) // width
+        img = Image.new("RGB", (width, height), color="white")
+        pixels = img.load()
+
+        for i, value in enumerate(self.heat_map.data):
+            color = self.mapValueToColor(value)
+            for x in range(i * block_size, (i + 1) * block_size):
+                for y in range(block_size):
+                    pixels[x, y] = color
+
+        img.save(fileName) 
+
+        return response
+
+
+    def saveHeatMapTest(self):
+        fileName = "hello.png"
+        block_size = 20
+
+        width = self.heat_map._info.width  * block_size
+        height = self.heat_map._info.height * block_size
+        img = Image.new("RGB", (width, height), color="white")
+        pixels = img.load()
+
+        for i, value in enumerate(self.heat_map.data):
+            color = self.mapValueToColor(value)
+            for x in range(i * block_size, (i + 1) * block_size):
+                for y in range(block_size):
+                    pixels[x, y] = color
+
+
+        img.show()
+        img.save(fileName) 
+
+
 
        
     
@@ -182,9 +257,9 @@ class HeatMapController(Node):
         # Set the map in array
         self.heat_map.data = [0] * (map_width * map_height)
         # self.heat_map.data[0] = 100
-        # self.updateHeatMap(100,-15,-10)
-        # self.updateHeatMap(100,10,-15)
-        # self.updateHeatMap(100,-15,10)
+        self.updateHeatMap(100,-15,-10)
+        self.updateHeatMap(100,10,-15)
+        self.updateHeatMap(100,-15,10)
 
 
 

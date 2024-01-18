@@ -20,12 +20,12 @@ class FireDetector(Node):
         self.subscription  # prevent unused variable warning
 
         # Set image publisher
-        self.imagePublisher = self.create_publisher(Image, "fire_detection_image",10)
+        self.imagePublisher = self.create_publisher(Image, "/fire_detection_image",10)
 
         self.fireDetected = False
         self.fire_cascade = cv2.CascadeClassifier('fire_detection_cascade_model.xml')
         # 4 FOR THE CAM
-        self.cam = cv2.VideoCapture(4)
+        self.cam = cv2.VideoCapture(0)
 
         timer_period = 0.01  # seconds
         self.timer = self.create_timer(timer_period, self.startImageProcessing)
@@ -84,8 +84,8 @@ class FireDetector(Node):
         self.imagePublisher.publish(msg)
         
 
-        cv2.imshow('frame', frame)
-        cv2.waitKey(10)
+        # cv2.imshow('frame', frame)
+        # cv2.waitKey(10)
         
 
 
