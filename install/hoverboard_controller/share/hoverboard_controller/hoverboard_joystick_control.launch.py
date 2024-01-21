@@ -44,8 +44,3 @@ def generate_launch_description():
         hoverboard_controller_node,
         joystick_node
     ])
-
-
-
-
-    return ld

@@ -1,0 +1,119 @@
+[0.563s] Invoking command in '/home/qty/ros2_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_gmapping/openslam_gmapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/openslam_gmapping
+[0.645s] -- The C compiler identification is GNU 9.4.0
+[0.708s] -- The CXX compiler identification is GNU 9.4.0
+[0.714s] -- Check for working C compiler: /usr/bin/cc
+[0.769s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.770s] -- Detecting C compiler ABI info
+[0.820s] -- Detecting C compiler ABI info - done
+[0.829s] -- Detecting C compile features
+[0.829s] -- Detecting C compile features - done
+[0.832s] -- Check for working CXX compiler: /usr/bin/c++
+[0.888s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.889s] -- Detecting CXX compiler ABI info
+[0.949s] -- Detecting CXX compiler ABI info - done
+[0.965s] -- Detecting CXX compile features
+[0.965s] -- Detecting CXX compile features - done
+[0.969s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.993s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.994s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.137s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.229s] -- Configuring done
+[1.237s] -- Generating done
+[1.239s] -- Build files have been written to: /home/qty/ros2_ws/build/openslam_gmapping
+[1.614s] Invoked command in '/home/qty/ros2_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_gmapping/openslam_gmapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/openslam_gmapping
+[1.623s] Invoking command in '/home/qty/ros2_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/openslam_gmapping -- -j16 -l16
+[1.685s] [35m[1mScanning dependencies of target sensor_base[0m
+[1.685s] [35m[1mScanning dependencies of target utils[0m
+[1.686s] [ 13%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o[0m
+[1.686s] [ 13%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o[0m
+[1.687s] [ 13%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o[0m
+[1.687s] [ 18%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o[0m
+[1.833s] [ 22%] [32m[1mLinking CXX static library libsensor_base.a[0m
+[1.858s] [ 22%] Built target sensor_base
+[1.867s] [35m[1mScanning dependencies of target sensor_odometry[0m
+[1.867s] [35m[1mScanning dependencies of target sensor_range[0m
+[1.876s] [ 36%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o[0m
+[1.877s] [ 36%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o[0m
+[1.877s] [ 36%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o[0m
+[1.878s] [ 40%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o[0m
+[1.911s] [ 45%] [32m[1mLinking CXX static library libutils.a[0m
+[1.935s] [ 45%] Built target utils
+[2.127s] [ 50%] [32m[1mLinking CXX static library libsensor_odometry.a[0m
+[2.151s] [ 50%] Built target sensor_odometry
+[2.241s] [ 54%] [32m[1mLinking CXX static library libsensor_range.a[0m
+[2.264s] [ 54%] Built target sensor_range
+[2.272s] [35m[1mScanning dependencies of target scanmatcher[0m
+[2.282s] [ 68%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o[0m
+[2.282s] [ 68%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o[0m
+[2.283s] [ 72%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o[0m
+[2.283s] [ 72%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o[0m
+[3.358s] [ 77%] [32m[1mLinking CXX static library libscanmatcher.a[0m
+[3.380s] [ 77%] Built target scanmatcher
+[3.388s] [35m[1mScanning dependencies of target gridfastslam[0m
+[3.397s] [ 95%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o[0m
+[3.397s] [ 95%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o[0m
+[3.397s] [ 95%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o[0m
+[3.397s] [ 95%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o[0m
+[4.518s] [100%] [32m[1mLinking CXX static library libgridfastslam.a[0m
+[4.539s] [100%] Built target gridfastslam
+[4.547s] Invoked command in '/home/qty/ros2_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/openslam_gmapping -- -j16 -l16
+[4.565s] Invoking command in '/home/qty/ros2_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/openslam_gmapping
+[4.570s] -- Install configuration: ""
+[4.571s] -- Execute custom install script
+[4.571s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/lib/libgridfastslam.a
+[4.577s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/lib/libscanmatcher.a
+[4.583s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/lib/libsensor_base.a
+[4.589s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[4.594s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[4.600s] -- Up-to-date symlink: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[4.600s] -- Up-to-date symlink: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[4.601s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/lib/libsensor_odometry.a
+[4.607s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/lib/libsensor_range.a
+[4.613s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/lib/libutils.a
+[4.618s] -- Up-to-date symlink: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[4.619s] -- Up-to-date symlink: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[4.619s] -- Up-to-date symlink: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[4.619s] -- Up-to-date symlink: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[4.620s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/grid/accessstate.h
+[4.625s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/grid/array2d.h
+[4.631s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/grid/harray2d.h
+[4.637s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/grid/map.h
+[4.642s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.h
+[4.648s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.hxx
+[4.653s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/gridfastslam/motionmodel.h
+[4.659s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/log/configuration.h
+[4.669s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/log/sensorlog.h
+[4.677s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/particlefilter/particlefilter.h
+[4.682s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/scanmatcher/icp.h
+[4.688s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/scanmatcher/scanmatcher.h
+[4.694s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/scanmatcher/smmap.h
+[4.699s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensor.h
+[4.706s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensorreading.h
+[4.711s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometryreading.h
+[4.717s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometrysensor.h
+[4.722s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangereading.h
+[4.728s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangesensor.h
+[4.733s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/utils/autoptr.h
+[4.739s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/utils/commandline.h
+[4.745s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/utils/gvalues.h
+[4.751s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/utils/macro_params.h
+[4.757s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/utils/point.h
+[4.763s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/include//gmapping/utils/stat.h
+[4.768s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/ament_index/resource_index/package_run_dependencies/openslam_gmapping
+[4.774s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/ament_index/resource_index/parent_prefix_path/openslam_gmapping
+[4.779s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.sh
+[4.785s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.dsv
+[4.791s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/path.sh
+[4.796s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/environment/path.dsv
+[4.802s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.bash
+[4.808s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.sh
+[4.814s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.zsh
+[4.819s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.dsv
+[4.825s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.dsv
+[4.831s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/ament_index/resource_index/packages/openslam_gmapping
+[4.836s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_libraries-extras.cmake
+[4.842s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.847s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake
+[4.853s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake
+[4.858s] -- Symlinking: /home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.xml
+[4.865s] Invoked command in '/home/qty/ros2_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/openslam_gmapping

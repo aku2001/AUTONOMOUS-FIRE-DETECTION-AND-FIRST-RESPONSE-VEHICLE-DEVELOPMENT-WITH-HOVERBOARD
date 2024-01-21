@@ -1,0 +1,2 @@
+{free_thresh: 0.25, image: /home/qty/ros2_ws/frontend/maps/Map2/map.png, mode: trinary,
+  negate: 0, occupied_thresh: 0.65, origin: [-10.0, -10.0, 0], resolution: 0.05000000074505806}

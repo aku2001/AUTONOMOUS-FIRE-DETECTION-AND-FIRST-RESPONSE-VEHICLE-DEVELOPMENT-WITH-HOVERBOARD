@@ -1,0 +1,22 @@
+[1.750s] Invoking command in '/home/qty/ros2_ws/build/hoverboard_controller': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one PYTHONPATH=/home/qty/ros2_ws/build/hoverboard_controller/prefix_override:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/hoverboard_controller/build --no-deps install_data
+[2.159s] running develop
+[2.390s] running egg_info
+[2.390s] writing hoverboard_controller.egg-info/PKG-INFO
+[2.391s] writing dependency_links to hoverboard_controller.egg-info/dependency_links.txt
+[2.391s] writing entry points to hoverboard_controller.egg-info/entry_points.txt
+[2.391s] writing requirements to hoverboard_controller.egg-info/requires.txt
+[2.391s] writing top-level names to hoverboard_controller.egg-info/top_level.txt
+[2.439s] reading manifest file 'hoverboard_controller.egg-info/SOURCES.txt'
+[2.440s] writing manifest file 'hoverboard_controller.egg-info/SOURCES.txt'
+[2.504s] running build_ext
+[2.505s] Creating /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard-controller.egg-link (link to .)
+[2.507s] Installing heat_map_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[2.507s] Installing heat_map_tester script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[2.508s] Installing hoverboard_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[2.508s] Installing joystick_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[2.510s] Installing navigation_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[2.511s] Installing navigation_controller_tester script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[2.511s] 
+[2.511s] Installed /home/qty/ros2_ws/build/hoverboard_controller
+[2.511s] running install_data
+[2.573s] Invoked command in '/home/qty/ros2_ws/build/hoverboard_controller' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one PYTHONPATH=/home/qty/ros2_ws/build/hoverboard_controller/prefix_override:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/hoverboard_controller/build --no-deps install_data

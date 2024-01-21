@@ -1,0 +1,24 @@
+[0.855s] Invoking command in '/home/qty/ros2_ws/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/slam_gmapping -- -j16 -l16
+[0.931s] [100%] Built target slam_gmapping
+[1.577s] Invoked command in '/home/qty/ros2_ws/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/slam_gmapping -- -j16 -l16
+[1.931s] Invoking command in '/home/qty/ros2_ws/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/slam_gmapping
+[1.940s] -- Install configuration: ""
+[1.941s] -- Execute custom install script
+[1.942s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/lib/slam_gmapping/slam_gmapping
+[1.943s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py
+[1.943s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
+[1.944s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping
+[1.944s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh
+[1.945s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv
+[1.945s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/environment/path.sh
+[1.946s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/environment/path.dsv
+[1.946s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/local_setup.bash
+[1.946s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/local_setup.sh
+[1.947s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/local_setup.zsh
+[1.947s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/local_setup.dsv
+[1.948s] -- Symlinking: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.dsv
+[1.959s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping
+[1.959s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake
+[1.960s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake
+[1.960s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.xml
+[2.096s] Invoked command in '/home/qty/ros2_ws/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/slam_gmapping

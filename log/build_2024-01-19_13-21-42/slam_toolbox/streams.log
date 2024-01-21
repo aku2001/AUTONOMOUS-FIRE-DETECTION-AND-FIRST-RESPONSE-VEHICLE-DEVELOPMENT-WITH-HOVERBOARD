@@ -1,0 +1,415 @@
+[0.268s] Invoking command in '/home/qty/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/slam_toolbox
+[0.279s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.301s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.301s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.454s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.463s] -- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)
+[0.466s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.487s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.490s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.597s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.760s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.786s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.788s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.891s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.971s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[0.982s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.272s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.335s] -- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)
+[1.355s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[1.365s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.390s] -- Found tf2_sensor_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_sensor_msgs/cmake)
+[1.403s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[1.410s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.419s] -- Found nav2_map_server: 0.4.7 (/opt/ros/foxy/share/nav2_map_server/cmake)
+[1.421s] -- Found rviz_common: 8.2.8 (/opt/ros/foxy/share/rviz_common/cmake)
+[1.438s] -- Setting OGRE_DIR to: '/opt/ros/foxy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.440s] -- Found OGRE
+[1.440s] --   static     : OFF
+[1.440s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.440s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.441s] --   media      : /opt/ros/foxy/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.441s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.441s] -- OGRE_LIBRARY_DIRS: /opt/ros/foxy/opt/rviz_ogre_vendor/lib
+[1.442s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.444s] -- OGRE_PLUGIN_DIR: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/OGRE
+[1.445s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.446s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.447s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.447s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.476s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[1.476s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[1.478s] -- library: libassimp.so.5
+[1.495s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.565s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[1.568s] -- Found rviz_default_plugins: 8.2.8 (/opt/ros/foxy/share/rviz_default_plugins/cmake)
+[1.975s] -- A library with LAPACK API found.
+[1.977s] -- Found installed version of Eigen: /usr/lib/cmake/eigen3
+[1.979s] -- Found required Ceres dependency: Eigen version 3.3.7 in /usr/include/eigen3
+[1.981s] -- Found required Ceres dependency: glog
+[1.984s] -- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags
+[1.984s] -- Detected gflags version: 2.2.2
+[1.986s] -- Found required Ceres dependency: gflags
+[1.987s] -- Found Ceres version: 1.14.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+[2.027s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.281s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[2.535s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.653s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.677s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[2.677s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.698s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.698s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.698s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.812s] -- Configuring done
+[3.049s] -- Generating done
+[3.053s] -- Build files have been written to: /home/qty/ros2_ws/build/slam_toolbox
+[3.064s] Invoked command in '/home/qty/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/slam_toolbox
+[3.066s] Invoking command in '/home/qty/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/slam_toolbox -- -j16 -l16
+[3.109s] [  1%] Built target slam_toolbox__cpp
+[3.111s] [ 10%] Built target slam_toolbox__rosidl_generator_c
+[3.115s] [ 12%] Built target kartoSlamToolbox
+[3.129s] [ 30%] Built target slam_toolbox__rosidl_typesupport_cpp
+[3.129s] [ 30%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp
+[3.131s] [ 39%] Built target slam_toolbox__rosidl_typesupport_c
+[3.131s] [ 48%] Built target slam_toolbox__rosidl_typesupport_introspection_c
+[3.138s] [ 57%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp
+[3.162s] [ 66%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c
+[3.175s] [ 66%] Built target slam_toolbox
+[3.191s] [ 67%] Built target slam_toolbox__py
+[3.204s] [ 69%] Built target ceres_solver_plugin
+[3.215s] [ 74%] Built target SlamToolboxPlugin
+[3.216s] [ 79%] Built target slam_toolbox__python
+[3.218s] [ 84%] Built target toolbox_common
+[3.236s] [ 86%] Built target slam_toolbox__rosidl_typesupport_introspection_c__pyext
+[3.236s] [ 85%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext
+[3.240s] [ 87%] Built target slam_toolbox__rosidl_typesupport_c__pyext
+[3.250s] [ 88%] Built target merge_maps_kinematic
+[3.250s] [ 89%] Built target localization_slam_toolbox
+[3.251s] [ 91%] Built target async_slam_toolbox
+[3.255s] [ 93%] Built target lifelong_slam_toolbox
+[3.256s] [ 95%] Built target sync_slam_toolbox
+[3.284s] [ 97%] Built target async_slam_toolbox_node
+[3.285s] [ 98%] Built target localization_slam_toolbox_node
+[3.288s] [100%] Built target sync_slam_toolbox_node
+[3.288s] [100%] Built target lifelong_slam_toolbox_node
+[3.387s] Invoked command in '/home/qty/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/slam_toolbox -- -j16 -l16
+[3.515s] Invoking command in '/home/qty/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/slam_toolbox
+[3.521s] -- Install configuration: "Release"
+[3.522s] -- Execute custom install script
+[3.522s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include//karto_sdk/Karto.h
+[3.522s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include//karto_sdk/Macros.h
+[3.522s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include//karto_sdk/Mapper.h
+[3.522s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include//karto_sdk/Math.h
+[3.523s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include//karto_sdk/Types.h
+[3.523s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include//karto_sdk/nanoflann.hpp
+[3.523s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include//karto_sdk/nanoflann_adaptors.h
+[3.523s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/libkartoSlamToolbox.so
+[3.523s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/environment/library_path.sh
+[3.524s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/environment/library_path.dsv
+[3.524s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/karto_sdk
+[3.524s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/karto_sdk
+[3.524s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/environment/ament_prefix_path.sh
+[3.524s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/environment/ament_prefix_path.dsv
+[3.525s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/environment/path.sh
+[3.525s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/environment/path.dsv
+[3.525s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/local_setup.bash
+[3.525s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/local_setup.sh
+[3.525s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/local_setup.zsh
+[3.525s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/local_setup.dsv
+[3.526s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/package.dsv
+[3.526s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/packages/karto_sdk
+[3.526s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[3.526s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.526s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.526s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/cmake/karto_sdkConfig.cmake
+[3.527s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/cmake/karto_sdkConfig-version.cmake
+[3.527s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/karto_sdk/package.xml
+[3.527s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/rosidl_interfaces/slam_toolbox
+[3.527s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/msg/rosidl_generator_c__visibility_control.h
+[3.528s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/add_submap.h
+[3.528s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/clear.h
+[3.528s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/clear_queue.h
+[3.528s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/deserialize_pose_graph.h
+[3.528s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__functions.h
+[3.528s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__struct.h
+[3.528s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__type_support.h
+[3.528s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__functions.h
+[3.528s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__struct.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__type_support.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__functions.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__struct.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__type_support.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__functions.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__struct.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__functions.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__struct.h
+[3.529s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__type_support.h
+[3.530s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__functions.h
+[3.530s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__struct.h
+[3.530s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__type_support.h
+[3.530s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__functions.h
+[3.530s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__struct.h
+[3.530s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__type_support.h
+[3.530s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__functions.h
+[3.530s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__struct.h
+[3.530s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__type_support.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__functions.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__struct.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__type_support.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__functions.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__struct.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__type_support.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/loop_closure.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/merge_maps.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/pause.h
+[3.531s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/save_map.h
+[3.532s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/serialize_pose_graph.h
+[3.532s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/toggle_interactive.h
+[3.532s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.sh
+[3.532s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.dsv
+[3.533s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.533s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_c.h
+[3.533s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_c.h
+[3.533s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_c.h
+[3.533s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_c.h
+[3.533s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_c.h
+[3.533s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_c.h
+[3.534s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_c.h
+[3.534s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h
+[3.534s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_c.h
+[3.534s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_c.h
+[3.534s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_c.so
+[3.535s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.535s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_cpp.hpp
+[3.535s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_cpp.hpp
+[3.535s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_cpp.hpp
+[3.535s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp
+[3.535s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_cpp.hpp
+[3.535s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_cpp.hpp
+[3.535s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_cpp.hpp
+[3.535s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp
+[3.536s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp
+[3.536s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_cpp.hpp
+[3.536s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so
+[3.536s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_c.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_c.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_c.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_c.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_c.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_c.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_c.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_c.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_c.h
+[3.537s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_c.h
+[3.538s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.538s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/add_submap.hpp
+[3.538s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/clear.hpp
+[3.538s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/clear_queue.hpp
+[3.538s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/deserialize_pose_graph.hpp
+[3.538s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__builder.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__struct.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__traits.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__type_support.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__builder.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__struct.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__traits.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__type_support.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__builder.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__struct.hpp
+[3.539s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__traits.hpp
+[3.540s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__type_support.hpp
+[3.540s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__builder.hpp
+[3.540s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__struct.hpp
+[3.540s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__traits.hpp
+[3.540s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.hpp
+[3.540s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__builder.hpp
+[3.540s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__struct.hpp
+[3.540s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__traits.hpp
+[3.540s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__type_support.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__builder.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__struct.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__traits.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__type_support.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__builder.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__struct.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__traits.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__type_support.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__builder.hpp
+[3.541s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__struct.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__traits.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__type_support.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__builder.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__struct.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__traits.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__type_support.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__builder.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__struct.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__traits.hpp
+[3.542s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__type_support.hpp
+[3.543s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/loop_closure.hpp
+[3.543s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/merge_maps.hpp
+[3.543s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/pause.hpp
+[3.543s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/save_map.hpp
+[3.543s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/serialize_pose_graph.hpp
+[3.543s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/toggle_interactive.hpp
+[3.543s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_cpp.hpp
+[3.544s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_cpp.hpp
+[3.544s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_cpp.hpp
+[3.544s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp
+[3.544s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_cpp.hpp
+[3.544s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_cpp.hpp
+[3.544s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_cpp.hpp
+[3.544s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp
+[3.544s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp
+[3.544s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_cpp.hpp
+[3.545s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.sh
+[3.545s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.dsv
+[3.545s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/__init__.py
+[3.545s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/__init__.py
+[3.546s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_add_submap.py
+[3.546s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_clear.py
+[3.546s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_clear_queue.py
+[3.546s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_deserialize_pose_graph.py
+[3.546s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_loop_closure.py
+[3.546s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_merge_maps.py
+[3.546s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_pause.py
+[3.546s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_save_map.py
+[3.547s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_serialize_pose_graph.py
+[3.547s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_toggle_interactive.py
+[3.547s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[3.547s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[3.548s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[3.548s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__python.so
+[3.549s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause.idl
+[3.549s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue.idl
+[3.549s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive.idl
+[3.549s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear.idl
+[3.550s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap.idl
+[3.550s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure.idl
+[3.550s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps.idl
+[3.550s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap.idl
+[3.550s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph.idl
+[3.550s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph.idl
+[3.551s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Pause.srv
+[3.551s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Request.msg
+[3.551s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Response.msg
+[3.551s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue.srv
+[3.551s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Request.msg
+[3.551s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Response.msg
+[3.552s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive.srv
+[3.552s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Request.msg
+[3.552s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Response.msg
+[3.552s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Clear.srv
+[3.552s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Request.msg
+[3.552s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Response.msg
+[3.553s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap.srv
+[3.553s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Request.msg
+[3.553s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Response.msg
+[3.553s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure.srv
+[3.553s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Request.msg
+[3.553s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Response.msg
+[3.554s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps.srv
+[3.554s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Request.msg
+[3.554s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Response.msg
+[3.554s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap.srv
+[3.554s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Request.msg
+[3.554s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Response.msg
+[3.554s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph.srv
+[3.555s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Request.msg
+[3.555s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Response.msg
+[3.555s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph.srv
+[3.555s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Request.msg
+[3.555s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Response.msg
+[3.555s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox//rviz_plugins.xml
+[3.556s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox//solver_plugins.xml
+[3.556s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/slam_toolbox/async_slam_toolbox_node
+[3.556s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/slam_toolbox/sync_slam_toolbox_node
+[3.556s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/slam_toolbox/localization_slam_toolbox_node
+[3.556s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/slam_toolbox/lifelong_slam_toolbox_node
+[3.557s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/slam_toolbox/merge_maps_kinematic
+[3.557s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/libtoolbox_common.so
+[3.557s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/libSlamToolboxPlugin.so
+[3.557s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/libceres_solver_plugin.so
+[3.557s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/libasync_slam_toolbox.so
+[3.557s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/libsync_slam_toolbox.so
+[3.557s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/liblocalization_slam_toolbox.so
+[3.558s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/lib/liblifelong_slam_toolbox.so
+[3.558s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_lifelong.hpp
+[3.558s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/get_pose_helper.hpp
+[3.558s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/laser_utils.hpp
+[3.558s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/loop_closure_assistant.hpp
+[3.558s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/map_saver.hpp
+[3.558s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/merge_maps_kinematic.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/serialization.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_mapper.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_async.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_common.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_localization.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_sync.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/snap_utils.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/toolbox_msgs.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/toolbox_types.hpp
+[3.559s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/include/slam_toolbox/visualization_utils.hpp
+[3.560s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/__pycache__/online_async_launch.cpython-38.pyc
+[3.560s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/__pycache__/online_async_launch_localization.cpython-38.pyc
+[3.560s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/lifelong_launch.py
+[3.560s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/localization_launch.py
+[3.560s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/merge_maps_kinematic_launch.py
+[3.560s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/offline_launch.py
+[3.560s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/online_async_launch.py
+[3.560s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/online_async_launch_localization.py
+[3.561s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/online_sync_launch.py
+[3.561s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_lifelong.yaml
+[3.561s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_localization.yaml
+[3.561s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_offline.yaml
+[3.561s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_async.yaml
+[3.561s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_async_localization.yaml
+[3.561s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_sync.yaml
+[3.562s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/solver_plugins.xml
+[3.562s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/rviz_plugins.xml
+[3.562s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/slam_toolbox
+[3.562s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/slam_toolbox
+[3.562s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.sh
+[3.562s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.dsv
+[3.562s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/path.sh
+[3.563s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/path.dsv
+[3.563s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.bash
+[3.563s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.sh
+[3.563s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.zsh
+[3.563s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.dsv
+[3.563s] -- Symlinking: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.dsv
+[3.570s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/packages/slam_toolbox
+[3.570s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/rviz_common__pluginlib__plugin/slam_toolbox
+[3.570s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/slam_toolbox__pluginlib__plugin/slam_toolbox
+[3.570s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake-extras.cmake
+[3.571s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.571s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_libraries-extras.cmake
+[3.571s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_targets-extras.cmake
+[3.571s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.571s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.571s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.571s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig.cmake
+[3.572s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig-version.cmake
+[3.572s] -- Up-to-date symlink: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.xml
+[3.572s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so
+[3.572s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so
+[3.572s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so
+[3.573s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so
+[3.573s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so
+[3.595s] Compiling '/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/__init__.py'...
+[3.597s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_generator_cExport.cmake
+[3.597s] -- Installing: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_generator_cExport-release.cmake
+[3.598s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport.cmake
+[3.598s] -- Installing: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport-release.cmake
+[3.598s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport.cmake
+[3.598s] -- Installing: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport-release.cmake
+[3.598s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_generator_cppExport.cmake
+[3.598s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport.cmake
+[3.598s] -- Installing: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport-release.cmake
+[3.598s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport.cmake
+[3.598s] -- Installing: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport-release.cmake
+[3.598s] -- Up-to-date: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport.cmake
+[3.598s] -- Installing: /home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport-release.cmake
+[3.600s] Invoked command in '/home/qty/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/slam_toolbox

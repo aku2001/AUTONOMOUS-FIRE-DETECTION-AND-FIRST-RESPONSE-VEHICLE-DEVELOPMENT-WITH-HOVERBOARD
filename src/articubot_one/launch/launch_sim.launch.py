@@ -25,6 +25,11 @@ def generate_launch_description():
                 )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'false'}.items()
     )
 
+    joystick_node = Node(   
+        package="hoverboard_controller",
+        executable="joystick_controller"
+    )
+
     # joystick = IncludeLaunchDescription(
     #             PythonLaunchDescriptionSource([os.path.join(
     #                 get_package_share_directory(package_name),'launch','joystick.launch.py'
@@ -88,6 +93,7 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription([
         rsp,
+        joystick_node,
         # joystick,
         # twist_mux,
         gazebo,

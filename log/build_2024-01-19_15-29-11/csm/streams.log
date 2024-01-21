@@ -1,0 +1,36 @@
+[3.390s] Invoking command in '/home/qty/ros2_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/csm -- -j16 -l16
+[3.668s] [100%] Built target csm
+[3.788s] Invoked command in '/home/qty/ros2_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/csm -- -j16 -l16
+[4.704s] Invoking command in '/home/qty/ros2_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/csm
+[4.764s] -- Install configuration: ""
+[4.765s] -- Execute custom install script
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/lib/libcsm.so
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/algos.h
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/csm.h
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/laser_data.h
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/laser_data_inline.h
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/csm/restrict.h
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/resource/csm
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/include/../gsl_eigen/gsl_eigen.h
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/library_path.sh
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/library_path.dsv
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+[4.766s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+[4.767s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/ament_prefix_path.sh
+[4.767s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/ament_prefix_path.dsv
+[4.767s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/path.sh
+[4.767s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/environment/path.dsv
+[4.767s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/local_setup.bash
+[4.767s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/local_setup.sh
+[4.767s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/local_setup.zsh
+[4.768s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/local_setup.dsv
+[4.768s] -- Symlinking: /home/qty/ros2_ws/install/csm/share/csm/package.dsv
+[4.837s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/ament_index/resource_index/packages/csm
+[4.851s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.852s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.854s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+[4.855s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/csmConfig.cmake
+[4.855s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/cmake/csmConfig-version.cmake
+[4.855s] -- Up-to-date symlink: /home/qty/ros2_ws/install/csm/share/csm/package.xml
+[5.437s] Invoked command in '/home/qty/ros2_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/csm
