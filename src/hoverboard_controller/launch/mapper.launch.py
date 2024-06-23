@@ -45,11 +45,11 @@ def generate_launch_description():
 
 
     return LaunchDescription([
-        # fire_detector,
+        fire_detector,
         laser_scan_matcher,
+        mapping_controller,
         map_saver,
         heat_map_controller,
-        # mapping_controller,
     ])
 
 

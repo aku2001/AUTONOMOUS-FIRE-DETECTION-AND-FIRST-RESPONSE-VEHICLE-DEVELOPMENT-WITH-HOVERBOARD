@@ -48,7 +48,7 @@ class HoverboardController(Node):
         super().__init__('hoverboard_controller')
 
         # Get params
-        self.declare_parameter('serial_port', '/dev/ttyUSB0'    ) 
+        self.declare_parameter('serial_port', '/dev/ttyUSB1'    ) 
         self.port = self.get_parameter('serial_port').value     
         self.speed_threshold_rpm = 3
 

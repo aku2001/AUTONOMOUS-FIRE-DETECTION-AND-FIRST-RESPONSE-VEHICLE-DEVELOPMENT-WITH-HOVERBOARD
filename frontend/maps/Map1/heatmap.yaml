@@ -1,2 +1,2 @@
-{free_thresh: 0.25, image: fileName, mode: trinary, negate: 0, occupied_thresh: 0.65,
-  origin: [-15.0, -15.0, 0], resolution: 1.0}
+{free_thresh: 0.25, image: /home/qty/ros2_ws/frontend/maps/Map1/heatmap.png, mode: trinary,
+  negate: 0, occupied_thresh: 0.65, origin: [-15.0, -15.0, 0], resolution: 1.0}

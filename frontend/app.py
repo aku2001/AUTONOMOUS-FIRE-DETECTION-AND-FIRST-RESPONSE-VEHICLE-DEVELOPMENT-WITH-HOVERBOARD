@@ -11,6 +11,9 @@ from std_msgs.msg import String
 import imageio.v2 as imageio
 import os
 from std_msgs.msg import Int64,String,Empty
+import time
+from hoverboard_msgs.msg import TempMsg
+
 
 
 #! /usr/bin/env python3
@@ -21,6 +24,7 @@ from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 import cv2 
 import sys
+from geometry_msgs.msg import Pose
 
 
 SLAM = 0
@@ -45,6 +49,15 @@ def on_image(msg):
     event.set()
 
 
+def overheat_callback(msg):
+    global overheat_msg
+    overheat_msg = msg
+
+def temperature_callback(msg):
+    global temperature_value 
+    temperature_value = msg.temp1
+
+overheat_msg = None
 frame = None # Global variable frame (the holy image)
 
 # Objects of cvbridge and event
@@ -57,6 +70,8 @@ Thread(target=lambda:node).start()
 
 # Create subscriptions and services
 subscription = node.create_subscription(Image,"/fire_detection_image", on_image,10) # Creating the Subscribe node
+subscription = node.create_subscription(Pose,"/overheat_pose", overheat_callback ,10) # Creating the Subscribe node
+temp_subscriber = node.create_subscription(TempMsg,"/temp_msg", temperature_callback,10)
 
 
 
@@ -95,6 +110,8 @@ heatmap_file_path = TEMP_MAPS_FILE_PATH + "/heatmap"
 # Set the map path for the gui
 map_filename = map_file_path + ".png"
 heatmap_filename = heatmap_file_path + ".png"
+last_published = 0
+temperature_value = 20
 
 
 
@@ -105,14 +122,19 @@ mode = None
 
 
 def get_frame():
-    rclpy.spin_once(node,timeout_sec=1.0)
-    event.wait()
-    event.clear()
+    rclpy.spin_once(node,timeout_sec=0.1)
+    # event.wait()
+    # event.clear()
     return frame
 
 
 def detect_fire():
-    return True 
+    global overheat_msg
+    # rclpy.spin_once(node,timeout_sec=1.0)
+    if(overheat_msg != None):
+        return True
+    else:
+        return False
 
 
 def generate_frames():
@@ -123,13 +145,17 @@ def generate_frames():
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 
+temperature_value = 20
+
+
 @app.route('/')
 def index():
-    temperature_value = 20
+    global temperature_value
     return render_template('index.html', temperature=temperature_value)
 
 @app.route('/video_feed')
 def video_feed():
+    global temperature_value
     print("Video Feed")
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
@@ -203,7 +229,7 @@ def save_maps_temp():
 
 
 @app.route("/navigation")
-def navigation(filename):
+def navigation():
     # print("Starting Navigation Change Robot Mode To Local ization")
     mode_msg.data = LOCALIZATION
     mode_publisher.publish(mode_msg)
@@ -252,11 +278,25 @@ def save_map(file_name):
 
 @app.route('/trigger-warning')
 def trigger_warning():
-    if detect_fire():
-        print("Fire Detected!")
-        return jsonify(message="Fire Detected! Check the console for details."), 200
-    else:
-        return jsonify(message="No fire detected."), 200
+    global last_published, overheat_msg
+    if(time.time() - last_published > 5):
+        if detect_fire():
+            last_published = time.time()
+            print("Fire Detected!")
+            msg = "Fire Detected At Point: x:{} y:{}".format(overheat_msg.position.x,overheat_msg.position.y)
+            overheat_msg = None
+            return jsonify(message=msg), 200
+        else:
+            return jsonify(message="No fire detected."), 200
+        
+    return jsonify(message="No fire detected."), 200
+
+@app.route('/check_temperature')
+def check_temperature():
+    global temperature_value
+    msg = "Temperature: "+ str(temperature_value) + "°C"
+    return jsonify(message= msg), 200
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

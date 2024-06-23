@@ -1,0 +1,153 @@
+[0.880s] Invoking command in '/home/qty/ros2_ws/build/hoverboard_controller': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one LD_LIBRARY_PATH=/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/qty/ros2_ws/build/hoverboard_controller/prefix_override:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages:/home/qty/ros2_ws/build/hoverboard_controller:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/qty/ros2_ws/build/hoverboard_controller/build
+[0.992s] /home/qty/.local/lib/python3.8/site-packages/setuptools/dist.py:472: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[0.992s] !!
+[0.992s] 
+[0.993s]         ********************************************************************************
+[0.993s]         Usage of dash-separated 'script-dir' will not be supported in future
+[0.993s]         versions. Please use the underscore name 'script_dir' instead.
+[0.993s] 
+[0.993s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[0.993s]         or your builds will no longer be supported.
+[0.993s] 
+[0.993s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[0.993s]         ********************************************************************************
+[0.993s] 
+[0.993s] !!
+[0.993s]   opt = self.warn_dash_deprecation(opt, section)
+[1.178s] running develop
+[1.178s] /home/qty/.local/lib/python3.8/site-packages/setuptools/command/develop.py:39: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.178s] !!
+[1.178s] 
+[1.178s]         ********************************************************************************
+[1.178s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.178s]         Instead, use pypa/build, pypa/installer or other
+[1.178s]         standards-based tools.
+[1.179s] 
+[1.179s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.179s]         ********************************************************************************
+[1.179s] 
+[1.179s] !!
+[1.179s]   easy_install.initialize_options(self)
+[1.212s] /home/qty/.local/lib/python3.8/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.212s] !!
+[1.212s] 
+[1.212s]         ********************************************************************************
+[1.212s]         Please avoid running ``setup.py`` directly.
+[1.212s]         Instead, use pypa/build, pypa/installer or other
+[1.212s]         standards-based tools.
+[1.212s] 
+[1.212s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.212s]         ********************************************************************************
+[1.212s] 
+[1.213s] !!
+[1.213s]   self.initialize_options()
+[1.393s] Removing /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller.egg-link (link to .)
+[1.411s] Invoked command in '/home/qty/ros2_ws/build/hoverboard_controller' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one LD_LIBRARY_PATH=/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/qty/ros2_ws/build/hoverboard_controller/prefix_override:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages:/home/qty/ros2_ws/build/hoverboard_controller:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/qty/ros2_ws/build/hoverboard_controller/build
+[1.414s] Invoking command in '/home/qty/ros2_ws/src/hoverboard_controller': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one LD_LIBRARY_PATH=/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/qty/ros2_ws/build/hoverboard_controller/prefix_override:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages:/home/qty/ros2_ws/build/hoverboard_controller:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/hoverboard_controller build --build-base /home/qty/ros2_ws/build/hoverboard_controller/build install --record /home/qty/ros2_ws/build/hoverboard_controller/install.log --install-scripts $base/lib/hoverboard_controller --single-version-externally-managed
+[1.525s] /home/qty/.local/lib/python3.8/site-packages/setuptools/dist.py:472: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[1.525s] !!
+[1.525s] 
+[1.525s]         ********************************************************************************
+[1.525s]         Usage of dash-separated 'script-dir' will not be supported in future
+[1.525s]         versions. Please use the underscore name 'script_dir' instead.
+[1.525s] 
+[1.525s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[1.525s]         or your builds will no longer be supported.
+[1.525s] 
+[1.525s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[1.525s]         ********************************************************************************
+[1.526s] 
+[1.526s] !!
+[1.526s]   opt = self.warn_dash_deprecation(opt, section)
+[1.627s] running egg_info
+[1.642s] writing ../../build/hoverboard_controller/hoverboard_controller.egg-info/PKG-INFO
+[1.643s] writing dependency_links to ../../build/hoverboard_controller/hoverboard_controller.egg-info/dependency_links.txt
+[1.643s] writing entry points to ../../build/hoverboard_controller/hoverboard_controller.egg-info/entry_points.txt
+[1.643s] writing requirements to ../../build/hoverboard_controller/hoverboard_controller.egg-info/requires.txt
+[1.644s] writing top-level names to ../../build/hoverboard_controller/hoverboard_controller.egg-info/top_level.txt
+[1.764s] reading manifest file '../../build/hoverboard_controller/hoverboard_controller.egg-info/SOURCES.txt'
+[1.765s] writing manifest file '../../build/hoverboard_controller/hoverboard_controller.egg-info/SOURCES.txt'
+[1.765s] running build
+[1.766s] running build_py
+[1.766s] copying hoverboard_controller/mapping_controller_tester.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.766s] copying hoverboard_controller/save_map_tester.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.766s] copying hoverboard_controller/map_saver.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.767s] copying hoverboard_controller/mapping_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.767s] copying hoverboard_controller/hoverboard_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.768s] copying hoverboard_controller/__init__.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.768s] copying hoverboard_controller/receive_image.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.768s] copying hoverboard_controller/joystick_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.768s] copying hoverboard_controller/heat_map_tester.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.768s] copying hoverboard_controller/old_joystickController.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.768s] copying hoverboard_controller/fire_detector.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.768s] copying hoverboard_controller/navigation_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.768s] copying hoverboard_controller/heat_map_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.769s] copying hoverboard_controller/navigation_controller_test.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.769s] copying hoverboard_controller/trial.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+[1.769s] running install
+[1.770s] /home/qty/.local/lib/python3.8/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.770s] !!
+[1.770s] 
+[1.770s]         ********************************************************************************
+[1.770s]         Please avoid running ``setup.py`` directly.
+[1.770s]         Instead, use pypa/build, pypa/installer or other
+[1.770s]         standards-based tools.
+[1.770s] 
+[1.770s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.770s]         ********************************************************************************
+[1.770s] 
+[1.771s] !!
+[1.771s]   self.initialize_options()
+[1.776s] running install_lib
+[1.795s] creating /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.795s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/mapping_controller_tester.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.796s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/save_map_tester.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.796s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/map_saver.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.796s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/mapping_controller.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.796s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/hoverboard_controller.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.796s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/__init__.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.797s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/receive_image.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.797s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/joystick_controller.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.797s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/heat_map_tester.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.797s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/old_joystickController.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.797s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/fire_detector.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.797s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/navigation_controller.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.798s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/heat_map_controller.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.798s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/navigation_controller_test.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.798s] copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/trial.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+[1.798s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/mapping_controller_tester.py to mapping_controller_tester.cpython-38.pyc
+[1.799s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/save_map_tester.py to save_map_tester.cpython-38.pyc
+[1.799s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/map_saver.py to map_saver.cpython-38.pyc
+[1.800s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/mapping_controller.py to mapping_controller.cpython-38.pyc
+[1.801s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/hoverboard_controller.py to hoverboard_controller.cpython-38.pyc
+[1.803s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/__init__.py to __init__.cpython-38.pyc
+[1.803s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/receive_image.py to receive_image.cpython-38.pyc
+[1.804s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/joystick_controller.py to joystick_controller.cpython-38.pyc
+[1.804s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/heat_map_tester.py to heat_map_tester.cpython-38.pyc
+[1.805s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/old_joystickController.py to old_joystickController.cpython-38.pyc
+[1.806s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/fire_detector.py to fire_detector.cpython-38.pyc
+[1.807s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/navigation_controller.py to navigation_controller.cpython-38.pyc
+[1.807s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/heat_map_controller.py to heat_map_controller.cpython-38.pyc
+[1.809s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/navigation_controller_test.py to navigation_controller_test.cpython-38.pyc
+[1.809s] byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/trial.py to trial.cpython-38.pyc
+[1.810s] running install_data
+[1.827s] copying resource/hoverboard_controller -> /home/qty/ros2_ws/install/hoverboard_controller/share/ament_index/resource_index/packages
+[1.828s] copying package.xml -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+[1.828s] copying launch/hoverboard_joystick_control.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+[1.828s] copying launch/rsp.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+[1.828s] copying launch/mapper.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+[1.828s] copying launch/localization.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+[1.828s] running install_egg_info
+[1.847s] Copying ../../build/hoverboard_controller/hoverboard_controller.egg-info to /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller-0.0.0-py3.8.egg-info
+[1.848s] running install_scripts
+[1.905s] Installing fire_detector script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[1.906s] Installing heat_map_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[1.906s] Installing heat_map_tester script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[1.906s] Installing hoverboard_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[1.906s] Installing joystick_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[1.907s] Installing map_saver script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[1.907s] Installing mapping_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[1.907s] Installing navigation_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[1.907s] Installing navigation_controller_tester script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+[1.908s] writing list of installed files to '/home/qty/ros2_ws/build/hoverboard_controller/install.log'
+[1.926s] Invoked command in '/home/qty/ros2_ws/src/hoverboard_controller' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one LD_LIBRARY_PATH=/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/qty/ros2_ws/build/hoverboard_controller/prefix_override:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages:/home/qty/ros2_ws/build/hoverboard_controller:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/hoverboard_controller build --build-base /home/qty/ros2_ws/build/hoverboard_controller/build install --record /home/qty/ros2_ws/build/hoverboard_controller/install.log --install-scripts $base/lib/hoverboard_controller --single-version-externally-managed

@@ -7,6 +7,10 @@ import time
 from sensor_msgs.msg import Image
 from ament_index_python.packages import get_package_share_directory
 import numpy as np
+from geometry_msgs.msg import Pose
+from tf2_ros import TransformException
+from tf2_ros.buffer import Buffer
+from tf2_ros.transform_listener import TransformListener
 
 
 
@@ -21,19 +25,30 @@ class FireDetector(Node):
 
         # Set image publisher
         self.imagePublisher = self.create_publisher(Image, "/fire_detection_image",10)
+        self.firePosePublisher = self.create_publisher(Pose, "/overheat_pose",10)
+
+        # Set tf listener
+        self.pose = Pose()
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+        self.target_frame = "map"
+        self.src_frame = "base_link"
 
         self.fireDetected = False
-        self.fire_cascade = cv2.CascadeClassifier('fire_detection_cascade_model.xml')
-        # 4 FOR THE CAM
-        self.cam = cv2.VideoCapture(0)
+        self.fire_cascade = cv2.CascadeClassifier('/home/qty/ros2_ws/src/hoverboard_controller/hoverboard_controller/fire_detection_cascade_model.xml')
 
-        timer_period = 0.1  # seconds
+        # 4 FOR THE CAM
+        self.cam = cv2.VideoCapture(4)
+        self.imgMsg = Image()
+
+
+        timer_period = 0.01  # seconds
         self.timer = self.create_timer(timer_period, self.startImageProcessing)
-        self.save_image_path = "/home/qty/ros2_ws/frontend/static/cam.png"
+        # self.save_image_path = "/home/qty/ros2_ws/frontend/static/cam.png"
 
 
     def fireDetectionCallback(self,msg):
-        if(msg.data < 1000):
+        if(msg.data < 900):
             self.fireDetected = True
             print("Fire Detected")
         else:
@@ -51,6 +66,7 @@ class FireDetector(Node):
 
         ## to highlight fire with square 
         if self.fireDetected:
+            print("Here")
             for (x, y, w, h) in fire:
                 # Calculate the center coordinates of the detected fire region
                 center_y = y + h // 2
@@ -64,54 +80,46 @@ class FireDetector(Node):
                     cv2.rectangle(frame, (x - 20, y - 20), (x + w + 20, y + h + 20), (255, 0, 0), 2)
                     
                     # Your other code for processing the fire region can go here
-                    roi_gray = gray[y:y + h, x:x + w]
-                    roi_color = frame[y:y + h, x:x + w]
+                    # roi_gray = gray[y:y + h, x:x + w]
+                    # roi_color = frame[y:y + h, x:x + w]
 
                     print("Fire alarm initiated")
 
+                    # Get the fire pose and publish
+                    try:
+                        t = self.tf_buffer.lookup_transform(
+                            self.target_frame,
+                            self.src_frame,
+                            rclpy.time.Time()
+                        )
+                        self.pose.position.x = t.transform.translation.x
+                        self.pose.position.y = t.transform.translation.y
+                        
+                    except TransformException as ex:
+                        self.get_logger().info(
+                            f'Could not transform {self.target_frame} to {self.src_frame}: {ex}')
+                    
+                    self.firePosePublisher.publish(self.pose)
+
         
         # Pubish Image
-        msg = Image()
-        msg.header.stamp = Node.get_clock(self).now().to_msg()
-        msg.header.frame_id = 'ANI717'
-        msg.height = np.shape(frame)[0]
-        msg.width = np.shape(frame)[1]
-        msg.encoding = "bgr8"
-        msg.is_bigendian = False
-        msg.step = np.shape(frame)[2] * np.shape(frame)[1]
-        msg.data = np.array(frame).tobytes()
+        self.imgMsg.header.stamp = Node.get_clock(self).now().to_msg()
+        self.imgMsg.header.frame_id = 'ANI717'
+        self.imgMsg.height = np.shape(frame)[0]
+        self.imgMsg.width = np.shape(frame)[1]
+        self.imgMsg.encoding = "bgr8"
+        self.imgMsg.is_bigendian = False
+        self.imgMsg.step = np.shape(frame)[2] * np.shape(frame)[1]
+        self.imgMsg.data = np.array(frame).tobytes()
 
         # publishes message
-        self.imagePublisher.publish(msg)
+        self.imagePublisher.publish(self.imgMsg)
         
 
         # cv2.imshow('frame', frame)
-        cv2.imwrite(self.save_image_path,frame)
         # cv2.waitKey(10)
-        
-
-
-
-    # Defined function to send mail post fire detection using threading
-    def send_mail_function(): 
-        
-        recipientmail = "add recipients mail" # recipients mail
-        recipientmail = recipientmail.lower() # To lower case mail
-        
-        try:
-            server = smtplib.SMTP('smtp.gmail.com', 587)
-            server.ehlo()
-            server.starttls()
-            # Senders mail ID and password
-            server.login("add senders mail", 'add senders password') 
-            # recipients mail with mail message
-            server.sendmail('add recipients mail', recipientmail, "Warning fire accident has been reported") 
-            # to print in consol to whome mail is sent
-            print("Alert mail sent sucesfully to {}".format(recipientmail))
-            server.close() ## To close server
-            
-        except Exception as e:
-            print(e) # To print error if any
+        # cv2.imwrite(self.save_image_path,frame)
+     
 		
 
 def main(args=None):

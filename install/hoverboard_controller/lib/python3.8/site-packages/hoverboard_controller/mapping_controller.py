@@ -89,8 +89,9 @@ class MappingController(Node):
             if(self.process != None):
                 print("Killing Process")
                 os.killpg(os.getpgid(self.process.pid), signal.SIGINT)
-                time.sleep(0.1)
+                time.sleep(0.5)
                 os.killpg(os.getpgid(self.process.pid), signal.SIGKILL)
+                time.sleep(0.5)
         
         self.mode = SLAM
         if(self.process != None):
@@ -109,7 +110,7 @@ class MappingController(Node):
             if(self.process != None):
                 print("Killing Process")
                 os.killpg(os.getpgid(self.process.pid), signal.SIGINT)
-                time.sleep(0.1)
+                time.sleep(0.5)
                 os.killpg(os.getpgid(self.process.pid), signal.SIGKILL)
                 time.sleep(0.5)
 
@@ -128,7 +129,7 @@ class MappingController(Node):
         if(self.process != None):
             print("Killing Process")
             os.killpg(os.getpgid(self.process.pid), signal.SIGINT)
-            time.sleep(0.1)
+            time.sleep(0.5)
             os.killpg(os.getpgid(self.process.pid), signal.SIGKILL)
 
         if(ret):
@@ -136,6 +137,8 @@ class MappingController(Node):
             time.sleep(3)
             msg = PoseWithCovarianceStamped()
             msg.header.frame_id = "map"
+            msg.pose.pose.position.x = 0.0
+            msg.pose.pose.position.y = 0.0
             self.init_pose_publisher.publish(msg)
         else:
             print("Updating File Failed")
@@ -146,7 +149,11 @@ class MappingController(Node):
         if(self.process != None):
             print("Killing Process")
             # Terminate the process group to include all subprocesses
+            os.killpg(os.getpgid(self.process.pid), signal.SIGINT)
+            time.sleep(0.5)
             os.killpg(os.getpgid(self.process.pid), signal.SIGKILL)
+            time.sleep(0.5)
+
     
 
 def main(args=None):

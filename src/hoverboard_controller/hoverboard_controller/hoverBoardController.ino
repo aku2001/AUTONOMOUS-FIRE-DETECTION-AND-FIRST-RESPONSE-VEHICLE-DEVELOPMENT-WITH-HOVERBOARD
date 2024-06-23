@@ -19,7 +19,7 @@
 // tempSensor4 = A3;
 // fireSensor = A4;
 
-#define STOP_TRESHHOLD      50
+#define STOP_TRESHHOLD      40
 #define MAX_SPEED 1000
 #define MAX_STEER 1000
 #define MESSAGE_LENGTH      4
@@ -48,6 +48,7 @@
 #define STOP_SONAR_BACK 2
 #define CAR_DIRECTION_FRONT 1
 #define CAR_DIRECTION_BACKWARD 2
+#define STOP_INTERVAL  1000
 
 // #define DEBUG_RX                        // [-] Debug received data. Prints all bytes to serial (comment-out to disable)
 
@@ -106,10 +107,10 @@ void Send(int16_t uSteer, int16_t uSpeed)
 // USED PINS: 4,5,6,7,8,9,10,11
 byte data,datas[2],startByte=254,stopByte=255;
 int cmd_vel,isReceived, msgType, fireSensorData=1500;
-uint16_t carSpeed=0,carSteer=0;
+int16_t carSpeed=0,carSteer=0;
 unsigned long iTimeSend = 0;
-unsigned long heartBeatTime;
-float sonarDataList[5], tempDataList[2];
+unsigned long heartBeatTime, stopTime;
+float sonarDataList[5]={0,0,0,0,0}, tempDataList[2];
 
 // Sonar Pins
 const int sonarTrig1 = 4;
@@ -135,10 +136,12 @@ const int tempSensor4 = A3;
 const int fireSensor = A4;
 
 
+
 // GET COMMAND FROM SERIAL 
 int getCommand(){
 
-     while(Serial.available() > 0){
+    carDirection = CAR_DIRECTION_BACKWARD;
+    while(Serial.available() > 0){
         datas[0] = Serial.read();
         msgType = datas[0] >> 4;
 
@@ -149,10 +152,10 @@ int getCommand(){
           if(msgType == SPEED_MSG){
             carSpeed = (datas[1] | datas[0] << 8) - MAX_SPEED;
             
-            if(carSpeed > 0){
+            if(carSpeed < 0){
               carDirection = CAR_DIRECTION_FRONT;
             }
-            else if(carSpeed < 0){
+            else if(carSpeed > 0){
               carDirection = CAR_DIRECTION_BACKWARD;
             }
             
@@ -229,10 +232,10 @@ int getSonarData(int sonarTrig, int sonarEcho){
   delayMicroseconds(10);
   digitalWrite(sonarTrig, LOW);
 
-  duration = pulseIn(sonarEcho, HIGH,10000);
-  if(distance == 0){
+  duration = pulseIn(sonarEcho, HIGH,30000);
+  if(duration == 0){
     // Max Value
-    return 100;
+    return 0;
   }
   else{
     distance = duration * 0.034 / 2;
@@ -257,19 +260,21 @@ int getSonarDataList(){
   sonarDataList[1] = getSonarData(sonarTrig2,sonarEcho2);
   sonarDataList[2] = getSonarData(sonarTrig3,sonarEcho3);
   sonarDataList[3] = getSonarData(sonarTrig4,sonarEcho4);
-  sonarDataList[4] = getSonarData(sonarTrig5,sonarEcho5);
+  // sonarDataList[4] = getSonarData(sonarTrig5,sonarEcho5);
 
-  for(i=0;i<3;i++){
-    if(sonarDataList[i] < MIN_SONAR_DISTANCE){
-      sonarStop = 1;
+  for(i=0;i<5;i++){
+    if(sonarDataList[i] < MIN_SONAR_DISTANCE && sonarDataList[i] != 0 ){
+      sonarStop = STOP_SONAR_FRONT;
+      stopTime = millis();
     }
   }
 
-  for(i=3;i<5;i++){
-    if(sonarDataList[i] < MIN_SONAR_DISTANCE){
-      sonarStop = 2;
-    }
-  }
+  // for(i=3;i<5;i++){
+  //   if(sonarDataList[i] < MIN_SONAR_DISTANCE && sonarDataList[i] != 0){
+  //     sonarStop = STOP_SONAR_BACK;
+  //     stopTime = millis();
+  //   }
+  // }
 
   return sonarStop;
 
@@ -314,6 +319,7 @@ void setup()
 
   HoverSerial.begin(HOVER_SERIAL_BAUD);
   heartBeatTime = millis();
+  stopTime = millis();
 }
 
 
@@ -334,15 +340,18 @@ void loop()
   }
 
   // Check if there is any obstacles in front
-  if(sonarStop == STOP_SONAR_FRONT && carDirection == CAR_DIRECTION_FRONT){
-    carSpeed = 0;
-    carSteer = 0;
+  if((sonarStop == STOP_SONAR_FRONT && carDirection == CAR_DIRECTION_FRONT) || (millis() - stopTime < STOP_INTERVAL)){
+    if(carDirection == CAR_DIRECTION_FRONT){
+      carSpeed = 30;
+      carSteer = 30;
+    }
   }
 
-  if(sonarStop == STOP_SONAR_BACK && carSpeed == CAR_DIRECTION_BACKWARD){
-    carSpeed = 0;
-    carSteer = 0;
-  }
+
+  // if(sonarStop == STOP_SONAR_BACK && carSpeed == CAR_DIRECTION_BACKWARD){
+  //   carSpeed = 0;
+  //   carSteer = 0;
+  // }
   
   sendCommand();
 

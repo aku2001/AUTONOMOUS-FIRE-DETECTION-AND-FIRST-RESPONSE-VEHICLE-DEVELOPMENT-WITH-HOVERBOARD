@@ -4,6 +4,7 @@ import rclpy
 from rclpy.node import Node
 from hoverboard_msgs.msg import TempMsg
 from builtin_interfaces.msg import Time 
+import time
 
 class TempPublisher(Node):
     def __init__(self):
@@ -21,6 +22,7 @@ class TempPublisher(Node):
         self.tempMsg.stamp = self.get_clock().now().to_msg()
         print("publishing: ",self.tempMsg)
         self.publisher.publish(self.tempMsg)
+    
 
 def main(args=None):
     rclpy.init(args=args)

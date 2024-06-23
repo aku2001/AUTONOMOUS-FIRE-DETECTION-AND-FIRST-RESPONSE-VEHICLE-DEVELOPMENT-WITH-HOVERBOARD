@@ -1,0 +1,841 @@
+[2.531s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[2.531s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fbd0fc9c190>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fbd0fc9c190>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fbd0f942970>)
+[2.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.636s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/qty/ros2_ws'
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extensions ['ignore', 'ignore_ament_install']
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extension 'ignore'
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extension 'ignore_ament_install'
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extensions ['colcon_pkg']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extension 'colcon_pkg'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extensions ['colcon_meta']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extension 'colcon_meta'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extensions ['ros']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extension 'ros'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extensions ['cmake', 'python']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extension 'cmake'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extension 'python'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extensions ['python_setup_py']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend) by extension 'python_setup_py'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extensions ['ignore', 'ignore_ament_install']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extension 'ignore'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extension 'ignore_ament_install'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extensions ['colcon_pkg']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extension 'colcon_pkg'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extensions ['colcon_meta']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extension 'colcon_meta'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extensions ['ros']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extension 'ros'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extensions ['cmake', 'python']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extension 'cmake'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extension 'python'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extensions ['python_setup_py']
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps) by extension 'python_setup_py'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extensions ['ignore', 'ignore_ament_install']
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extension 'ignore'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extension 'ignore_ament_install'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extensions ['colcon_pkg']
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extension 'colcon_pkg'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extensions ['colcon_meta']
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extension 'colcon_meta'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extensions ['ros']
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extension 'ros'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extensions ['cmake', 'python']
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extension 'cmake'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extension 'python'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extensions ['python_setup_py']
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/maps/Map1) by extension 'python_setup_py'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extensions ['ignore', 'ignore_ament_install']
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extension 'ignore'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extension 'ignore_ament_install'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extensions ['colcon_pkg']
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extension 'colcon_pkg'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extensions ['colcon_meta']
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extension 'colcon_meta'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extensions ['ros']
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extension 'ros'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extensions ['cmake', 'python']
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extension 'cmake'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extension 'python'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extensions ['python_setup_py']
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/serialized_maps) by extension 'python_setup_py'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extensions ['ignore', 'ignore_ament_install']
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extension 'ignore'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extension 'ignore_ament_install'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extensions ['colcon_pkg']
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extension 'colcon_pkg'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extensions ['colcon_meta']
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extension 'colcon_meta'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extensions ['ros']
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extension 'ros'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extensions ['cmake', 'python']
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extension 'cmake'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extension 'python'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extensions ['python_setup_py']
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/static) by extension 'python_setup_py'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extensions ['ignore', 'ignore_ament_install']
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extension 'ignore'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extension 'ignore_ament_install'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extensions ['colcon_pkg']
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extension 'colcon_pkg'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extensions ['colcon_meta']
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extension 'colcon_meta'
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extensions ['ros']
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extension 'ros'
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extensions ['cmake', 'python']
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extension 'cmake'
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extension 'python'
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extensions ['python_setup_py']
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/templates) by extension 'python_setup_py'
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extensions ['ignore', 'ignore_ament_install']
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extension 'ignore'
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extension 'ignore_ament_install'
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extensions ['colcon_pkg']
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extension 'colcon_pkg'
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extensions ['colcon_meta']
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extension 'colcon_meta'
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extensions ['ros']
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extension 'ros'
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extensions ['cmake', 'python']
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extension 'cmake'
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extension 'python'
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extensions ['python_setup_py']
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(frontend/trial) by extension 'python_setup_py'
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.657s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ignore', 'ignore_ament_install']
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore'
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore_ament_install'
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_pkg']
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_pkg'
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_meta']
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_meta'
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ros']
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ros'
+[2.662s] DEBUG:colcon.colcon_core.package_identification:Package 'src/articubot_one' with type 'ros.ament_cmake' and name 'articubot_one'
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['ignore', 'ignore_ament_install']
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'ignore'
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'ignore_ament_install'
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['colcon_pkg']
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'colcon_pkg'
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['colcon_meta']
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'colcon_meta'
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['ros']
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'ros'
+[2.663s] DEBUG:colcon.colcon_core.package_identification:Package 'src/csm' with type 'ros.ament_cmake' and name 'csm'
+[2.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_controller) by extensions ['ignore', 'ignore_ament_install']
+[2.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_controller) by extension 'ignore'
+[2.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_controller) by extension 'ignore_ament_install'
+[2.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_controller) by extensions ['colcon_pkg']
+[2.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_controller) by extension 'colcon_pkg'
+[2.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_controller) by extensions ['colcon_meta']
+[2.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_controller) by extension 'colcon_meta'
+[2.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_controller) by extensions ['ros']
+[2.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_controller) by extension 'ros'
+[2.664s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hoverboard_controller' with type 'ros.ament_python' and name 'hoverboard_controller'
+[2.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_msgs) by extension 'ignore'
+[2.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_msgs) by extension 'ignore_ament_install'
+[2.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_msgs) by extensions ['colcon_pkg']
+[2.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_msgs) by extension 'colcon_pkg'
+[2.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_msgs) by extensions ['colcon_meta']
+[2.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_msgs) by extension 'colcon_meta'
+[2.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_msgs) by extensions ['ros']
+[2.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/hoverboard_msgs) by extension 'ros'
+[2.666s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hoverboard_msgs' with type 'ros.ament_cmake' and name 'hoverboard_msgs'
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['ignore', 'ignore_ament_install']
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'ignore'
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'ignore_ament_install'
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['colcon_pkg']
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'colcon_pkg'
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['colcon_meta']
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'colcon_meta'
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['ros']
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'ros'
+[2.667s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_laser_scan_matcher' with type 'ros.ament_cmake' and name 'ros2_laser_scan_matcher'
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore'
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore_ament_install'
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_pkg']
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_pkg'
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_meta']
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_meta'
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ros']
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ros'
+[2.668s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros2' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ignore'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ignore_ament_install'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['colcon_pkg']
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'colcon_pkg'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['colcon_meta']
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'colcon_meta'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['ros']
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ros'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['cmake', 'python']
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'cmake'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'python'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['python_setup_py']
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'python_setup_py'
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'ignore'
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'ignore_ament_install'
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['colcon_pkg']
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'colcon_pkg'
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['colcon_meta']
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'colcon_meta'
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['ros']
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'ros'
+[2.670s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_gmapping/openslam_gmapping' with type 'ros.ament_cmake' and name 'openslam_gmapping'
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'ignore'
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'ignore_ament_install'
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['colcon_pkg']
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'colcon_pkg'
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['colcon_meta']
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'colcon_meta'
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['ros']
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'ros'
+[2.671s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_gmapping/slam_gmapping' with type 'ros.ament_cmake' and name 'slam_gmapping'
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore'
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore_ament_install'
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_pkg']
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_pkg'
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_meta']
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_meta'
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ros']
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ros'
+[2.674s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_toolbox' with type 'ros.ament_cmake' and name 'slam_toolbox'
+[2.674s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.674s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.674s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.674s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.674s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.773s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/qty/ros2_ws/install
+[2.785s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 325 installed packages in /opt/ros/foxy
+[2.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.850s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'slam_toolbox' is in: /home/qty/ros2_ws/install/slam_toolbox, /opt/ros/foxy
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding slam_toolbox
+
+This may be promoted to an error in a future release of colcon-override-check.
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_args' from command line to 'None'
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target' from command line to 'None'
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_cache' from command line to 'False'
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_first' from command line to 'False'
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_force_configure' from command line to 'False'
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'ament_cmake_args' from command line to 'None'
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_cmake_args' from command line to 'None'
+[2.864s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.864s] DEBUG:colcon.colcon_core.verb:Building package 'articubot_one' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/qty/ros2_ws/build/articubot_one', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/qty/ros2_ws/install/articubot_one', 'merge_install': False, 'path': '/home/qty/ros2_ws/src/articubot_one', 'symlink_install': True, 'test_result_base': None}
+[2.879s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_args' from command line to 'None'
+[2.879s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target' from command line to 'None'
+[2.879s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.879s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_cache' from command line to 'False'
+[2.879s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_first' from command line to 'False'
+[2.879s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_force_configure' from command line to 'False'
+[2.879s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'ament_cmake_args' from command line to 'None'
+[2.879s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_cmake_args' from command line to 'None'
+[2.879s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.879s] DEBUG:colcon.colcon_core.verb:Building package 'csm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/qty/ros2_ws/build/csm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/qty/ros2_ws/install/csm', 'merge_install': False, 'path': '/home/qty/ros2_ws/src/csm', 'symlink_install': True, 'test_result_base': None}
+[2.895s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_msgs' build argument 'cmake_args' from command line to 'None'
+[2.895s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_msgs' build argument 'cmake_target' from command line to 'None'
+[2.895s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.895s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.895s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.895s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.895s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.895s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.895s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.895s] DEBUG:colcon.colcon_core.verb:Building package 'hoverboard_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/qty/ros2_ws/build/hoverboard_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/qty/ros2_ws/install/hoverboard_msgs', 'merge_install': False, 'path': '/home/qty/ros2_ws/src/hoverboard_msgs', 'symlink_install': True, 'test_result_base': None}
+[2.908s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_args' from command line to 'None'
+[2.908s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target' from command line to 'None'
+[2.908s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.908s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[2.909s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[2.909s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[2.909s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[2.909s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[2.909s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.909s] DEBUG:colcon.colcon_core.verb:Building package 'openslam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/qty/ros2_ws/build/openslam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/qty/ros2_ws/install/openslam_gmapping', 'merge_install': False, 'path': '/home/qty/ros2_ws/src/slam_gmapping/openslam_gmapping', 'symlink_install': True, 'test_result_base': None}
+[2.922s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[2.922s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[2.922s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.923s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[2.923s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[2.923s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[2.923s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[2.923s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[2.923s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.923s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/qty/ros2_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/qty/ros2_ws/install/rplidar_ros', 'merge_install': False, 'path': '/home/qty/ros2_ws/src/rplidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[2.936s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_args' from command line to 'None'
+[2.936s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target' from command line to 'None'
+[2.936s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.936s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_cache' from command line to 'False'
+[2.936s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_first' from command line to 'False'
+[2.936s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_force_configure' from command line to 'False'
+[2.936s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'ament_cmake_args' from command line to 'None'
+[2.937s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_cmake_args' from command line to 'None'
+[2.937s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.937s] DEBUG:colcon.colcon_core.verb:Building package 'slam_toolbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/qty/ros2_ws/build/slam_toolbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/qty/ros2_ws/install/slam_toolbox', 'merge_install': False, 'path': '/home/qty/ros2_ws/src/slam_toolbox', 'symlink_install': True, 'test_result_base': None}
+[2.947s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_controller' build argument 'cmake_args' from command line to 'None'
+[2.947s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_controller' build argument 'cmake_target' from command line to 'None'
+[2.947s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.947s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[2.947s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_controller' build argument 'cmake_clean_first' from command line to 'False'
+[2.947s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_controller' build argument 'cmake_force_configure' from command line to 'False'
+[2.947s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_controller' build argument 'ament_cmake_args' from command line to 'None'
+[2.947s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[2.947s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.947s] DEBUG:colcon.colcon_core.verb:Building package 'hoverboard_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/qty/ros2_ws/build/hoverboard_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/qty/ros2_ws/install/hoverboard_controller', 'merge_install': False, 'path': '/home/qty/ros2_ws/src/hoverboard_controller', 'symlink_install': True, 'test_result_base': None}
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_args' from command line to 'None'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target' from command line to 'None'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_cache' from command line to 'False'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_first' from command line to 'False'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_force_configure' from command line to 'False'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'ament_cmake_args' from command line to 'None'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_cmake_args' from command line to 'None'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.959s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_laser_scan_matcher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/qty/ros2_ws/build/ros2_laser_scan_matcher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/qty/ros2_ws/install/ros2_laser_scan_matcher', 'merge_install': False, 'path': '/home/qty/ros2_ws/src/ros2_laser_scan_matcher', 'symlink_install': True, 'test_result_base': None}
+[2.972s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_args' from command line to 'None'
+[2.972s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target' from command line to 'None'
+[2.972s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.972s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[2.972s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[2.972s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[2.972s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[2.972s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[2.972s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.972s] DEBUG:colcon.colcon_core.verb:Building package 'slam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/qty/ros2_ws/build/slam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/qty/ros2_ws/install/slam_gmapping', 'merge_install': False, 'path': '/home/qty/ros2_ws/src/slam_gmapping/slam_gmapping', 'symlink_install': True, 'test_result_base': None}
+[2.982s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.995s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.995s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/qty/ros2_ws/src/csm' with build type 'ament_cmake'
+[2.995s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/qty/ros2_ws/src/csm'
+[3.019s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.019s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.019s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.056s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/qty/ros2_ws/src/hoverboard_msgs' with build type 'ament_cmake'
+[3.057s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/qty/ros2_ws/src/hoverboard_msgs'
+[3.069s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.069s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.115s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/qty/ros2_ws/src/slam_gmapping/openslam_gmapping' with build type 'ament_cmake'
+[3.116s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/qty/ros2_ws/src/slam_gmapping/openslam_gmapping'
+[3.136s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.136s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.193s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/qty/ros2_ws/src/rplidar_ros2' with build type 'ament_cmake'
+[3.194s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/qty/ros2_ws/src/rplidar_ros2'
+[3.213s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.213s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.275s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/qty/ros2_ws/src/slam_toolbox' with build type 'ament_cmake'
+[3.276s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/qty/ros2_ws/src/slam_toolbox'
+[3.289s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.289s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.331s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/qty/ros2_ws/src/articubot_one' with build type 'ament_cmake'
+[3.332s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/qty/ros2_ws/src/articubot_one'
+[3.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.349s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/csm -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/csm
+[3.401s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/hoverboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/hoverboard_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/hoverboard_msgs
+[3.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_gmapping/openslam_gmapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/openslam_gmapping
+[3.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/rplidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/rplidar_ros
+[3.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/slam_toolbox
+[3.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/articubot_one
+[3.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/articubot_one
+[3.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/articubot_one -- -j16 -l16
+[3.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_gmapping/openslam_gmapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/openslam_gmapping
+[3.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/openslam_gmapping -- -j16 -l16
+[3.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/articubot_one -- -j16 -l16
+[3.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/articubot_one
+[3.967s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[3.968s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/articubot_one
+[3.990s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one' for CMake module files
+[3.990s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one' for CMake config files
+[3.991s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[4.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[4.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[4.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[4.011s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one/bin'
+[4.011s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[4.012s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one/lib/python3.8/site-packages'
+[4.012s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one/bin'
+[4.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.ps1'
+[4.028s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.dsv'
+[4.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.sh'
+[4.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.bash'
+[4.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.zsh'
+[4.031s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/articubot_one/share/colcon-core/packages/articubot_one)
+[4.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/openslam_gmapping -- -j16 -l16
+[4.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[4.087s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one' for CMake module files
+[4.088s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one' for CMake config files
+[4.088s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[4.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[4.104s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[4.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[4.105s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one/bin'
+[4.105s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[4.106s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one/lib/python3.8/site-packages'
+[4.106s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/articubot_one/bin'
+[4.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.ps1'
+[4.121s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.dsv'
+[4.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.sh'
+[4.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.bash'
+[4.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/articubot_one/share/articubot_one/package.zsh'
+[4.123s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/articubot_one/share/colcon-core/packages/articubot_one)
+[4.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/openslam_gmapping
+[4.167s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[4.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/openslam_gmapping
+[4.185s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping' for CMake module files
+[4.186s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping' for CMake config files
+[4.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[4.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[4.209s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[4.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[4.210s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/lib'
+[4.211s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/bin'
+[4.211s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[4.211s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/lib/python3.8/site-packages'
+[4.211s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/bin'
+[4.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[4.231s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[4.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[4.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[4.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[4.235s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[4.281s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[4.299s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping' for CMake module files
+[4.300s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping' for CMake config files
+[4.300s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[4.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[4.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[4.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[4.317s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/lib'
+[4.318s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/bin'
+[4.318s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[4.318s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/lib/python3.8/site-packages'
+[4.318s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/openslam_gmapping/bin'
+[4.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[4.334s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[4.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[4.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[4.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[4.336s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[4.337s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/qty/ros2_ws/src/slam_gmapping/slam_gmapping' with build type 'ament_cmake'
+[4.337s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/qty/ros2_ws/src/slam_gmapping/slam_gmapping'
+[4.354s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.354s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/csm -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/csm
+[4.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/csm -- -j16 -l16
+[4.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_gmapping/slam_gmapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/slam_gmapping
+[4.509s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/csm -- -j16 -l16
+[4.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/csm
+[4.609s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[4.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/csm
+[4.637s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm' for CMake module files
+[4.638s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm' for CMake config files
+[4.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[4.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[4.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[4.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[4.655s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/lib'
+[4.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[4.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[4.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[4.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[4.672s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/bin'
+[4.672s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/lib/pkgconfig/csm.pc'
+[4.672s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/lib/python3.8/site-packages'
+[4.672s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/bin'
+[4.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/csm/share/csm/package.ps1'
+[4.687s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/csm/share/csm/package.dsv'
+[4.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/csm/share/csm/package.sh'
+[4.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/csm/share/csm/package.bash'
+[4.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/csm/share/csm/package.zsh'
+[4.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/csm/share/colcon-core/packages/csm)
+[4.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/rplidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/rplidar_ros
+[4.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/rplidar_ros -- -j16 -l16
+[4.791s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[4.818s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm' for CMake module files
+[4.819s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm' for CMake config files
+[4.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[4.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[4.844s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[4.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[4.845s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/lib'
+[4.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[4.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[4.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[4.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[4.862s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/bin'
+[4.862s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/lib/pkgconfig/csm.pc'
+[4.863s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/lib/python3.8/site-packages'
+[4.863s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/csm/bin'
+[4.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/csm/share/csm/package.ps1'
+[4.878s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/csm/share/csm/package.dsv'
+[4.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/csm/share/csm/package.sh'
+[4.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/csm/share/csm/package.bash'
+[4.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/csm/share/csm/package.zsh'
+[4.881s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/csm/share/colcon-core/packages/csm)
+[4.882s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/qty/ros2_ws/src/ros2_laser_scan_matcher' with build type 'ament_cmake'
+[4.883s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/qty/ros2_ws/src/ros2_laser_scan_matcher'
+[4.899s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.899s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/hoverboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/hoverboard_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/hoverboard_msgs
+[4.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/hoverboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/hoverboard_msgs -- -j16 -l16
+[4.962s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/rplidar_ros -- -j16 -l16
+[4.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy LD_LIBRARY_PATH=/home/qty/ros2_ws/install/csm/lib:/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake /home/qty/ros2_ws/src/ros2_laser_scan_matcher -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/ros2_laser_scan_matcher
+[5.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/rplidar_ros
+[5.045s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[5.047s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/rplidar_ros
+[5.070s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros' for CMake module files
+[5.071s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros' for CMake config files
+[5.071s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[5.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[5.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[5.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[5.090s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/lib'
+[5.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[5.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[5.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[5.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[5.108s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/bin'
+[5.108s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[5.109s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/lib/python3.8/site-packages'
+[5.109s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/bin'
+[5.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[5.125s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[5.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[5.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[5.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[5.127s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[5.190s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[5.211s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros' for CMake module files
+[5.212s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros' for CMake config files
+[5.212s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[5.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[5.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[5.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[5.235s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/lib'
+[5.235s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[5.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[5.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[5.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[5.256s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/bin'
+[5.256s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[5.257s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/lib/python3.8/site-packages'
+[5.257s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/rplidar_ros/bin'
+[5.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[5.276s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[5.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[5.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[5.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[5.278s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[5.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/hoverboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/hoverboard_msgs -- -j16 -l16
+[5.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/hoverboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/hoverboard_msgs
+[5.443s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hoverboard_msgs)
+[5.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/hoverboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/hoverboard_msgs
+[5.470s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs' for CMake module files
+[5.471s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs' for CMake config files
+[5.471s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_msgs', 'cmake_prefix_path')
+[5.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/cmake_prefix_path.ps1'
+[5.488s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/cmake_prefix_path.dsv'
+[5.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/cmake_prefix_path.sh'
+[5.489s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/lib'
+[5.489s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_msgs', 'ld_library_path_lib')
+[5.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/ld_library_path_lib.ps1'
+[5.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/ld_library_path_lib.dsv'
+[5.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/ld_library_path_lib.sh'
+[5.511s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/bin'
+[5.511s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/lib/pkgconfig/hoverboard_msgs.pc'
+[5.512s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages'
+[5.512s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_msgs', 'pythonpath')
+[5.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/pythonpath.ps1'
+[5.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/pythonpath.dsv'
+[5.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/pythonpath.sh'
+[5.532s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/bin'
+[5.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.ps1'
+[5.548s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.dsv'
+[5.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.sh'
+[5.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.bash'
+[5.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.zsh'
+[5.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/hoverboard_msgs/share/colcon-core/packages/hoverboard_msgs)
+[5.632s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hoverboard_msgs)
+[5.646s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs' for CMake module files
+[5.647s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs' for CMake config files
+[5.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_msgs', 'cmake_prefix_path')
+[5.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/cmake_prefix_path.ps1'
+[5.661s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/cmake_prefix_path.dsv'
+[5.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/cmake_prefix_path.sh'
+[5.662s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/lib'
+[5.663s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_msgs', 'ld_library_path_lib')
+[5.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/ld_library_path_lib.ps1'
+[5.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/ld_library_path_lib.dsv'
+[5.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/ld_library_path_lib.sh'
+[5.678s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/bin'
+[5.678s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/lib/pkgconfig/hoverboard_msgs.pc'
+[5.678s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages'
+[5.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_msgs', 'pythonpath')
+[5.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/pythonpath.ps1'
+[5.693s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/pythonpath.dsv'
+[5.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/hook/pythonpath.sh'
+[5.694s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_msgs/bin'
+[5.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.ps1'
+[5.710s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.dsv'
+[5.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.sh'
+[5.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.bash'
+[5.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_msgs/share/hoverboard_msgs/package.zsh'
+[5.712s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/hoverboard_msgs/share/colcon-core/packages/hoverboard_msgs)
+[6.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_gmapping/slam_gmapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/slam_gmapping
+[6.133s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/slam_gmapping -- -j16 -l16
+[6.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/slam_gmapping -- -j16 -l16
+[6.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/slam_gmapping
+[6.255s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[6.255s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/slam_gmapping
+[6.268s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping' for CMake module files
+[6.269s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping' for CMake config files
+[6.269s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[6.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[6.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[6.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[6.284s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/lib'
+[6.284s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/bin'
+[6.284s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[6.284s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/lib/python3.8/site-packages'
+[6.284s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/bin'
+[6.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[6.298s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[6.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.sh'
+[6.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.bash'
+[6.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[6.300s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[6.335s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[6.349s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping' for CMake module files
+[6.350s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping' for CMake config files
+[6.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[6.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[6.364s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[6.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[6.365s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/lib'
+[6.365s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/bin'
+[6.365s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[6.366s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/lib/python3.8/site-packages'
+[6.366s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_gmapping/bin'
+[6.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[6.381s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[6.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.sh'
+[6.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.bash'
+[6.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[6.383s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[6.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy LD_LIBRARY_PATH=/home/qty/ros2_ws/install/csm/lib:/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake /home/qty/ros2_ws/src/ros2_laser_scan_matcher -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/ros2_laser_scan_matcher
+[6.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy LD_LIBRARY_PATH=/home/qty/ros2_ws/install/csm/lib:/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/qty/ros2_ws/build/ros2_laser_scan_matcher -- -j16 -l16
+[6.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy LD_LIBRARY_PATH=/home/qty/ros2_ws/install/csm/lib:/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/qty/ros2_ws/build/ros2_laser_scan_matcher -- -j16 -l16
+[6.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy LD_LIBRARY_PATH=/home/qty/ros2_ws/install/csm/lib:/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --install /home/qty/ros2_ws/build/ros2_laser_scan_matcher
+[6.639s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[6.640s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/articubot_one:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy LD_LIBRARY_PATH=/home/qty/ros2_ws/install/csm/lib:/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --install /home/qty/ros2_ws/build/ros2_laser_scan_matcher
+[6.653s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher' for CMake module files
+[6.653s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher' for CMake config files
+[6.653s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[6.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[6.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[6.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[6.668s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/lib'
+[6.668s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/bin'
+[6.668s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[6.668s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/lib/python3.8/site-packages'
+[6.668s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/bin'
+[6.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[6.681s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[6.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[6.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[6.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[6.683s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[6.723s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[6.736s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher' for CMake module files
+[6.737s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher' for CMake config files
+[6.738s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[6.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[6.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[6.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[6.753s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/lib'
+[6.753s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/bin'
+[6.753s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[6.753s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/lib/python3.8/site-packages'
+[6.753s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/bin'
+[6.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[6.767s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[6.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[6.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[6.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[6.769s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[7.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake /home/qty/ros2_ws/src/slam_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/qty/ros2_ws/install/slam_toolbox
+[7.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/slam_toolbox -- -j16 -l16
+[7.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --build /home/qty/ros2_ws/build/slam_toolbox -- -j16 -l16
+[7.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/slam_toolbox
+[8.002s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_toolbox)
+[8.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/qty/ros2_ws/install/hoverboard_controller:/opt/ros/foxy /usr/bin/cmake --install /home/qty/ros2_ws/build/slam_toolbox
+[8.018s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox' for CMake module files
+[8.018s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox' for CMake config files
+[8.019s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'cmake_prefix_path')
+[8.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.ps1'
+[8.031s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.dsv'
+[8.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.sh'
+[8.032s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/lib'
+[8.032s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'ld_library_path_lib')
+[8.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.ps1'
+[8.047s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.dsv'
+[8.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.sh'
+[8.048s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/bin'
+[8.048s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/lib/pkgconfig/slam_toolbox.pc'
+[8.048s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages'
+[8.048s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'pythonpath')
+[8.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.ps1'
+[8.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.dsv'
+[8.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.sh'
+[8.061s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/bin'
+[8.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.ps1'
+[8.074s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.dsv'
+[8.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.sh'
+[8.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.bash'
+[8.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.zsh'
+[8.076s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/slam_toolbox/share/colcon-core/packages/slam_toolbox)
+[8.303s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_toolbox)
+[8.316s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox' for CMake module files
+[8.317s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox' for CMake config files
+[8.317s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'cmake_prefix_path')
+[8.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.ps1'
+[8.329s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.dsv'
+[8.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.sh'
+[8.330s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/lib'
+[8.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'ld_library_path_lib')
+[8.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.ps1'
+[8.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.dsv'
+[8.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.sh'
+[8.345s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/bin'
+[8.345s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/lib/pkgconfig/slam_toolbox.pc'
+[8.345s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages'
+[8.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'pythonpath')
+[8.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.ps1'
+[8.358s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.dsv'
+[8.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.sh'
+[8.359s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/slam_toolbox/bin'
+[8.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.ps1'
+[8.373s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.dsv'
+[8.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.sh'
+[8.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.bash'
+[8.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.zsh'
+[8.375s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/slam_toolbox/share/colcon-core/packages/slam_toolbox)
+[8.375s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/qty/ros2_ws/src/hoverboard_controller' with build type 'ament_python'
+[8.375s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_controller', 'ament_prefix_path')
+[8.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/hook/ament_prefix_path.ps1'
+[8.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/hook/ament_prefix_path.dsv'
+[8.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/hook/ament_prefix_path.sh'
+[8.402s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.403s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.654s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/qty/ros2_ws/src/hoverboard_controller'
+[8.665s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.665s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.298s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/share/ament_index/resource_index/packages/hoverboard_controller
+[9.298s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/package.xml
+[9.298s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/hoverboard_joystick_control.launch.py
+[9.298s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/rsp.launch.py
+[9.298s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/mapper.launch.py
+[9.298s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/localization.launch.py
+[9.299s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller/fire_detector
+[9.299s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller/heat_map_controller
+[9.299s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller/heat_map_tester
+[9.299s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller/hoverboard_controller
+[9.299s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller/joystick_controller
+[9.299s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller/map_saver
+[9.299s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller/mapping_controller
+[9.299s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller/navigation_controller
+[9.299s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller/navigation_controller_tester
+[9.302s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/qty/ros2_ws/build/hoverboard_controller': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one LD_LIBRARY_PATH=/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/qty/ros2_ws/build/hoverboard_controller/prefix_override:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages:/home/qty/ros2_ws/build/hoverboard_controller:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/hoverboard_controller/build --no-deps install_data
+[9.946s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_controller', 'pythonpath_develop')
+[9.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/qty/ros2_ws/build/hoverboard_controller' returned '0': CMAKE_PREFIX_PATH=/home/qty/ros2_ws/install/slam_toolbox:/home/qty/ros2_ws/install/rplidar_ros:/home/qty/ros2_ws/install/hoverboard_msgs:/home/qty/ros2_ws/install/slam_gmapping:/home/qty/ros2_ws/install/ros2_laser_scan_matcher:/home/qty/ros2_ws/install/openslam_gmapping:/home/qty/ros2_ws/install/csm:/home/qty/ros2_ws/install/articubot_one LD_LIBRARY_PATH=/home/qty/ros2_ws/install/slam_toolbox/lib:/home/qty/ros2_ws/install/rplidar_ros/lib:/home/qty/ros2_ws/install/hoverboard_msgs/lib:/home/qty/ros2_ws/install/openslam_gmapping/lib:/home/qty/ros2_ws/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/qty/ros2_ws/build/hoverboard_controller/prefix_override:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/home/qty/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/qty/ros2_ws/install/hoverboard_msgs/lib/python3.8/site-packages:/home/qty/ros2_ws/build/hoverboard_controller:/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/qty/ros2_ws/build/hoverboard_controller/build --no-deps install_data
+[9.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/build/hoverboard_controller/share/hoverboard_controller/hook/pythonpath_develop.ps1'
+[9.960s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/build/hoverboard_controller/share/hoverboard_controller/hook/pythonpath_develop.dsv'
+[9.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/build/hoverboard_controller/share/hoverboard_controller/hook/pythonpath_develop.sh'
+[9.973s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_controller' for CMake module files
+[9.974s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_controller' for CMake config files
+[9.974s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_controller/lib'
+[9.974s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_controller/bin'
+[9.975s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_controller/lib/pkgconfig/hoverboard_controller.pc'
+[9.975s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages'
+[9.975s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_controller', 'pythonpath')
+[9.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/hook/pythonpath.ps1'
+[9.988s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/hook/pythonpath.dsv'
+[9.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/hook/pythonpath.sh'
+[9.989s] Level 1:colcon.colcon_core.environment:checking '/home/qty/ros2_ws/install/hoverboard_controller/bin'
+[9.989s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hoverboard_controller)
+[10.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/package.ps1'
+[10.004s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/package.dsv'
+[10.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/package.sh'
+[10.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/package.bash'
+[10.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller/package.zsh'
+[10.007s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/qty/ros2_ws/install/hoverboard_controller/share/colcon-core/packages/hoverboard_controller)
+[10.007s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.007s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.008s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.008s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.031s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.031s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.031s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.046s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.062s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/qty/ros2_ws/install/local_setup.ps1'
+[10.064s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/qty/ros2_ws/install/_local_setup_util_ps1.py'
+[10.066s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/qty/ros2_ws/install/setup.ps1'
+[10.084s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/qty/ros2_ws/install/local_setup.sh'
+[10.085s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/qty/ros2_ws/install/_local_setup_util_sh.py'
+[10.085s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/qty/ros2_ws/install/setup.sh'
+[10.103s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/qty/ros2_ws/install/local_setup.bash'
+[10.104s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/qty/ros2_ws/install/setup.bash'
+[10.121s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/qty/ros2_ws/install/local_setup.zsh'
+[10.122s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/qty/ros2_ws/install/setup.zsh'

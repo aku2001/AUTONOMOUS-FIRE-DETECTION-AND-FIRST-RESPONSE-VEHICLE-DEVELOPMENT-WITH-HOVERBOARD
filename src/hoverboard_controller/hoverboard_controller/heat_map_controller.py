@@ -36,7 +36,7 @@ class HeatMapController(Node):
         # Set tf listener
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
-        self.target_frame = "map"
+        self.target_frame = "odom"
         self.src_frame = "base_link"
 
         self.timer = self.create_timer(0.1,self.publishHeatMap)

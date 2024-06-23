@@ -1,0 +1,29 @@
+running develop
+running egg_info
+writing hoverboard_controller.egg-info/PKG-INFO
+writing dependency_links to hoverboard_controller.egg-info/dependency_links.txt
+writing entry points to hoverboard_controller.egg-info/entry_points.txt
+writing requirements to hoverboard_controller.egg-info/requires.txt
+writing top-level names to hoverboard_controller.egg-info/top_level.txt
+reading manifest file 'hoverboard_controller.egg-info/SOURCES.txt'
+writing manifest file 'hoverboard_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller.egg-link (link to .)
+Installing fire_detector script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing heat_map_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing heat_map_tester script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing hoverboard_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing joystick_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing map_saver script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing mapping_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing navigation_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing navigation_controller_tester script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+
+Installed /home/qty/ros2_ws/build/hoverboard_controller
+running install_data
+copying resource/hoverboard_controller -> /home/qty/ros2_ws/install/hoverboard_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+copying launch/hoverboard_joystick_control.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+copying launch/rsp.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+copying launch/mapper.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+copying launch/localization.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller

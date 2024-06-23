@@ -8,7 +8,7 @@ from tf2_ros import TransformException
 from tf2_ros.buffer import Buffer
 from tf2_ros.transform_listener import TransformListener
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageOps
 import yaml
 import time
 
@@ -245,6 +245,7 @@ class MapSaver(Node):
                             img.putpixel((pixel_x, pixel_y), element_value)
 
             # img.show()
+            img = ImageOps.flip(img)                     
             img.save(fileName) 
 
             # Create the yaml file

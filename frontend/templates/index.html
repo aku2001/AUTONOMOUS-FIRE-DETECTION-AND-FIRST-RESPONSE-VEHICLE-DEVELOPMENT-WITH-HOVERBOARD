@@ -5,6 +5,7 @@
     <style>
         body {
             position: relative;
+            padding: 2em;
         }
         img{
             height: 100%;
@@ -18,23 +19,25 @@
             margin: 5px;
             width: 60vw;
             height: 60vh;
+            margin: auto;
+            margin-top: 5vh;
             /* border: 2px solid black ;
             border-radius: 10%; */
 
         }
         .minimized-top {
-            top: 10px;
+            top: 10vh;
             right: 10px;
             position: absolute;
             width: 20vw;
-            height: 20vh;
+            height: 25vh;
         }
         .minimized-bottom {
-            top: 200px;
+            top: 40vh;
             right: 10px;
             position: absolute;
             width: 20vw;
-            height: 20vh;
+            height: 25vh;
         }
 
         #temperature-value {
@@ -51,23 +54,20 @@
             width: 30vw;            
         }
         #start-button-id {
-            font-size: 2em;
             top: 10px;
             margin-left: 10px;
         }
         #stop-button-id {
-            font-size: 2em;
             top: 10px;
             margin-left: 10px;
         }
         #save-button-id{
-            font-size: 2em;
+            /* font-size: 2em; */
             top: 10px;
             margin-left: 10px;
         }
 
         #load-button-id{
-            font-size: 2em;
             top: 10px;
             margin-left: 10px;
         }
@@ -92,38 +92,65 @@
             left: 50px;
             width: 30vw;  
         }
+        .options_header{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .button{
+            border: none;
+            outline: none;
+            background-color: white;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .button:hover{
+            color: white;
+            background-color: purple;
+            border-radius: 10%;
+            cursor: pointer;
+            padding: 0.2em;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
 
     <div class="button_container">
 
-        <form method="post" action="/start-button">
-            <div id="selectContainer">
-                <select id="select-option" name="select-option">
-                    <option value="Mapping">Mapping</option>
-                    <option value="Navigation">Navigation</option>
-                </select>
-                <input type="submit" value="Start" id="start-button-id">
-            </div>
-        </form>
-        
-        <form method="post" action="/reset-button">
-                <input type="submit" value="Reset" id="stop-button-id">
-        </form>
-    
-        <form id="mapForm" method="post" action="/load-button">
-            <div id="loadContainer">
-                <select id="mapDropdown" name="selectedMap">
-                    <option value="">Select a map</option>
-                </select>
-                <button type="submit" id="load-button-id">Load</button>
-            </div>
-        </form>
+        <div class="options_header">
 
-        <form method="post" action="/">
-            <a id="save-button-id"> Save </a>       
-        </form>
+            <form method="post" action="/start-button">
+                <div id="selectContainer">
+                    <select id="select-option" name="select-option">
+                        <option value="Mapping">Mapping</option>
+                        <option value="Navigation">Navigation</option>
+                    </select>
+                    <input class="button" type="submit" value="Start" id="start-button-id">
+                </div>
+            </form>
+            
+            <form method="post" action="/reset-button">
+                    <input class="button" type="submit" value="Reset" id="stop-button-id">
+            </form>
+        </div>
+        
+        <div class="options_header">
+            <form id="mapForm" method="post" action="/load-button">
+                <div id="loadContainer">
+                    <select id="mapDropdown" name="selectedMap">
+                        <option value="">Select a map</option>
+                    </select>
+                    <button class="button" type="submit" id="load-button-id">Load</button>
+                </div>
+            </form>
+    
+            <form method="post" action="/">
+                <a class="button" id="save-button-id"> Save </a>       
+            </form>
+        </div>
     </div>
     
 
@@ -138,7 +165,7 @@
         <img id="heatMap" src="/static/heatmap" onclick="toggleSize()">
     </div>
     <div id="temperature-value">
-        <p>Temperature: {{ temperature }}°C</p>
+        <p id="temperature_value_p">Temperature: {{ temperature }}°C</p>
     </div>
     <script>
         function toggleSize() {
@@ -178,9 +205,23 @@
                 .then(response => response.json())
                 .then(data => {
                     console.log(data.message);
-                    if (data.message === "Fire Detected! Check the console for details.") {
-                        alert("Fire Detected!");
+                    if (data.message.includes("Fire")) {
+                        alert(data.message);
                     }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        function checkForTemperature() {
+            
+            fetch('/check_temperature')
+                .then(response => response.json())
+                .then(data => {
+                    var temp = document.getElementById('temperature_value_p');
+                    temp.innerHTML=data.message
+                    console.log("changing");
                 })
                 .catch(error => {
                     console.error('Error:', error);
@@ -244,6 +285,9 @@
 
 
         fetchMapFiles();
+        refreshLidarAndHeatMap()
+        setInterval(checkForTemperature,1000)
+        setInterval(checkForFire,1000)
         setInterval(refreshLidarAndHeatMap,5000);
         setInterval(saveMapsToTemp, 5000);
     </script>

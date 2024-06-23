@@ -8,4 +8,3 @@ map_saver = hoverboard_controller.map_saver:main
 mapping_controller = hoverboard_controller.mapping_controller:main
 navigation_controller = hoverboard_controller.navigation_controller:main
 navigation_controller_tester = hoverboard_controller.navigation_controller_tester:main
-

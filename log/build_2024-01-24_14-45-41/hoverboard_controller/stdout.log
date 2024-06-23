@@ -1,0 +1,58 @@
+running egg_info
+writing ../../build/hoverboard_controller/hoverboard_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/hoverboard_controller/hoverboard_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/hoverboard_controller/hoverboard_controller.egg-info/entry_points.txt
+writing requirements to ../../build/hoverboard_controller/hoverboard_controller.egg-info/requires.txt
+writing top-level names to ../../build/hoverboard_controller/hoverboard_controller.egg-info/top_level.txt
+reading manifest file '../../build/hoverboard_controller/hoverboard_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/hoverboard_controller/hoverboard_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying hoverboard_controller/mapping_controller_tester.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/save_map_tester.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/map_saver.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/mapping_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/hoverboard_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/__init__.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/receive_image.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/joystick_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/heat_map_tester.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/old_joystickController.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/fire_detector.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/navigation_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/heat_map_controller.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/navigation_controller_test.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+copying hoverboard_controller/trial.py -> /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller
+running install
+running install_lib
+copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/map_saver.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/mapping_controller.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/heat_map_tester.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/fire_detector.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+copying /home/qty/ros2_ws/build/hoverboard_controller/build/lib/hoverboard_controller/heat_map_controller.py -> /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller
+byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/map_saver.py to map_saver.cpython-38.pyc
+byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/mapping_controller.py to mapping_controller.cpython-38.pyc
+byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/heat_map_tester.py to heat_map_tester.cpython-38.pyc
+byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/fire_detector.py to fire_detector.cpython-38.pyc
+byte-compiling /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller/heat_map_controller.py to heat_map_controller.cpython-38.pyc
+running install_data
+copying resource/hoverboard_controller -> /home/qty/ros2_ws/install/hoverboard_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+copying launch/hoverboard_joystick_control.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+copying launch/rsp.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+copying launch/mapper.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+copying launch/localization.launch.py -> /home/qty/ros2_ws/install/hoverboard_controller/share/hoverboard_controller
+running install_egg_info
+removing '/home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/hoverboard_controller/hoverboard_controller.egg-info to /home/qty/ros2_ws/install/hoverboard_controller/lib/python3.8/site-packages/hoverboard_controller-0.0.0-py3.8.egg-info
+running install_scripts
+Installing fire_detector script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing heat_map_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing heat_map_tester script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing hoverboard_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing joystick_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing map_saver script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing mapping_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing navigation_controller script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+Installing navigation_controller_tester script to /home/qty/ros2_ws/install/hoverboard_controller/lib/hoverboard_controller
+writing list of installed files to '/home/qty/ros2_ws/build/hoverboard_controller/install.log'

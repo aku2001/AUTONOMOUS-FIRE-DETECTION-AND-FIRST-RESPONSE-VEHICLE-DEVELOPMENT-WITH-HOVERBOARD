@@ -45,7 +45,7 @@ def generate_launch_description():
 
         DeclareLaunchArgument(
             'map',
-            default_value= "/home/qty/ros2_ws/frontend/maps/MAP3/map.yaml",
+            default_value= "/home/qty/ros2_ws/frontend/maps/Map1/map.yaml",
             description='Full path to map yaml file to load'),
 
         DeclareLaunchArgument(
